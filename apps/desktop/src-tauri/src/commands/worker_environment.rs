@@ -17,7 +17,7 @@ use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicBool, Ordering};
 use tauri::{AppHandle, Emitter, Manager};
 
-const RELEASE_ROOT: &str = "https://github.com/RoamerFly/anime-pic-manage/releases/download";
+const RELEASE_ROOT: &str = "https://github.com/RoamerFly/CharaForge/releases/download";
 const PROGRESS_EVENT: &str = "worker-environment://install";
 static INSTALLING: AtomicBool = AtomicBool::new(false);
 

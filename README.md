@@ -280,4 +280,4 @@ build_installer.bat --gpu  # GPU 版安装器（读 dist_windows_gpu）
 
 本项目原创代码采用 MIT，见 [LICENSE](LICENSE)。第三方依赖、识别模型、打标权重与训练器不自动继承本项目许可证，需分别遵守其上游许可。
 
-开发者：[@RoamerFly](https://github.com/RoamerFly) · [项目仓库](https://github.com/RoamerFly/anime-pic-manage) · [提交问题](https://github.com/RoamerFly/anime-pic-manage/issues)
+开发者：[@RoamerFly](https://github.com/RoamerFly) · [项目仓库](https://github.com/RoamerFly/CharaForge) · [提交问题](https://github.com/RoamerFly/CharaForge/issues)

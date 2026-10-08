@@ -14,7 +14,7 @@
     {
       "file": "agent/config.py",
       "source_sha256": "f96d884eb22c630ba6c3be74e2acaaf0229c99b790c1b55fee983bb1f16b635f",
-      "sha256": "f96d884eb22c630ba6c3be74e2acaaf0229c99b790c1b55fee983bb1f16b635f"
+      "sha256": "551417c5ffe5b0d65f4f11c2de66c50ce8f7a93486aeb02a18486c17e6047e75"
     },
     {
       "file": "agent/context.py",
@@ -108,5 +108,5 @@
     }
   ],
   "knowledge_files": 27,
-  "text_normalization": "UTF-8 LF; provider.py extra blank EOF removed"
+  "text_normalization": "UTF-8 LF; provider.py and config.py extra blank EOF removed"
 }

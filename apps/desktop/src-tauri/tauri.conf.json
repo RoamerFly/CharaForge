@@ -33,7 +33,7 @@
     "active": true,
     "targets": ["nsis"],
     "publisher": "RoamerFly",
-    "homepage": "https://github.com/RoamerFly/anime-pic-manage",
+    "homepage": "https://github.com/RoamerFly/CharaForge",
     "shortDescription": "本地动漫图片角色识别、相似度去重与 LoRA 训练工具",
     "longDescription": "在本地识别动漫图片里的角色、人工矫正、去除重复图、导出训练集并训练 LoRA，可选联动 ComfyUI 生图。",
     "licenseFile": "../../../LICENSE",
@@ -54,7 +54,7 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IERFRTRGMDcyRDk5REY3MUQKUldRZDk1M1pjdkRrM3JUT250QUdiNHdxb012eWFxQkdLUENNUzJlY2Q0NXdHenY1U2dUejBnTXEK",
       "endpoints": [
-        "https://github.com/RoamerFly/anime-pic-manage/releases/latest/download/latest.json"
+        "https://github.com/RoamerFly/CharaForge/releases/latest/download/latest.json"
       ],
       "dangerousInsecureTransportProtocol": false
     }

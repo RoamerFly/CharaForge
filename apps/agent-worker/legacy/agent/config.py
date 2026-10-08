@@ -48,4 +48,3 @@ def add_project(root,current):
     return rows
 def preferences(): return read(settings.CONFIG/'agent-preferences.json',{})
 def save_preferences(value): atomic(settings.CONFIG/'agent-preferences.json',value)
-

@@ -137,7 +137,7 @@ const SETTINGS_TABS: Array<{
 
 
 export const developerUrl = "https://github.com/RoamerFly";
-export const repositoryUrl = "https://github.com/RoamerFly/anime-pic-manage";
+export const repositoryUrl = "https://github.com/RoamerFly/CharaForge";
 export const issuesUrl = `${repositoryUrl}/issues`;
 
 export function RuntimeDependencyCard({
