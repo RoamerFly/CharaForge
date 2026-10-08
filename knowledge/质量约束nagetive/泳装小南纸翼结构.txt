@@ -1,0 +1,14 @@
+泳装小南纸翼结构约束（2026-10-07，用户最新校准）
+
+形态正向约束：以角色游戏图/1000134912.png与1000134910.png中的游戏建模为最高优先级形态依据，Screenshot_2026_1007_184201.png与Screenshot_2026_1007_184121.png作为补充。两条纸翼从背部肩胛区以窄根部开始，沿长轴向身体两侧上方延伸，逐渐变宽，形成特别长、巨大的弧形带状翼面。中外段拱起，宽大的远端再沿长弧向下弯垂；不能只让末端向上展开成扇面。纸片沿长轴错层搭接，外缘为明显的矩形纸张和不规则错落纸缘；自然弯曲、层叠和纸张折痕，有长翼的纵向延伸感。宽阔空间展开时单翼从根到末端应接近人物身高量级，跨度明显大于人物身高；实际比例优先依照游戏图与用户校准，不当作精确官方尺寸。
+
+避免：短扇形翅膀；根部就很宽、从肩边直接散开的羽扇；覆盖整个肩背的宽翅根；三角尖叶整齐排成鸟羽；普通短天使翅膀；仅向上外扬、不向下弯垂的翼端；只把短翼整体等比放大，仍保留错误的宽根扇形。不能替代人体手臂，也不能把纸翼画成额外肢体。
+
+展示与场景：纸翼结构参考优先使用宽画幅，镜头拉远并留出翼尖空间，让窄根、长轴、渐宽和完整弧线均可判断。狭窄车厢不强行展开；宽阔酒店全身镜可在空间充足时展开，镜像左右方向必须一致。纸翼长度与轮廓由独立道具约束决定，不写进姿势正文。
+
+方向与透视（2026-10-08）：肩胛两侧翼根及内段随上背部偏航、前倾、侧倾，外端纸片受重力下垂并可柔性弯曲。侧面视角需要翼展透视缩短、近远翼自然重叠，三分之四视角体现深度和投影宽度变化。不要为显示两翼而移动翼根，也不要让弯腰或转身人物背后出现不随身体转动的正面对称贴图。身体坐标中的左右对称允许；对称不是自动判错条件。翼根、投影与重力关系才是验收依据。详见同目录《泳装小南纸翼方向与透视约束.md》。
+
+English: Rotate the two scapular roots and inner wing arches with the upper back's yaw, pitch and roll. Flexible outer paper panels hang downward with gravity. Project the wings from the actual camera direction, with foreshortening, near/far depth and natural occlusion. Do not force equally wide screen-facing wings on a rotated torso. Bilateral symmetry in the body frame is allowed. Avoid misplaced roots and collisions with body, floor, furniture and mirrors.
+中文注释：内段跟随背部，外端考虑重力；近远透视及遮挡自然，不能把正面纸翼贴在任何方向的人物身后。
+
+验收：先看从背部的窄根如何延伸，再看长轴和逐渐变宽的过程，最后核对完整翼形及材质。人物、脸型和衣装不随纸翼返修改变。旧短扇形生成图不得继续作为纸翼形态标准。

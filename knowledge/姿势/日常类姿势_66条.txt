@@ -1,0 +1,647 @@
+日常类姿势提示词
+条目数量：66
+说明：参考图片与参考记录各最多一个例子；姿势与场景独立组合。
+
+[N001]
+姿势名称：侧身行走扶帽
+姿势：侧身从左向右行走，左脚向前迈步、右脚自然跟随；右手轻扶帽檐、左臂自然后摆，头轻转向镜头。
+通用英文：Walking from left to right in a clear three-quarter side view, left foot stepping forward and right foot trailing naturally. Right hand lightly touching the brim of her existing hat, left arm swinging back naturally, head gently turned toward the camera.
+中文注释：侧身从左向右行走，左脚向前迈步、右脚自然跟随；右手轻扶帽檐、左臂自然后摆，头轻转向镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\海滨与水畔_12条.txt :: S014「海边露台」
+参考图片：{project_root}\姿势\姿势参考图\侧身行走扶帽.png
+参考记录：{project_root}\角色图集\夏日黑土\other\generate\生成记录.json :: 夏日黑土 / summer-basic-01
+
+[N002]
+姿势名称：侧脸抱臂
+姿势：左向纯侧面站立，双臂松抱于身前，头和视线朝侧方，身体直立放松。
+通用英文：Standing in a true left-facing side profile, arms loosely folded in front of the torso, head and gaze facing left. Upright relaxed posture; do not turn the face toward the camera.
+中文注释：左向纯侧面站立，双臂松抱于身前，头和视线朝侧方，身体直立放松。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S014「海边露台」
+  - {project_root}\场景\阅读展览与摄影棚_9条.txt :: S189「摄影棚」
+参考图片：{project_root}\姿势\姿势参考图\侧脸抱臂.png
+参考记录：{project_root}\角色图集\夏日黑土\other\generate\生成记录.json :: 夏日黑土 / summer-basic-03
+
+[N003]
+姿势名称：倚栏看海
+姿势：三分侧站并轻靠栏杆，双前臂分别搭在栏杆上，双手放松，一脚略后；原任务视线朝景物。
+通用英文：Standing in a three-quarter side view and leaning lightly against a waist-high railing. Both forearms rest separately on the rail, hands relaxed, one foot slightly behind the other, gaze directed toward the distant view.
+中文注释：三分侧站并轻靠栏杆，双前臂分别搭在栏杆上，双手放松，一脚略后；原任务视线朝景物。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S014「海边露台」
+  - {project_root}\场景\客房与居住空间_19条.txt :: S140「民宿阳台俯瞰屋顶」
+参考图片：
+参考记录：
+
+[N004]
+姿势名称：侧转微笑近景
+姿势：头肩三分侧面近景，脸朝右、目光朝镜头，自然闭嘴微笑，头部端正。
+通用英文：Head-and-shoulders portrait in a three-quarter view, face turned right and eyes toward the camera. Head upright, natural closed-mouth smile.
+中文注释：头肩三分侧面近景，脸朝右、目光朝镜头，自然闭嘴微笑，头部端正。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+  - {project_root}\场景\庭院与园林_28条.txt :: S021「公园」
+参考图片：{project_root}\姿势\姿势参考图\侧转微笑近景.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-06
+
+[N005]
+姿势名称：正面自然站姿
+姿势：正面自然站立，双臂垂在身体两侧，双足舒适分开，平静看镜头。
+通用英文：Standing front-facing with arms relaxed at the sides, feet comfortably apart, calm neutral expression and eyes toward the camera.
+中文注释：正面自然站立，双臂垂在身体两侧，双足舒适分开，平静看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S014「海边露台」
+  - {project_root}\场景\阅读展览与摄影棚_9条.txt :: S185「展厅」
+参考图片：{project_root}\姿势\姿势参考图\正面自然站姿.png
+参考记录：{project_root}\角色图集\夏日黑土\other\generate\生成记录.json :: 夏日黑土 / summer-basic-07
+
+[N006]
+姿势名称：桌前坐姿书写
+姿势：端坐桌前，一手持笔在明信片或笔记本上书写，另一手轻压纸面，低头看书写内容。
+通用英文：Sitting upright at a table, writing on a postcard or notebook with a pen in one hand. The other hand lightly steadies the paper; eyes lowered toward the writing.
+中文注释：端坐桌前，一手持笔在明信片或笔记本上书写，另一手轻压纸面，低头看书写内容。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\咖啡馆与茶室_23条.txt :: S158「咖啡馆」
+  - {project_root}\场景\咖啡馆与茶室_23条.txt :: S168「木质茶室」
+参考图片：{project_root}\姿势\姿势参考图\桌前坐姿书写.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-R01
+
+[N007]
+姿势名称：站姿指向远方
+姿势：三分侧面站立，一臂低角度自然伸出并指向远方，另一臂放松，视线顺指向。
+通用英文：Standing in a three-quarter side view, one arm extended at a natural low angle with the index finger pointing into the distance. Other arm relaxed; eyes follow the pointing direction.
+中文注释：三分侧面站立，一臂低角度自然伸出并指向远方，另一臂放松，视线顺指向。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+  - {project_root}\场景\阅读展览与摄影棚_9条.txt :: S185「展厅」
+参考图片：{project_root}\姿势\姿势参考图\站姿指向远方.png
+参考记录：{project_root}\角色图集\夏日黑土\other\generate\生成记录.json :: 夏日黑土 / summer-basic-17
+
+[N008]
+姿势名称：踏上一阶台阶
+姿势：谨慎踏上宽浅台阶，一足在高阶、一足仍落地，一手轻扶栏杆保持平衡，三分正面。
+通用英文：Stepping carefully onto one broad shallow step, one foot on the higher surface and the other on the ground. One hand lightly touches a railing for balance; three-quarter front view.
+中文注释：谨慎踏上宽浅台阶，一足在高阶、一足仍落地，一手轻扶栏杆保持平衡，三分正面。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\庭院与园林_28条.txt :: S023「台阶」
+  - {project_root}\场景\街道与广场_3条.txt :: S056「街巷」
+  - {project_root}\场景\庭院与园林_28条.txt :: S027「庭院」
+参考图片：{project_root}\姿势\姿势参考图\踏上一阶台阶.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-24
+
+[N009]
+姿势名称：椅子纯侧面坐姿
+姿势：纯侧面端坐椅子，双手放腿上、双足落地，视线朝正前方景物。
+通用英文：Sitting upright on a chair in a true side view, hands resting on the lap, both feet on the ground, head and gaze facing ahead.
+中文注释：纯侧面端坐椅子，双手放腿上、双足落地，视线朝正前方景物。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+  - {project_root}\场景\街道与广场_3条.txt :: S054「城市露台」
+参考图片：{project_root}\姿势\姿势参考图\椅子纯侧面坐姿.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-28
+
+[N010]
+姿势名称：长椅坐姿脚踝交叠
+姿势：坐长椅，双膝靠近、脚踝轻交叠，双手分别撑在身旁凳面，肩部放松看镜头。
+通用英文：Sitting on a bench with knees naturally close and ankles lightly crossed. Hands rest separately on the bench beside the body, shoulders relaxed, eyes toward the camera.
+中文注释：坐长椅，双膝靠近、脚踝轻交叠，双手分别撑在身旁凳面，肩部放松看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\客厅与休息区_27条.txt :: S097「室内休息区」
+参考图片：
+参考记录：
+
+[N011]
+姿势名称：摄影棚捧一朵向日葵
+姿势：腰上正面人像，自然闭嘴微笑，双手在腰前松持一朵向日葵。
+通用英文：Waist-up front-facing portrait, holding one sunflower loosely with both hands in front of the waist. Natural closed-mouth smile.
+中文注释：腰上正面人像，自然闭嘴微笑，双手在腰前松持一朵向日葵。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\阅读展览与摄影棚_9条.txt :: S189「摄影棚」
+参考图片：
+参考记录：
+
+[N012]
+姿势名称：坐姿翻阅书本
+姿势：端坐长椅，双手在腿上方自然持打开的书低头阅读，双足落地。
+通用英文：Sitting upright on a bench, holding an open book naturally with both hands above the lap, gaze lowered to the pages, both feet on the ground.
+中文注释：端坐长椅，双手在腿上方自然持打开的书低头阅读，双足落地。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\咖啡馆与茶室_23条.txt :: S158「咖啡馆」
+  - {project_root}\场景\阅读展览与摄影棚_9条.txt :: S185「展厅」
+参考图片：{project_root}\姿势\姿势参考图\坐姿翻阅书本.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-37
+
+[N013]
+姿势名称：举手机拍摄
+姿势：侧面站立，双手持手机拍摄，眼睛看屏幕，上身端正放松。
+通用英文：Standing in a side view, holding a phone with both hands to take a photograph. Eyes toward the screen, upper body upright and relaxed.
+中文注释：侧面站立，双手持手机拍摄，眼睛看屏幕，上身端正放松。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+  - {project_root}\场景\阅读展览与摄影棚_9条.txt :: S189「摄影棚」
+参考图片：{project_root}\姿势\姿势参考图\举手机拍摄.png
+参考记录：{project_root}\角色图集\神驹小南原造型\other\generate\生成记录.json :: 神驹小南原造型 / armorkonan-43
+
+[N014]
+姿势名称：正脸平静近景
+姿势：正面头肩近景，头部端正、嘴部自然放松，眼睛看镜头。
+通用英文：Front-facing head-and-shoulders portrait, head upright, mouth naturally relaxed, eyes looking at the camera.
+中文注释：正面头肩近景，头部端正、嘴部自然放松，眼睛看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+  - {project_root}\场景\庭院与园林_28条.txt :: S021「公园」
+  - {project_root}\场景\庭院与园林_28条.txt :: S051「花园」
+参考图片：{project_root}\姿势\姿势参考图\正脸平静近景.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-46
+
+[N015]
+姿势名称：纯侧脸近景
+姿势：头肩纯左侧面近景，头端正、视线正前方，嘴部放松，侧面鼻梁和下颌轮廓清楚。
+通用英文：Head-and-shoulders portrait in a true left-facing profile. Head upright, gaze straight ahead, mouth relaxed, nose and jaw profile clearly visible.
+中文注释：头肩纯左侧面近景，头端正、视线正前方，嘴部放松，侧面鼻梁和下颌轮廓清楚。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\街道与广场_3条.txt :: S054「城市露台」
+  - {project_root}\场景\街道与广场_3条.txt :: S056「街巷」
+参考图片：{project_root}\姿势\姿势参考图\纯侧脸近景.png
+参考记录：{project_root}\角色图集\夏日黑土\other\generate\生成记录.json :: 夏日黑土 / summer-basic-48
+
+[N016]
+姿势名称：侧身自然行走
+姿势：纯侧面舒适步速行走，双臂自然摆动，视线向前。
+通用英文：Walking at a comfortable pace in a true side view, arms swinging naturally, gaze directed ahead.
+中文注释：纯侧面舒适步速行走，双臂自然摆动，视线向前。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\街道与广场_3条.txt :: S056「街巷」
+  - {project_root}\场景\庭院与园林_28条.txt :: S051「花园」
+参考图片：{project_root}\姿势\姿势参考图\侧身自然行走.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-01
+
+[N017]
+姿势名称：椅子坐姿双脚落地
+姿势：端坐椅子，双脚自然落地，膝盖和脚踝受力合理，双手轻放膝上或座位两侧。
+通用英文：Sitting upright on a chair with both feet naturally on the floor and plausible knee and ankle alignment. Hands rest lightly on the knees or at the sides of the seat.
+中文注释：端坐椅子，双脚自然落地，膝盖和脚踝受力合理，双手轻放膝上或座位两侧。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\客厅与休息区_27条.txt :: S097「室内休息区」
+参考图片：{project_root}\姿势\姿势参考图\椅子坐姿双脚落地.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-02
+
+[N018]
+姿势名称：站姿握饮料杯
+姿势：站立时单手自然持陶瓷饮料杯，看向镜头。
+通用英文：Standing upright, holding a ceramic drink cup naturally in one hand, looking toward the camera.
+中文注释：站立时单手自然持陶瓷饮料杯，看向镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\街道与广场_3条.txt :: S056「街巷」
+  - {project_root}\场景\庭院与园林_28条.txt :: S051「花园」
+  - {project_root}\场景\庭院与园林_28条.txt :: S027「庭院」
+参考图片：
+参考记录：
+
+[N019]
+姿势名称：三分侧站单手叉腰
+姿势：四十五度三分侧站，一手叉腰、另一臂放松，脸朝镜头、闭嘴微笑。
+通用英文：Standing at a forty-five-degree three-quarter angle, one hand on the hip and the other arm relaxed. Head toward the camera, gentle closed-mouth smile.
+中文注释：四十五度三分侧站，一手叉腰、另一臂放松，脸朝镜头、闭嘴微笑。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\街道与广场_3条.txt :: S056「街巷」
+  - {project_root}\场景\街道与广场_3条.txt :: S054「城市露台」
+参考图片：{project_root}\姿势\姿势参考图\三分侧站单手叉腰.png
+参考记录：{project_root}\角色图集\漂泊佩恩-萝莉道\other\generate\生成记录.json :: 漂泊佩恩-萝莉道 / pain-08
+
+[N020]
+姿势名称：单手招呼挥手
+姿势：三分朝镜头站立，右手在肩旁轻挥手，左臂自然垂放，温和微笑。
+通用英文：Standing three-quarter toward the camera, giving a small friendly wave with the right hand beside the shoulder. Left arm relaxed at the side, warm smile.
+中文注释：三分朝镜头站立，右手在肩旁轻挥手，左臂自然垂放，温和微笑。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\街道与广场_3条.txt :: S056「街巷」
+  - {project_root}\场景\庭院与园林_28条.txt :: S051「花园」
+参考图片：{project_root}\姿势\姿势参考图\单手招呼挥手.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-11
+
+[N021]
+姿势名称：双手扶发饰
+姿势：正面站立，双手轻触头饰两侧，双肘自然朝外放松，看向镜头。
+通用英文：Standing front-facing, both hands lightly touching the two sides of an existing hair ornament. Elbows relaxed outward, eyes toward the camera.
+中文注释：正面站立，双手轻触头饰两侧，双肘自然朝外放松，看向镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\客厅与休息区_27条.txt :: S097「室内休息区」
+参考图片：{project_root}\姿势\姿势参考图\双手扶发饰.png
+参考记录：{project_root}\角色图集\神驹小南原造型\other\generate\生成记录.json :: 神驹小南原造型 / armorkonan-12
+
+[N022]
+姿势名称：桌边坐姿前臂放桌
+姿势：坐桌前，双前臂放桌上、双手分开放松，上身端正，目光朝镜头。
+通用英文：Sitting upright at a table, both forearms resting on the tabletop and hands relaxed separately. Gaze toward the camera; natural seated leg support.
+中文注释：坐桌前，双前臂放桌上、双手分开放松，上身端正，目光朝镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\客厅与休息区_27条.txt :: S097「室内休息区」
+参考图片：{project_root}\姿势\姿势参考图\桌边坐姿前臂放桌.png
+参考记录：{project_root}\角色图集\漂泊佩恩-萝莉道\other\generate\生成记录.json :: 漂泊佩恩-萝莉道 / pain-32
+
+[N023]
+姿势名称：低头闻一朵花
+姿势：三分侧面站立，一手把白花放近鼻尖，目光柔和看花，另一臂放松。
+通用英文：Standing in a three-quarter view, holding one flower near the nose with one hand and looking softly down at it. Other arm relaxed.
+中文注释：三分侧面站立，一手把白花放近鼻尖，目光柔和看花，另一臂放松。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\咖啡馆与茶室_23条.txt :: S158「咖啡馆」
+参考图片：
+参考记录：
+
+[N024]
+姿势名称：站姿展开旅行地图
+姿势：自然站立，双手在腰高拿展开的旅行地图，低头阅读。
+通用英文：Standing upright, holding an unfolded travel map with both hands at waist height, looking down to read it.
+中文注释：自然站立，双手在腰高拿展开的旅行地图，低头阅读。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\庭院与园林_28条.txt :: S021「公园」
+参考图片：
+参考记录：
+
+[N025]
+姿势名称：桌前画速写
+姿势：坐桌前持铅笔在小素描本上画画，低头，另一手自然扶本。
+通用英文：Sitting upright at a table, drawing in a small sketchbook with a pencil in one hand. Other hand steadies the book, eyes lowered toward the page.
+中文注释：坐桌前持铅笔在小素描本上画画，低头，另一手自然扶本。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\阅读展览与摄影棚_9条.txt :: S184「室内艺术工作室」
+参考图片：{project_root}\姿势\姿势参考图\桌前画速写.png
+参考记录：{project_root}\角色图集\冬日玖辛奈\other\generate\生成记录.json :: 冬日玖辛奈 / kushina-R05
+
+[N026]
+姿势名称：椅子坐姿轻托下巴
+姿势：自然坐椅，一肘撑扶手、同侧手轻托下巴，另一手放腿上，视线略偏镜头。
+通用英文：Sitting naturally on a chair, one elbow supported by an armrest and the same hand lightly supporting the chin. Other hand on the lap, contemplative gaze beside the camera.
+中文注释：自然坐椅，一肘撑扶手、同侧手轻托下巴，另一手放腿上，视线略偏镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\庭院与园林_28条.txt :: S051「花园」
+  - {project_root}\场景\客厅与休息区_27条.txt :: S097「室内休息区」
+参考图片：{project_root}\姿势\姿势参考图\椅子坐姿轻托下巴.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-31
+
+[N027]
+姿势名称：长椅侧坐看远方
+姿势：侧坐长椅，上身朝远处景物，双腿自然靠近、双足落地，双手放凳面，脸呈三分侧面。
+通用英文：Sitting sideways on a bench, torso facing the distant view. Legs naturally close, both feet on the ground, hands on the bench, face in a three-quarter profile.
+中文注释：侧坐长椅，上身朝远处景物，双腿自然靠近、双足落地，双手放凳面，脸呈三分侧面。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\庭院与园林_28条.txt :: S027「庭院」
+参考图片：
+参考记录：
+
+[N028]
+姿势名称：桌前摆一枚棋子
+姿势：坐棋桌前，一手移动棋子，另一手放桌面，上身直立。
+通用英文：Sitting upright at a chess table, one hand moving a chess piece while the other hand rests on the tabletop.
+中文注释：坐棋桌前，一手移动棋子，另一手放桌面，上身直立。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\客厅与休息区_27条.txt :: S097「室内休息区」
+参考图片：{project_root}\姿势\姿势参考图\桌前摆一枚棋子.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-R03
+
+[N029]
+姿势名称：扶栏站姿
+姿势：三分侧站，一手或双前臂轻靠腰高栏杆，手与栏杆接触自然，肩膀放松。
+通用英文：Standing three-quarter to the camera, one hand or both forearms resting lightly on a waist-high railing. Natural contact with the rail and relaxed shoulders.
+中文注释：三分侧站，一手或双前臂轻靠腰高栏杆，手与栏杆接触自然，肩膀放松。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\庭院与园林_28条.txt :: S018「乡间栈道」
+  - {project_root}\场景\客房与居住空间_19条.txt :: S140「民宿阳台俯瞰屋顶」
+参考图片：{project_root}\姿势\姿势参考图\扶栏站姿.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N10
+
+[N030]
+姿势名称：正脸温柔微笑近景
+姿势：正面头肩近景，头部端正，闭嘴微笑、目光柔和看镜头。
+通用英文：Front-facing head-and-shoulders portrait, head upright, gentle closed-mouth smile, soft eyes toward the camera.
+中文注释：正面头肩近景，头部端正，闭嘴微笑、目光柔和看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\阅读展览与摄影棚_9条.txt :: S185「展厅」
+参考图片：
+参考记录：
+
+[N031]
+姿势名称：撑伞站立看镜头
+姿势：三分朝镜头站立，一手撑开纸伞放在肩上方，另一手自然垂放，原头饰保留。
+通用英文：Standing three-quarter toward the camera, holding an open parasol above one shoulder with one hand. Other arm relaxed at the side, gaze toward the camera.
+中文注释：三分朝镜头站立，一手撑开纸伞放在肩上方，另一手自然垂放，原头饰保留。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\庭院与园林_28条.txt :: S018「乡间栈道」
+参考图片：{project_root}\姿势\姿势参考图\撑伞站立看镜头.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-45
+
+[N032]
+姿势名称：望向远处近景
+姿势：头肩三分侧面近景，脸向左、眼睛看向镜头外的远方，神态自然沉静。
+通用英文：Head-and-shoulders portrait in a left-facing three-quarter view, eyes looking into the distance away from the camera. Thoughtful relaxed expression.
+中文注释：头肩三分侧面近景，脸向左、眼睛看向镜头外的远方，神态自然沉静。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+参考图片：
+参考记录：
+
+[N033]
+姿势名称：站立舒展扶发
+姿势：站立舒展，双肘松抬、双手轻碰脑后头发，肩和躯干自然，一足略朝外，目光朝镜头。
+通用英文：Standing in a gentle stretch, elbows loosely raised and both hands lightly touching the hair behind the head. Shoulders relaxed, torso naturally aligned, one foot slightly turned outward, eyes toward the camera.
+中文注释：站立舒展，双肘松抬、双手轻碰脑后头发，肩和躯干自然，一足略朝外，目光朝镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\庭院与园林_28条.txt :: S051「花园」
+参考图片：
+参考记录：
+
+[N034]
+姿势名称：侧转回望触发
+姿势：髋部稍朝远方，肩部转向镜头，微歪头，一手轻触颈侧头发，另一臂放松。
+通用英文：Standing with hips facing slightly away and shoulders gently turned toward the camera. Subtle head tilt, one hand lightly touching neck-side hair, other arm relaxed.
+中文注释：髋部稍朝远方，肩部转向镜头，微歪头，一手轻触颈侧头发，另一臂放松。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\海滨与水畔_12条.txt :: S015「湖畔露台」
+参考图片：
+参考记录：
+
+[N035]
+姿势名称：双手端杯看镜头
+姿势：正面站立，双手在胸高自然托握陶瓷杯，神态放松。
+通用英文：Standing front-facing, supporting a ceramic cup naturally with both hands at chest height, relaxed expression.
+中文注释：正面站立，双手在胸高自然托握陶瓷杯，神态放松。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\海滨与水畔_12条.txt :: S011「海边」
+参考图片：
+参考记录：
+
+[N036]
+姿势名称：撑伞站姿
+姿势：一手持原花纹纸伞、另一手垂放，树荫站立，轻微微笑。
+通用英文：Standing beneath an open parasol held in one hand, other arm relaxed beside the body, mild smile toward the camera.
+中文注释：一手持原花纹纸伞、另一手垂放，树荫站立，轻微微笑。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\庭院与园林_28条.txt :: S019「传统庭院」
+参考图片：{project_root}\姿势\姿势参考图\撑伞站姿.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N02
+
+[N037]
+姿势名称：端坐饮茶
+姿势：咖啡椅端坐、双脚落地，一手持杯柄另一手桌面，看窗外。
+通用英文：Sitting upright on a chair, knees naturally close and both feet on the ground. One hand holds a teacup by its handle, other hand rests on a table, gaze directed to one side.
+中文注释：咖啡椅端坐、双脚落地，一手持杯柄另一手桌面，看窗外。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\咖啡馆与茶室_23条.txt :: S158「咖啡馆」
+参考图片：{project_root}\姿势\姿势参考图\端坐饮茶.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N03
+
+[N038]
+姿势名称：站姿翻书
+姿势：书架旁站立，双手胸前捧书，低头阅读。
+通用英文：Standing comfortably, holding an open book with both hands at chest height, reading with lowered gaze.
+中文注释：书架旁站立，双手胸前捧书，低头阅读。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\阅读展览与摄影棚_9条.txt :: S192「独立书店」
+参考图片：{project_root}\姿势\姿势参考图\站姿翻书.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N04
+
+[N039]
+姿势名称：坐姿远眺
+姿势：湖畔长椅自然坐姿，双手分放膝上、双脚落地，望向湖面。
+通用英文：Sitting naturally on a bench, hands resting separately on the knees, both feet on the ground, gaze directed across the distant view.
+中文注释：湖畔长椅自然坐姿，双手分放膝上、双脚落地，望向湖面。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\海滨与水畔_12条.txt :: S016「湖边公园长椅」
+参考图片：{project_root}\姿势\姿势参考图\坐姿远眺.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N05
+
+[N040]
+姿势名称：轻倚站姿
+姿势：一肩轻靠木柱，一手腰侧另一手垂放，脚踝轻交叠，看向街道。
+通用英文：Standing with one shoulder lightly touching a post, one hand relaxed at the side of the waist and the other at the side. Ankles lightly crossed, gaze directed sideways.
+中文注释：一肩轻靠木柱，一手腰侧另一手垂放，脚踝轻交叠，看向街道。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\廊桥与建筑外景_28条.txt :: S088「雨后古街木檐廊」
+参考图片：{project_root}\姿势\姿势参考图\轻倚站姿.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N06
+
+[N041]
+姿势名称：抬手看花
+姿势：花架旁站立，一手轻触低处花枝、另一手垂放，看花。
+通用英文：Standing beside a low flower stem, gently touching it with one hand without pulling. Other arm relaxed, eyes on the flower.
+中文注释：花架旁站立，一手轻触低处花枝、另一手垂放，看花。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\庭院与园林_28条.txt :: S034「庭院花架」
+参考图片：{project_root}\姿势\姿势参考图\抬手看花.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N08
+
+[N042]
+姿势名称：侧身回望
+姿势：广场行走，身体沿行进方向、头轻回望，腰肩自然。
+通用英文：Walking naturally, body following the direction of travel, head gently turned back toward the camera. Keep the waist and shoulders comfortably aligned.
+中文注释：广场行走，身体沿行进方向、头轻回望，腰肩自然。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\街道与广场_3条.txt :: S055「步行广场」
+参考图片：{project_root}\姿势\姿势参考图\侧身回望.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\普通写真\生成记录.json :: 日向花火 / hanabi-N09
+
+[N043]
+姿势名称：镜前全身站立自拍
+姿势：酒店穿衣镜前自然站立；右手在肩高竖握手机看反射屏幕，空手自然垂放，完整镜像含鞋。
+通用英文：Standing naturally before a full-length mirror, holding a phone vertically in the right hand at shoulder height. Free arm relaxed at the side, eyes on the reflected screen; complete coherent body reflection.
+中文注释：酒店穿衣镜前自然站立；右手在肩高竖握手机看反射屏幕，空手自然垂放，完整镜像含鞋。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S204「通用镜前空间」
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S200「民宿镜前空间」
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S205「酒店穿衣镜」
+参考图片：{project_root}\姿势\姿势参考图\镜前全身站立自拍.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-71
+
+[N044]
+姿势名称：镜前双手持机自拍
+姿势：正对高镜站立，胸前双手竖握手机，略低头看反射屏幕，全身镜前自拍。
+通用英文：Standing upright facing a tall mirror, holding a phone vertically with both hands at chest height. Head slightly lowered toward its reflected screen; full-body mirror selfie.
+中文注释：正对高镜站立，胸前双手竖握手机，略低头看反射屏幕，全身镜前自拍。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S204「通用镜前空间」
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S205「酒店穿衣镜」
+参考图片：{project_root}\姿势\姿势参考图\镜前双手持机自拍.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-73
+
+[N045]
+姿势名称：镜前坐姿自拍
+姿势：坐在镜前，一手肩高持手机、另一手自然放膝上或桌边，镜中脸和上身清晰。
+通用英文：Sitting before a mirror, one hand holding a phone at shoulder height and the other resting naturally on a knee or beside the table. Face and upper torso visible in one coherent reflection.
+中文注释：坐在镜前，一手肩高持手机、另一手自然放膝上或桌边，镜中脸和上身清晰。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S204「通用镜前空间」
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S194「咖啡馆角落镜墙」
+参考图片：{project_root}\姿势\姿势参考图\镜前坐姿自拍.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-74
+
+[N046]
+姿势名称：镜前侧转自拍
+姿势：镜前躯干微侧、头朝镜子；单手近脸持手机但不遮全脸，空手放松，膝上构图。
+通用英文：Standing before a mirror, torso turned slightly sideways and head toward the mirror. One hand holds a phone near the cheek without covering the whole face, other arm relaxed; knee-up selfie.
+中文注释：镜前躯干微侧、头朝镜子；单手近脸持手机但不遮全脸，空手放松，膝上构图。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S204「通用镜前空间」
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S199「木廊落地镜」
+参考图片：{project_root}\姿势\姿势参考图\镜前侧转自拍.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\自拍\生成记录.json :: 日向花火 / hanabi-Z02
+
+[N047]
+姿势名称：镜前持册自拍
+姿势：穿衣镜前单手在肩高竖持手机，另一手在腰高拿折叠活动册，全身镜像。
+通用英文：Standing before a full-length mirror, holding a phone vertically at shoulder height in one hand. Other hand holds a folded event program at waist height; full-body reflection.
+中文注释：穿衣镜前单手在肩高竖持手机，另一手在腰高拿折叠活动册，全身镜像。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\镜前与更衣空间_12条.txt :: S204「通用镜前空间」
+参考图片：{project_root}\姿势\姿势参考图\镜前持册自拍.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-R09
+
+[N048]
+姿势名称：镜前半身自拍
+姿势：衣柜镜前三分侧站，左手在脸高持手机，空手放腰侧；腰上自拍，手机旁保留大部分脸。
+通用英文：Standing in a slight three-quarter angle before a mirror, left hand holding a phone at face height and free hand resting beside the waist. Waist-up selfie with most of the face visible beside the phone.
+中文注释：衣柜镜前三分侧站，左手在脸高持手机，空手放腰侧；腰上自拍，手机旁保留大部分脸。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S204「通用镜前空间」
+  - {project_root}\场景\镜前与更衣空间_12条.txt :: S203「窗边梳妆镜」
+参考图片：{project_root}\姿势\姿势参考图\镜前半身自拍.png
+参考记录：{project_root}\角色图集\神驹小南原造型\other\generate\生成记录.json :: 神驹小南原造型 / armorkonan-72
+
+[N049]
+姿势名称：整理发丝自拍
+姿势：一手手机自拍、另一手轻触肩侧发丝，神态自然。
+通用英文：Taking a mirror selfie with a phone in one hand, other hand lightly touching a loose hair strand at shoulder level. Relaxed expression.
+中文注释：一手手机自拍、另一手轻触肩侧发丝，神态自然。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\镜前与更衣空间_12条.txt :: S196「旅馆玄关镜」
+参考图片：{project_root}\姿势\姿势参考图\整理发丝自拍.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\自拍\生成记录.json :: 日向花火 / hanabi-Z04
+
+[N050]
+姿势名称：门边自然坐姿
+姿势：地铁门边坐，双手分开放腿上，膝自然靠近、双足落地，看左侧过道；松弛抓拍，不看镜头。
+通用英文：Sitting naturally on a seat, hands relaxed separately on the lap, knees naturally close and both feet on the floor. Gaze toward the aisle on the left, no eye contact with the camera; relaxed candid expression.
+中文注释：地铁门边坐，双手分开放腿上，膝自然靠近、双足落地，看左侧过道；松弛抓拍，不看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S239「地铁车厢」
+参考图片：{project_root}\姿势\姿势参考图\门边自然坐姿.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-D01
+
+[N051]
+姿势名称：坐姿查看手机
+姿势：地铁门边坐，双手在腿上方持手机阅读，低头看屏幕，双足落地；不看镜头。
+通用英文：Sitting upright, reading a phone held with both hands above the lap. Gaze lowered toward the screen, both feet supported, no eye contact with the camera.
+中文注释：地铁门边坐，双手在腿上方持手机阅读，低头看屏幕，双足落地；不看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S239「地铁车厢」
+参考图片：{project_root}\姿势\姿势参考图\坐姿查看手机.png
+参考记录：{project_root}\角色图集\夏日黑土\other\generate\生成记录.json :: 夏日黑土 / summer-D02
+
+[N052]
+姿势名称：站姿轻扶立杆
+姿势：地铁竖扶手旁自然站立，一手在胸高轻握扶手，空手放松，视线朝关闭车门。
+通用英文：Standing comfortably beside a vertical handrail, one hand holding it lightly at chest height and the other arm relaxed. Gaze toward the closed door, no eye contact with the camera.
+中文注释：地铁竖扶手旁自然站立，一手在胸高轻握扶手，空手放松，视线朝关闭车门。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S239「地铁车厢」
+参考图片：{project_root}\姿势\姿势参考图\站姿轻扶立杆.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-D07
+
+[N053]
+姿势名称：门边等候
+姿势：地铁闭门旁站，双手自然放腰前，抬头看门上路线图而非镜头。
+通用英文：Standing beside a closed door, hands resting naturally together at waist height. Head raised to read a route map above the door, gaze away from the camera.
+中文注释：地铁闭门旁站，双手自然放腰前，抬头看门上路线图而非镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S239「地铁车厢」
+参考图片：{project_root}\姿势\姿势参考图\门边等候.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-D08
+
+[N054]
+姿势名称：车厢过道行走
+姿势：在宽敞地铁过道迈一小步，手臂自然摆动，头转向出口，视线避开镜头。
+通用英文：Taking a small natural step along an aisle, arms moving gently, head turned toward the exit and gaze away from the camera.
+中文注释：在宽敞地铁过道迈一小步，手臂自然摆动，头转向出口，视线避开镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S239「地铁车厢」
+参考图片：{project_root}\姿势\姿势参考图\车厢过道行走.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-D10
+
+[N055]
+姿势名称：抬头看图
+姿势：线路图旁站立，一手握旁边竖杆、微抬头看路线，不看镜头。
+通用英文：Standing naturally beside a route diagram, one hand lightly holding a nearby vertical pole. Chin slightly raised to read the diagram, no eye contact with the camera.
+中文注释：线路图旁站立，一手握旁边竖杆、微抬头看路线，不看镜头。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S239「地铁车厢」
+参考图片：
+参考记录：
+
+[N056]
+姿势名称：高铁窗边旅行随拍
+姿势：高铁靠窗自然坐，双膝靠近、双足有支撑，前臂放腿上，头朝窗外；中广角休闲旅行照。
+通用英文：Sitting naturally in a window seat, knees comfortably close, feet supported and forearms relaxed on the lap. Head turned toward the passing view; medium-wide candid seated photograph.
+中文注释：高铁靠窗自然坐，双膝靠近、双足有支撑，前臂放腿上，头朝窗外；中广角休闲旅行照。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S238「列车车厢」
+参考图片：{project_root}\姿势\姿势参考图\高铁窗边旅行随拍.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-76
+
+[N057]
+姿势名称：飞机舷窗休闲随拍
+姿势：飞机靠窗端坐并正确扣腰带，一手在扶手、一手拿腿上的闭合旅行册，朝同伴镜头轻微笑。
+通用英文：Sitting upright in a window seat with a lap seatbelt correctly fastened over the clothing. One hand on an armrest, other hand holding a closed travel booklet on the lap, slight smile toward a companion camera.
+中文注释：飞机靠窗端坐并正确扣腰带，一手在扶手、一手拿腿上的闭合旅行册，朝同伴镜头轻微笑。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S247「飞机客舱」
+参考图片：{project_root}\姿势\姿势参考图\飞机舷窗休闲随拍.png
+参考记录：{project_root}\角色图集\神驹小南原造型\other\generate\生成记录.json :: 神驹小南原造型 / armorkonan-77
+
+[N058]
+姿势名称：观光巴士旅行随拍
+姿势：观光大巴窗边坐，双手在腿上持折叠地图并低头阅读；中广角坐姿旅游照。
+通用英文：Sitting upright beside a window, holding a folded paper map with both hands at lap height and looking down to read it. Medium-wide seated photograph.
+中文注释：观光大巴窗边坐，双手在腿上持折叠地图并低头阅读；中广角坐姿旅游照。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S246「观光巴士窗边」
+参考图片：{project_root}\姿势\姿势参考图\观光巴士旅行随拍.png
+参考记录：{project_root}\角色图集\冬日玖辛奈\other\generate\生成记录.json :: 冬日玖辛奈 / kushina-78
+
+[N059]
+姿势名称：渡轮座位旅行随拍
+姿势：渡轮客舱窗边长椅坐，一手在腿上拿闭合笔记本，另一手撑凳面，向侧面看。
+通用英文：Sitting naturally on a bench, holding a closed notebook on the lap with one hand. Other hand rests on the bench for support, gaze directed sideways.
+中文注释：渡轮客舱窗边长椅坐，一手在腿上拿闭合笔记本，另一手撑凳面，向侧面看。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S245「渡轮客舱窗边座椅」
+参考图片：{project_root}\姿势\姿势参考图\渡轮座位旅行随拍.png
+参考记录：{project_root}\角色图集\漂泊佩恩-萝莉道\other\generate\生成记录.json :: 漂泊佩恩-萝莉道 / pain-79
+
+[N060]
+姿势名称：城际列车读册随拍
+姿势：城际列车窗边端坐，双手自然拿打开的旅行指南阅读，双足有支撑。
+通用英文：Sitting upright in a window seat, reading a small open travel guide held naturally with both hands. Both feet supported, relaxed posture.
+中文注释：城际列车窗边端坐，双手自然拿打开的旅行指南阅读，双足有支撑。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S238「列车车厢」
+参考图片：{project_root}\姿势\姿势参考图\城际列车读册随拍.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-80
+
+[N061]
+姿势名称：高铁地图随拍
+姿势：高铁窗边端坐，读腿上的折叠地图，双足有支撑。
+通用英文：Sitting upright, reading a folded paper map resting on the lap. Both feet naturally supported.
+中文注释：高铁窗边端坐，读腿上的折叠地图，双足有支撑。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S238「列车车厢」
+参考图片：{project_root}\姿势\姿势参考图\高铁地图随拍.png
+参考记录：{project_root}\角色图集\漂泊小南白鹤\other\generate\生成记录.json :: 漂泊小南白鹤 / whitekonan-78
+
+[N062]
+姿势名称：飞机读册随拍
+姿势：飞机靠窗端坐并正确扣腰带，阅读腿上的旅行指南。
+通用英文：Sitting upright with a lap seatbelt correctly fastened over clothing, reading an open travel guide on the lap.
+中文注释：飞机靠窗端坐并正确扣腰带，阅读腿上的旅行指南。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S247「飞机客舱」
+参考图片：{project_root}\姿势\姿势参考图\飞机读册随拍.png
+参考记录：{project_root}\角色图集\神驹小南时装\other\generate\生成记录.json :: 神驹小南时装 / lavenderkonan-R36
+
+[N063]
+姿势名称：坐姿看云海
+姿势：飞机窗边端坐，安全带正确放衣装外侧，双手腿上、看云海。
+通用英文：Sitting upright beside a window with a lap seatbelt properly positioned over clothing. Hands relaxed on the lap, gaze directed outside.
+中文注释：飞机窗边端坐，安全带正确放衣装外侧，双手腿上、看云海。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S247「飞机客舱」
+参考图片：{project_root}\姿势\姿势参考图\坐姿看云海.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\旅游休闲\生成记录.json :: 日向花火 / hanabi-T02
+
+[N064]
+姿势名称：扶箱站姿
+姿势：直立行李箱旁站立，一手扶伸缩柄另一手垂放，看候车厅。
+通用英文：Standing naturally beside an upright suitcase, one hand resting on its extended handle, other arm relaxed. Gaze directed into the distance.
+中文注释：直立行李箱旁站立，一手扶伸缩柄另一手垂放，看候车厅。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\交通出行_6条.txt :: S244「明亮车站候车厅」
+参考图片：
+参考记录：
+
+[N065]
+姿势名称：凭栏看景
+姿势：石桥栏边站姿，一手扶栏另一手持收拢的原花纹纸伞，看河景。
+通用英文：Standing beside a parapet, one hand resting on its top and the other holding a folded parasol. Gaze directed toward the distant view.
+中文注释：石桥栏边站姿，一手扶栏另一手持收拢的原花纹纸伞，看河景。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\廊桥与建筑外景_28条.txt :: S059「古城河上石桥」
+参考图片：
+参考记录：
+
+[N066]
+姿势名称：悠闲散步
+姿势：海滨步道悠闲行走，双臂自然，轻风吹发丝和外袖，看向海面。
+通用英文：Walking casually, arms relaxed, gaze directed sideways into the distance. Natural hair and loose fabric movement in a light breeze.
+中文注释：海滨步道悠闲行走，双臂自然，轻风吹发丝和外袖，看向海面。 人物身份、服装细节和环境由独立参考及场景模块决定。
+可配场景：{project_root}\场景\海滨与水畔_12条.txt :: S010「海滨步道」
+参考图片：{project_root}\姿势\姿势参考图\悠闲散步.png
+参考记录：{project_root}\角色图集\日向花火\other\generate\旅游休闲\生成记录.json :: 日向花火 / hanabi-T05

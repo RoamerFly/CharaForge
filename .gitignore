@@ -117,3 +117,9 @@ desktop.ini
 对话记录.md
 resources/comfy-workflows/*.private.json
 commit-msg.txt
+
+# Local migration inventories, machine paths and verification outputs
+/validation/
+/docs/来源清单-*.json
+/local-only/
+/migration-result.json

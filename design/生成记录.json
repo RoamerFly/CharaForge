@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-08",
+  "requested_base": "https://www.newtransfer.site/v1",
+  "requested_model": "gpt-image-2",
+  "cli": "imagegen/scripts/image_gen.py",
+  "quality": "high",
+  "requested_size": "2048x1152",
+  "successful_images": [
+    {
+      "file": "角色工坊-01-生图工作台.png",
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 1749910,
+      "sha256": "a3eb279d32a12f86af1549633673ea95196fdd8578139f9793099c789e00502b",
+      "visual_inspection": "completed",
+      "purpose": "UI concept only"
+    },
+    {
+      "file": "角色工坊-02-审核返修.png",
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 1720084,
+      "sha256": "431dc473f0fd00c8ac51fee2fe9bac45704c6aaaacfebd968075ac870ac72f0a",
+      "visual_inspection": "completed",
+      "purpose": "UI concept only"
+    },
+    {
+      "file": "角色工坊-03-训练中心.png",
+      "size": [
+        1672,
+        941
+      ],
+      "bytes": 1791567,
+      "sha256": "f96050856e18c5bff70b1c01d5df510add2991f1e2c38b1a663e302d1a93d88a",
+      "visual_inspection": "completed",
+      "purpose": "UI concept only"
+    }
+  ],
+  "submitted_designs": 4,
+  "failed_designs": [
+    {
+      "prompt": "prompts/02-审核返修.txt",
+      "error_code": "moderation_blocked",
+      "resolution": "used ordinary fully covered clothing and origami prop example; original failed request retained"
+    }
+  ],
+  "reference_uploads": 0,
+  "keys_included": false,
+  "actual_cost": "not reported; provider billing not independently verified",
+  "notes": [
+    "Only UI prompt text was submitted; no gallery assets or source code uploaded.",
+    "Provider actual model routing was not independently verified.",
+    "Training example attire, model settings and counters are placeholders; original character standards unchanged.",
+    "Concept images have some imperfect Chinese microtext; implementation follows the UI specification."
+  ]
+}

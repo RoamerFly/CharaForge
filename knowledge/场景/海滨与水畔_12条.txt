@@ -1,0 +1,168 @@
+海滨与水畔场景提示词
+条目数量：12
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S001]
+场景名称：临河庭院宽低窗台
+场景：临河庭院宽低窗台，柔和晨间窗光
+通用英文：wide low window seat overlooking a riverside garden, soft morning window light
+中文注释：临河庭院宽低窗台，柔和晨间窗光；窗景或窗侧光；晨间光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\临河庭院宽低窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S001
+
+[S002]
+场景名称：临湖木平台
+场景：
+  - 版本1：临湖木平台，偏冷柔和晨光
+  - 版本2：蓝色湖畔木台，淡雅晨光
+通用英文：
+  - 版本1：wooden deck overlooking a lake, cool soft morning light
+  - 版本2：wooden deck by a blue lake, pale morning daylight
+中文注释：
+  - 版本1：临湖木平台，偏冷柔和晨光；晨间光线；偏冷光线。
+  - 版本2：蓝色湖畔木台，淡雅晨光；晨间光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\临湖木平台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S002
+
+[S003]
+场景名称：沙滩凉亭
+场景：沙滩凉亭；日光、自然镜头虚化
+通用英文：beach pavilion with driftwood chair and soft daylight. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：沙滩凉亭；日光、自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\沙滩凉亭.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S003
+
+[S005]
+场景名称：泳池露台
+场景：
+  - 版本1：泳池露台；金色时段光线、自然镜头虚化
+  - 版本2：泳池旁宽石平台，柔和阴天日光
+通用英文：
+  - 版本1：pool terrace at golden hour. Soft directional light, believable reflected fill and natural lens bokeh.
+  - 版本2：wide poolside stone deck, soft overcast daylight
+中文注释：
+  - 版本1：泳池露台；金色时段光线、自然镜头虚化；日落金色光线。
+  - 版本2：泳池旁宽石平台，柔和阴天日光；阴天散射光。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\泳池露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S005
+
+[S007]
+场景名称：海景窗边
+场景：
+  - 版本1：海景窗边；窗边自然光或窗景
+  - 版本2：海景宽窗边，柔和侧窗日光
+通用英文：
+  - 版本1：A broad window alcove overlooking the ocean, pale curtains and soft natural window light.
+  - 版本2：broad window overlooking the ocean, soft side daylight
+中文注释：
+  - 版本1：海景窗边；窗边自然光或窗景；窗景或窗侧光。
+  - 版本2：海景宽窗边，柔和侧窗日光；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海景窗边.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S007
+
+[S008]
+场景名称：海景阳台
+场景：海景阳台；夕阳、自然镜头虚化
+通用英文：ocean-view balcony at sunset. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：海景阳台；夕阳、自然镜头虚化；落日光线。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\海景阳台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S008
+
+[S010]
+场景名称：海滨步道
+场景：日落海滨步道、远处小船及柔和暖光
+通用英文：seaside boardwalk at sunset with distant boats, warm soft light
+中文注释：日落海滨步道、远处小船及柔和暖光；落日光线；暖色光或暖色布置。
+在用角色：日向花火、泳装小南
+参考图片：{project_root}\场景\场景参考图\海滨步道.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S010
+
+[S011]
+场景名称：海边
+场景：
+  - 版本1：海边；日光
+  - 版本2：海边
+  - 版本3：海边
+  - 版本4：海边；日光
+  - 版本5：海边
+通用英文：
+  - 版本1：A seaside setting with ocean and palm trees, soft open-shade daylight.
+  - 版本2：A quiet beachside walkway with stone paving, sea and distant hills, natural late-afternoon light.
+  - 版本3：A beachside promenade with wooden railings and a distant sea horizon, soft overcast light, muted natural colors.
+  - 版本4：An outdoor seaside cafe with white architecture, subtle background details and natural soft daylight.
+  - 版本5：A quiet seaside promenade with wooden railing, cloudy sky and distant horizon, muted natural colors.
+中文注释：
+  - 版本1：海边；日光；棕榈植被。
+  - 版本2：海边；石铺地面；午后光线。
+  - 版本3：海边；阴天散射光。
+  - 版本4：海边；日光。
+  - 版本5：海边；木栏杆；阴天柔光。
+在用角色：夏日黑土、泳装小南
+参考图片：{project_root}\场景\场景参考图\海边.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S011
+
+[S013]
+场景名称：海边花园白墙
+场景：海边花园白墙，淡雅阴天日光
+通用英文：white plaster wall by a seaside garden, pale cloudy daylight
+中文注释：海边花园白墙，淡雅阴天日光；阴天柔光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海边花园白墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S013
+
+[S014]
+场景名称：海边露台
+场景：
+  - 版本1：海边露台
+  - 版本2：海边露台；自然镜头虚化
+  - 版本3：海边露台；日光
+  - 版本4：海边露台；日光
+  - 版本5：海景露台
+  - 版本6：海景露台
+  - 版本7：海景露台
+  - 版本8：海边石露台，柔和晨光
+通用英文：
+  - 版本1：A believable seaside terrace location with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：seaside shaded terrace with linen curtains and turquoise sea. Soft directional light, believable reflected fill and natural lens bokeh.
+  - 版本3：A seaside resort terrace with white columns, turquoise ocean and palm trees, bright summer daylight.
+  - 版本4：A white seaside terrace with turquoise ocean in the background, soft morning daylight.
+  - 版本5：sunny seaside terrace, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本6：sunny seaside terrace, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本7：sunny seaside terrace, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本8：seaside stone terrace, soft morning daylight
+中文注释：
+  - 版本1：海边露台。
+  - 版本2：海边露台；自然镜头虚化。
+  - 版本3：海边露台；日光；白色立柱；碧蓝海面；棕榈植被。
+  - 版本4：海边露台；日光；碧蓝海面；晨间光线。
+  - 版本5：海景露台；晨间光线。
+  - 版本6：海景露台；窗景或窗侧光；午后光线。
+  - 版本7：海景露台；暖色光或暖色布置。
+  - 版本8：海边石露台，柔和晨光；晨间光线。
+在用角色：夏日黑土、泳装小南
+参考图片：{project_root}\场景\场景参考图\海边露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S014
+
+[S015]
+场景名称：湖畔露台
+场景：露台；日光
+通用英文：A lakeside terrace in soft cloudy daylight.
+中文注释：露台；日光；阴天柔光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\湖畔露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S015
+
+[S016]
+场景名称：湖边公园长椅
+场景：湖边公园长椅、阴天散射光
+通用英文：lakeside park bench under pale overcast daylight
+中文注释：湖边公园长椅、阴天散射光；长椅；阴天散射光。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\湖边公园长椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S016

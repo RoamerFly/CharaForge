@@ -1,0 +1,153 @@
+温室与玻璃空间场景提示词
+条目数量：10
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S207]
+场景名称：冬日阳光房
+场景：
+  - 版本1：冬日阳光房；雪景、自然镜头虚化
+  - 版本2：冬日玻璃房
+  - 版本3：冬日玻璃房
+  - 版本4：冬日玻璃房
+  - 版本5：雪景玻璃房
+通用英文：
+  - 版本1：winter conservatory with snowy garden outside. Soft directional light, believable reflected fill and natural lens bokeh.
+  - 版本2：winter conservatory, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：winter conservatory, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：winter conservatory, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本5：A believable glass room overlooking snow setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：冬日阳光房；雪景、自然镜头虚化。
+  - 版本2：冬日玻璃房；晨间光线。
+  - 版本3：冬日玻璃房；窗景或窗侧光；午后光线。
+  - 版本4：冬日玻璃房；暖色光或暖色布置。
+  - 版本5：雪景玻璃房；雪景。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\冬日阳光房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S207
+
+[S208]
+场景名称：古庭玻璃回廊
+场景：
+  - 版本1：古庭玻璃回廊，柔和午后晚光
+  - 版本2：古庭玻璃廊
+  - 版本3：古庭玻璃廊
+  - 版本4：古庭玻璃廊
+  - 版本5：古庭玻璃廊
+通用英文：
+  - 版本1：courtyard glass corridor, soft late-afternoon light
+  - 版本2：old courtyard glass corridor, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：old courtyard glass corridor, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：old courtyard glass corridor, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本5：wide chaise in an old courtyard glass corridor, pale morning light
+中文注释：
+  - 版本1：古庭玻璃回廊，柔和午后晚光；午后光线。
+  - 版本2：古庭玻璃廊；晨间光线。
+  - 版本3：古庭玻璃廊；窗景或窗侧光；午后光线。
+  - 版本4：古庭玻璃廊；暖色光或暖色布置。
+  - 版本5：古庭玻璃廊；晨间光线。
+在用角色：漂泊佩恩-萝莉道
+参考图片：{project_root}\场景\场景参考图\古庭玻璃回廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S208
+
+[S210]
+场景名称：城堡玻璃廊
+场景：城堡玻璃廊
+通用英文：A believable castle glass corridor setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：城堡玻璃廊。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\城堡玻璃廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S210
+
+[S211]
+场景名称：寺院玻璃廊
+场景：寺院玻璃廊
+通用英文：A believable temple glass corridor setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：寺院玻璃廊。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\寺院玻璃廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S211
+
+[S213]
+场景名称：棕榈玻璃屋
+场景：
+  - 版本1：棕榈玻璃屋
+  - 版本2：棕榈玻璃屋
+  - 版本3：棕榈玻璃屋
+通用英文：
+  - 版本1：palm-lined glass conservatory, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：palm-lined glass conservatory, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：palm-lined glass conservatory, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：棕榈玻璃屋；棕榈植被；晨间光线。
+  - 版本2：棕榈玻璃屋；棕榈植被；窗景或窗侧光；午后光线。
+  - 版本3：棕榈玻璃屋；棕榈植被；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\棕榈玻璃屋.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S213
+
+[S214]
+场景名称：棕榈花园玻璃廊
+场景：棕榈花园玻璃廊，柔和午后晚光
+通用英文：palm garden glass corridor, soft late-afternoon light
+中文注释：棕榈花园玻璃廊，柔和午后晚光；棕榈植被；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\棕榈花园玻璃廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S214
+
+[S215]
+场景名称：海岛玻璃屋
+场景：海岛玻璃屋
+通用英文：A believable island glass pavilion setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：海岛玻璃屋。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海岛玻璃屋.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S215
+
+[S217]
+场景名称：竹园玻璃房宽沙发
+场景：竹园玻璃房宽沙发，柔和阴天日光
+通用英文：wide sofa in a bamboo garden conservatory, soft overcast daylight
+中文注释：竹园玻璃房宽沙发，柔和阴天日光；竹林或竹屏；沙发；阴天散射光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹园玻璃房宽沙发.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S217
+
+[S218]
+场景名称：花园玻璃房
+场景：
+  - 版本1：花园玻璃房
+  - 版本2：玻璃花房
+  - 版本3：庭院玻璃房
+通用英文：
+  - 版本1：A believable garden glass room setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable glass greenhouse setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本3：broad sofa in a bright garden conservatory, gentle side light
+中文注释：
+  - 版本1：花园玻璃房。
+  - 版本2：玻璃花房。
+  - 版本3：庭院玻璃房；沙发。
+在用角色：漂泊小南白鹤、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\花园玻璃房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S218
+
+[S219]
+场景名称：雪景暖房
+场景：
+  - 版本1：雪景暖房
+  - 版本2：雪景暖房
+  - 版本3：雪景暖房
+  - 版本4：雪景暖房
+通用英文：
+  - 版本1：warm room overlooking snow, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：warm room overlooking snow, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：warm room overlooking snow, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：A believable warm conservatory overlooking snow location with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：雪景暖房；晨间光线；暖色光或暖色布置；雪景。
+  - 版本2：雪景暖房；窗景或窗侧光；午后光线；暖色光或暖色布置；雪景。
+  - 版本3：雪景暖房；暖色光或暖色布置；雪景。
+  - 版本4：雪景暖房；暖色光或暖色布置；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪景暖房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S219

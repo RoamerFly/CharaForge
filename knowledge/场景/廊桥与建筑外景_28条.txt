@@ -1,0 +1,285 @@
+廊桥与建筑外景场景提示词
+条目数量：28
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S057]
+场景名称：传统旅馆木廊
+场景：传统旅馆木廊，午后柔和反射光
+通用英文：wooden wall on a traditional inn veranda, soft late-afternoon reflected light
+中文注释：传统旅馆木廊，午后柔和反射光；午后光线。
+在用角色：漂泊小南白鹤
+参考图片：{project_root}\场景\场景参考图\传统旅馆木廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S057
+
+[S058]
+场景名称：传统有顶回廊细木柱
+场景：传统有顶回廊细木柱，庭院柔和反射光
+通用英文：slim wooden pillar in a traditional covered corridor, soft garden reflected light
+中文注释：传统有顶回廊细木柱，庭院柔和反射光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\传统有顶回廊细木柱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S058
+
+[S059]
+场景名称：古城河上石桥
+场景：古城河上石桥、午后暖色自然光
+通用英文：old-town stone bridge above a river, warm late-afternoon daylight
+中文注释：古城河上石桥、午后暖色自然光；午后光线；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古城河上石桥.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S059
+
+[S060]
+场景名称：古城石柱
+场景：古城石柱
+通用英文：A believable old-town stone pillar setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：古城石柱。
+在用角色：神驹小南原造型
+参考图片：{project_root}\场景\场景参考图\古城石柱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S060
+
+[S061]
+场景名称：古堡石柱
+场景：古堡石柱；暖色光线、自然镜头虚化
+通用英文：castle column beside a warmly lit archway. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：古堡石柱；暖色光线、自然镜头虚化。
+在用角色：神驹小南原造型
+参考图片：{project_root}\场景\场景参考图\古堡石柱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S061
+
+[S062]
+场景名称：古街门框
+场景：古街门框
+通用英文：shaded old-town doorway with subtle architectural details
+中文注释：古街门框。
+在用角色：泳装小南、漂泊佩恩-萝莉道
+参考图片：{project_root}\场景\场景参考图\古街门框.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S062
+
+[S063]
+场景名称：回廊石台
+场景：回廊石台；自然镜头虚化
+通用英文：covered stone arcade with a waist-high stone table. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：回廊石台；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\回廊石台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S063
+
+[S064]
+场景名称：夜色石廊
+场景：夜色石廊；暖色光线、自然镜头虚化
+通用英文：stone colonnade at blue hour with warm sconces. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：夜色石廊；暖色光线、自然镜头虚化；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\夜色石廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S064
+
+[S065]
+场景名称：度假石廊
+场景：度假石廊；自然镜头虚化
+通用英文：sunlit resort stone colonnade. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：度假石廊；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\度假石廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S065
+
+[S067]
+场景名称：庭院木廊
+场景：庭院木廊
+通用英文：wooden veranda with a low kneeling mat and garden background
+中文注释：庭院木廊。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院木廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S067
+
+[S068]
+场景名称：庭院矮墙
+场景：庭院矮墙
+通用英文：low stone wall in a leafy garden, soft late-afternoon daylight
+中文注释：庭院矮墙；绿树树荫；午后光线。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\庭院矮墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S068
+
+[S069]
+场景名称：庭院长廊
+场景：庭院长廊；暮色、自然镜头虚化
+通用英文：covered winter courtyard arcade at dusk. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：庭院长廊；暮色、自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院长廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S069
+
+[S070]
+场景名称：暖灯石廊
+场景：暖灯石廊；灯笼照明、自然镜头虚化
+通用英文：stone arcade with soft winter lantern light. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：暖灯石廊；灯笼照明、自然镜头虚化；灯笼。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\暖灯石廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S070
+
+[S071]
+场景名称：池塘廊桥
+场景：池塘廊桥
+通用英文：covered wooden bridge above a still garden pond. Real camera perspective, soft believable light, subtle grain and authentic fabric detail.
+中文注释：池塘廊桥。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\池塘廊桥.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S071
+
+[S072]
+场景名称：河畔有顶回廊
+场景：
+  - 版本1：河畔有顶回廊，淡雅午后光与微风
+  - 版本2：河畔长廊
+通用英文：
+  - 版本1：covered riverside promenade, pale afternoon light and a light breeze
+  - 版本2：covered riverside promenade, gentle daylight and light breeze
+中文注释：
+  - 版本1：河畔有顶回廊，淡雅午后光与微风；午后光线。
+  - 版本2：河畔长廊。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\河畔有顶回廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S072
+
+[S075]
+场景名称：海滨有顶回廊
+场景：
+  - 版本1：海滨有顶回廊，柔和午后光与微风
+  - 版本2：海滨回廊细柱，柔和反射日光
+通用英文：
+  - 版本1：covered seaside promenade, gentle afternoon light and a light breeze
+  - 版本2：slim pillar in a seaside corridor, soft reflected daylight
+中文注释：
+  - 版本1：海滨有顶回廊，柔和午后光与微风；午后光线。
+  - 版本2：海滨回廊细柱，柔和反射日光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海滨有顶回廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S075
+
+[S076]
+场景名称：海滨花园石桥平整平台
+场景：海滨花园石桥平整平台，柔和均匀日光
+通用英文：flat platform beside a seaside garden bridge, soft even daylight
+中文注释：海滨花园石桥平整平台，柔和均匀日光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海滨花园石桥平整平台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S076
+
+[S077]
+场景名称：石墙门廊
+场景：石墙门廊
+通用英文：quiet covered stone doorway in an old courtyard, soft reflected light
+中文注释：石墙门廊。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\石墙门廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S077
+
+[S078]
+场景名称：石廊座椅
+场景：石廊座椅；自然镜头虚化
+通用英文：pale stone corridor with a carved chair. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：石廊座椅；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\石廊座椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S078
+
+[S079]
+场景名称：码头有顶木廊
+场景：
+  - 版本1：码头有顶木廊，偏冷阴天日光
+  - 版本2：码头有顶木廊，偏冷阴天日光
+通用英文：
+  - 版本1：covered marina wooden walkway, cool overcast daylight
+  - 版本2：covered marina walkway, cool overcast daylight
+中文注释：
+  - 版本1：码头有顶木廊，偏冷阴天日光；阴天散射光；偏冷光线。
+  - 版本2：码头有顶木廊，偏冷阴天日光；阴天散射光；偏冷光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\码头有顶木廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S079
+
+[S080]
+场景名称：窗边石柱
+场景：窗边石柱；窗边自然光或窗景、自然镜头虚化
+通用英文：old palace window alcove beside a stone column. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：窗边石柱；窗边自然光或窗景、自然镜头虚化；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\窗边石柱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S080
+
+[S081]
+场景名称：红枫廊柱
+场景：红枫廊柱
+通用英文：A believable red-maple corridor pillar setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：红枫廊柱；枫树。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\红枫廊柱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S081
+
+[S082]
+场景名称：花园回廊
+场景：花园回廊；金色时段光线、自然镜头虚化
+通用英文：covered flowering garden arcade at golden hour. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：花园回廊；金色时段光线、自然镜头虚化；花卉；日落金色光线。
+在用角色：泳装小南、神驹小南原造型
+参考图片：{project_root}\场景\场景参考图\花园回廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S082
+
+[S083]
+场景名称：花园石栏
+场景：花园石栏；暮色、自然镜头虚化
+通用英文：stone balustrade overlooking a garden at dusk. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：花园石栏；暮色、自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\花园石栏.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S083
+
+[S084]
+场景名称：花园石桥旁平整石平台
+场景：花园石桥旁平整石平台，柔和均匀日光
+通用英文：flat stone platform beside a garden bridge, soft even daylight
+中文注释：花园石桥旁平整石平台，柔和均匀日光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\花园石桥旁平整石平台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S084
+
+[S085]
+场景名称：酒店廊柱
+场景：
+  - 版本1：酒店廊柱
+  - 版本2：度假酒店廊柱
+通用英文：
+  - 版本1：A believable hotel corridor pillar setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable resort hotel corridor pillars setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：酒店廊柱。
+  - 版本2：度假酒店廊柱。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\酒店廊柱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S085
+
+[S086]
+场景名称：金色回廊
+场景：
+  - 版本1：金色回廊
+  - 版本2：金色廊柱
+通用英文：
+  - 版本1：ornate pale gold corridor with elegant chair.
+  - 版本2：A believable golden corridor pillars setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：金色回廊。
+  - 版本2：金色廊柱。
+在用角色：神驹小南原造型
+参考图片：{project_root}\场景\场景参考图\金色回廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S086
+
+[S088]
+场景名称：雨后古街木檐廊
+场景：雨后古街木檐廊
+通用英文：old-town covered wooden arcade after light rain
+中文注释：雨后古街木檐廊；雨后或小雨环境。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\雨后古街木檐廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S088

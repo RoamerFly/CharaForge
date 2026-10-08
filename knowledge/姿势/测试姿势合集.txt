@@ -1,0 +1,119 @@
+1. 侧卧高抬腿
+姿势描述：侧躺在躺椅或沙发上，一条腿高高向上抬起伸直，另一条腿自然弯曲，上身用肘撑起，一只手轻托脸颊，眼神直视镜头。
+提示词关键点：lying on side on lounge chair, one leg raised high, other leg bent, propped on elbow, hand near face, exaggerated thigh and hip line, soft gaze
+
+2. 侧卧并腿后仰
+姿势描述：侧卧在躺椅上，双腿并拢向前伸展并微微弯曲，臀部微微后送，上身后仰靠在枕头上，一只手托着脸颊，身体呈现流畅曲线。
+提示词关键点：reclining on side, legs together and slightly bent, hips pushed back, hand supporting head, soft body curve, relaxed pose
+
+3. 侧卧曲腿撑肘
+姿势描述：侧躺在沙发上，用一只手肘撑起上身，另一只手轻放在大腿外侧，一条腿弯曲抬起，另一条腿伸直，头部微侧看向镜头。
+提示词关键点：lying on side on sofa, propped up on elbow, one leg bent upward, other leg extended, hand on outer thigh, soft fabric drape
+
+4. 侧卧回眸抚腿
+姿势描述：侧躺在沙发上，身体微微向后扭转，一只手轻抚自己的大腿外侧，另一只手托着下巴，双腿交叠，眼神带有回眸感。
+提示词关键点：side-lying on sofa, hand caressing outer thigh, looking over shoulder, legs slightly crossed, soft body twist
+
+5. 镜前轻拉衣角
+姿势描述：站在镜前，一只手举起手机自拍，另一只手轻拉衣角或裙摆，身体微微侧转，胸部自然挺起，眼神直视镜头。
+提示词关键点：standing mirror selfie, holding phone, lightly pulling clothing edge, slight body twist, confident soft stare
+
+6. 侧卧并腿忍耐
+姿势描述：侧躺在床上，双腿紧紧并拢，膝盖轻轻相贴，一只手自然放在大腿外侧，另一只手轻扶小腹，眉头微蹙，嘴唇轻抿，眼神带着明显的忍住与不适。
+提示词关键点：lying on side, legs pressed tightly together, knees touching, hand on outer thigh, other hand on lower abdomen, furrowed brows, lips pressed, restrained expression
+
+7. 坐姿并腿微颤
+姿势描述：坐在床沿或椅子上，双腿并拢并用力夹紧，脚尖微微点地，上身微微前倾，双手交叠放在膝盖上，眉头轻皱，脸颊微红，眼神带着忍耐的急切。
+提示词关键点：sitting with legs tightly closed, toes slightly tapping, leaning forward, hands overlapping on knees, lightly furrowed brows, flushed cheeks, restrained urgent gaze
+
+8. 站立交叉并腿
+姿势描述：站立姿势，双腿交叉并紧紧夹住，身体微微扭动，一只手轻按小腹，另一只手扶着旁边的家具，眉头紧锁，嘴唇微微张开又马上闭上，表情在极力忍耐。
+提示词关键点：standing with legs crossed and tightly pressed, slight body shift, hand pressing lower abdomen, other hand supporting on furniture, tightly furrowed brows, strong restrained expression
+
+9. 跪坐并腿低头
+姿势描述：跪坐在床上，双腿并拢夹紧，身体微微前倾，双手放在膝盖上，头部低垂，眉头皱起，眼神向下，脸颊泛红，流露出明显的忍耐与不适。
+提示词关键点：kneeling with legs tightly together, leaning slightly forward, hands on knees, head lowered, furrowed brows, downward gaze, flushed face, restrained discomfort
+
+10. 靠坐并腿轻晃
+姿势描述：靠坐在床头，双腿并拢并用力夹紧，身体轻微左右晃动，一只手按在小腹，另一只手抓紧床单，眉头紧皱，嘴唇紧抿，眼神湿润且带着急切忍耐。
+提示词关键点：reclining against headboard, legs pressed tightly together, slight body swaying, hand on lower abdomen, other hand gripping sheet, tightly furrowed brows, moist restrained eyes
+
+11. 侧卧手置身前
+姿势描述：侧躺在床上，双腿自然弯曲并保持放松间距，一只手轻柔地放在身体前方靠近中线的位置，另一只手托着脸颊，整体姿态放松。
+提示词关键点：lying on side, legs gently bent with natural space, one hand resting softly in front of the body near center line, supporting head, calm relaxed expression
+
+12. 仰躺手置身前
+姿势描述：仰躺在床上，双腿微微弯曲并保持自然分开，一只手平放在身体前方中下位置，另一只手自然伸展在身侧，腰部轻微上抬。
+提示词关键点：lying on back, legs softly bent and naturally apart, hand resting on the front mid-lower area of the body, soft hip lift, focused calm gaze
+
+13. 坐姿手扶内侧
+姿势描述：坐在床沿，双腿自然分开，一只手轻放在身体内侧靠近中线的位置，上身微微前倾，另一只手可轻托下巴，表情安静。
+提示词关键点：sitting on edge of bed, legs naturally apart, hand resting on the inner side near the body’s center, slight forward lean, quiet expression
+
+14. 跪姿手前伸
+姿势描述：双膝跪在床上，身体略微前倾，一只手自然向前伸并停在身体中下方，另一只手支撑在床面，头部微低或轻抬。
+提示词关键点：kneeling on bed, leaning slightly forward, one hand reaching forward to the mid-lower body, other hand supporting, soft glance
+
+15. 侧卧手随曲线
+姿势描述：侧卧，一条腿抬起弯曲，一只手顺着身体侧线缓缓向下并停在中下位置，另一只手托着头部，整体曲线自然。
+提示词关键点：lying on side, one leg bent up, hand following the body side line down to mid-lower area, supporting head, gentle curve
+
+16. 趴卧手置身下
+姿势描述：趴在床上，上身用肘撑起，一只手自然伸向身下并停在身体中线附近，双腿保持自然姿态，头部侧转。
+提示词关键点：lying on stomach, propped on elbows, one hand placed under the body near the center line, natural leg position, looking sideways
+
+17. 靠坐双手交叠
+姿势描述：靠坐在床头，双腿弯曲并保持自然间距，双手交叠轻放在身体前方中下位置，上身放松后仰，眼神柔和。
+提示词关键点：reclining against headboard, legs bent with natural space, hands overlapping on the front mid-lower body, relaxed upper body, soft gaze
+
+18. 侧卧屈膝置手
+姿势描述：侧躺并屈起靠近床面的腿，一只手轻轻放在弯曲腿与身体形成的空间中，另一只手自然放在枕头上，表情平静。
+提示词关键点：lying on side with lower leg bent, hand gently placed in the space formed by the bent leg and body, other hand on pillow, calm look
+
+19. 坐姿分腿置手
+姿势描述：坐在床上，双腿自然分开，一只手轻放在双腿之间靠近身体中线的位置，上身微微前倾，眼神向下或看向镜头。
+提示词关键点：sitting with legs naturally apart, hand resting between the legs near the body’s center line, slight forward lean, soft gaze
+
+20. 仰躺单手置中
+姿势描述：仰躺在床上，一条腿抬起弯曲，另一条腿伸直，一只手轻放在身体前方更靠近中线的位置，腰部微微抬起，表情安静。
+提示词关键点：lying on back, one leg bent up, other extended, hand resting closer to the center front of the body, soft hip raise, quiet focused expression
+
+21. 侧卧抚腿
+姿势描述：侧躺在床上，一条腿微微抬起弯曲，一只手轻放在大腿外侧，另一只手托着脸颊，身体自然放松，眼神柔和。
+提示词关键点：lying on side, one leg bent, hand resting on outer thigh, supporting head, soft relaxed expression
+
+22. 仰躺双手轻触
+姿势描述：仰躺在床上，双腿自然弯曲并微微分开，一只手轻放在小腹位置，另一只手自然放在身侧，腰部微微上拱。
+提示词关键点：lying on back, legs slightly apart and bent, hand on lower abdomen, soft arched back, calm focused gaze
+
+23. 坐姿交叠抚膝
+姿势描述：坐在床沿或沙发上，双腿交叠，一只手顺着大腿向下轻抚至膝盖外侧，上身微微前倾，另一只手可轻托下巴。
+提示词关键点：sitting with legs crossed, hand gently caressing outer thigh toward knee, leaning slightly forward, soft contemplative expression
+
+24. 跪姿前倾扶腿
+姿势描述：双膝跪在床上，身体微微前倾，一只手支撑在身前，另一只手自然放在大腿外侧，头部低垂或微微抬起。
+提示词关键点：kneeling on bed, leaning forward, one hand supporting, other hand on outer thigh, lowered head or soft upward glance
+
+25. 侧卧夹腿轻触
+姿势描述：侧卧，双腿并拢并微微夹紧，一只手从腰侧向下滑动至大腿上方，另一只手托着头部，身体呈现自然曲线。
+提示词关键点：lying on side, legs pressed together, hand sliding from waist to upper thigh, supporting head, gentle body curve
+
+26. 趴卧手伸身下
+姿势描述：趴在床上，上身用肘撑起，一只手自然伸向身下靠近腰腹位置，双腿并拢或微微分开，头部侧转。
+提示词关键点：lying on stomach, propped on elbows, one hand reaching under body near waist, legs together, looking sideways
+
+27. 靠坐双手腹前
+姿势描述：靠坐在床头或沙发上，双腿弯曲并微微分开，双手交叠轻放在小腹位置，上身放松后仰，眼神平静而专注。
+提示词关键点：reclining against headboard, legs bent and slightly open, hands overlapping on lower abdomen, relaxed upper body, focused soft gaze
+
+28. 侧卧屈膝抚腰
+姿势描述：侧躺并屈起一条腿，一只手顺着腰侧缓慢向下滑动，另一只手自然放在枕头或身前，身体微微向前倾，表情安静。
+提示词关键点：lying on side with one knee bent, hand sliding down from waist, other hand resting forward, slight forward lean, quiet expression
+
+29. 坐姿分腿扶膝
+姿势描述：坐在床上，双腿自然分开，双手分别轻放在两侧膝盖外侧，上身微微前倾，头部略低，眼神柔和。
+提示词关键点：sitting with legs apart, hands resting on outer knees, leaning slightly forward, soft downward gaze, calm atmosphere
+
+30. 仰躺单手轻抚
+姿势描述：仰躺在床上，一条腿弯曲抬起，另一条腿伸直，一只手轻放在小腹偏下位置，另一只手自然伸展在身侧，腰部微微抬起。
+提示词关键点：lying on back, one leg bent up, other leg extended, hand resting on lower abdomen, soft hip lift, relaxed and focused expression

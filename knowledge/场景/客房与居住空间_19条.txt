@@ -1,0 +1,258 @@
+客房与居住空间场景提示词
+条目数量：19
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S129]
+场景名称：古堡窗台
+场景：
+  - 版本1：古堡窗台
+  - 版本2：古堡窗边；窗边自然光或窗景、自然镜头虚化
+通用英文：
+  - 版本1：A believable castle windowsill setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：deep castle window seat overlooking trees. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：
+  - 版本1：古堡窗台；窗台。
+  - 版本2：古堡窗边；窗边自然光或窗景、自然镜头虚化；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古堡窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S129
+
+[S131]
+场景名称：宫殿窗边
+场景：宫殿窗边；侧光、窗边自然光或窗景、自然镜头虚化
+通用英文：broad palace window seat with diffused side light. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：宫殿窗边；侧光、窗边自然光或窗景、自然镜头虚化；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\宫殿窗边.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S131
+
+[S132]
+场景名称：山景客房
+场景：
+  - 版本1：山景客房
+  - 版本2：山景客房
+  - 版本3：山景客房
+  - 版本4：山景客房
+  - 版本5：山景客房宽床，柔和晨间窗光
+通用英文：
+  - 版本1：mountain-view guest room, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：mountain-view guest room, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：mountain-view guest room, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：mountain-view inn guest room, gentle afternoon light
+  - 版本5：broad bed in a mountain-view guest room, soft morning window light
+中文注释：
+  - 版本1：山景客房；晨间光线。
+  - 版本2：山景客房；窗景或窗侧光；午后光线。
+  - 版本3：山景客房；暖色光或暖色布置。
+  - 版本4：山景客房；午后光线。
+  - 版本5：山景客房宽床，柔和晨间窗光；窗景或窗侧光；床铺；晨间光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\山景客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S132
+
+[S134]
+场景名称：旅馆床沿
+场景：旅馆床沿
+通用英文：simple guest-room bed edge with warm linen and afternoon light
+中文注释：旅馆床沿；床铺；午后光线；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\旅馆床沿.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S134
+
+[S135]
+场景名称：旅馆木墙
+场景：旅馆木墙
+通用英文：textured wooden wall in a lantern-lit inn hallway
+中文注释：旅馆木墙；灯笼。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\旅馆木墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S135
+
+[S136]
+场景名称：旧木宅门框
+场景：旧木宅门框，庭院柔和反射光
+通用英文：old wooden house doorway, soft reflected garden light
+中文注释：旧木宅门框，庭院柔和反射光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\旧木宅门框.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S136
+
+[S137]
+场景名称：暮色海湾客房
+场景：
+  - 版本1：暮色海湾客房
+  - 版本2：暮色海湾客房
+  - 版本3：暮色海湾客房
+通用英文：
+  - 版本1：room overlooking bay at dusk, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：room overlooking bay at dusk, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：room overlooking bay at dusk, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：暮色海湾客房；晨间光线。
+  - 版本2：暮色海湾客房；窗景或窗侧光；午后光线。
+  - 版本3：暮色海湾客房；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\暮色海湾客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S137
+
+[S138]
+场景名称：木屋客房
+场景：
+  - 版本1：木屋客房
+  - 版本2：木屋客房
+  - 版本3：木屋客房
+通用英文：
+  - 版本1：cozy cabin bedroom, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：cozy cabin bedroom, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：cozy cabin bedroom, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：木屋客房；晨间光线。
+  - 版本2：木屋客房；窗景或窗侧光；午后光线。
+  - 版本3：木屋客房；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\木屋客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S138
+
+[S139]
+场景名称：木屋窗台
+场景：木屋窗台
+通用英文：A believable cabin windowsill setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：木屋窗台；窗台。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\木屋窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S139
+
+[S140]
+场景名称：民宿阳台俯瞰屋顶
+场景：民宿阳台俯瞰屋顶、傍晚前柔光
+通用英文：guesthouse balcony overlooking rooftops in late afternoon
+中文注释：民宿阳台俯瞰屋顶、傍晚前柔光；午后光线。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\民宿阳台俯瞰屋顶.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S140
+
+[S141]
+场景名称：海岛客房
+场景：
+  - 版本1：海岛客房
+  - 版本2：海岛客房
+  - 版本3：海岛客房
+通用英文：
+  - 版本1：island guest room, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：island guest room, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：island guest room, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：海岛客房；晨间光线。
+  - 版本2：海岛客房；窗景或窗侧光；午后光线。
+  - 版本3：海岛客房；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海岛客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S141
+
+[S142]
+场景名称：海岛民宿门廊
+场景：海岛民宿门廊，柔和夕阳侧光
+通用英文：island guesthouse veranda, gentle sunset side light
+中文注释：海岛民宿门廊，柔和夕阳侧光；落日光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海岛民宿门廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S142
+
+[S143]
+场景名称：海景卧室
+场景：
+  - 版本1：海景卧室
+  - 版本2：海景卧室
+  - 版本3：海景卧室
+通用英文：
+  - 版本1：bedroom overlooking ocean, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：bedroom overlooking ocean, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：bedroom overlooking ocean, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：海景卧室；晨间光线。
+  - 版本2：海景卧室；窗景或窗侧光；午后光线。
+  - 版本3：海景卧室；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海景卧室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S143
+
+[S144]
+场景名称：海边民宿木门框
+场景：海边民宿木门框，柔和庭院光
+通用英文：wooden doorway of a coastal guesthouse, soft garden light
+中文注释：海边民宿木门框，柔和庭院光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海边民宿木门框.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S144
+
+[S145]
+场景名称：海边民宿窗台
+场景：海边民宿窗台
+通用英文：A believable seaside guesthouse windowsill setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：海边民宿窗台；窗台。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海边民宿窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S145
+
+[S146]
+场景名称：灯笼客房
+场景：
+  - 版本1：灯笼客房
+  - 版本2：灯笼客房
+通用英文：
+  - 版本1：warm lantern-lit guest room, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：warm lantern-lit guest room, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：灯笼客房；晨间光线；暖色光或暖色布置；灯笼。
+  - 版本2：灯笼客房；窗景或窗侧光；午后光线；暖色光或暖色布置；灯笼。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\灯笼客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S146
+
+[S147]
+场景名称：竹帘民宿
+场景：
+  - 版本1：竹帘民宿
+  - 版本2：竹帘民宿
+  - 版本3：竹帘民宿
+通用英文：
+  - 版本1：coastal guesthouse with bamboo blinds, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：coastal guesthouse with bamboo blinds, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：coastal guesthouse with bamboo blinds, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：竹帘民宿；竹林或竹屏；晨间光线。
+  - 版本2：竹帘民宿；竹林或竹屏；窗景或窗侧光；午后光线。
+  - 版本3：竹帘民宿；竹林或竹屏；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹帘民宿.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S147
+
+[S148]
+场景名称：纸窗客房
+场景：
+  - 版本1：纸窗客房
+  - 版本2：纸窗客房
+  - 版本3：纸窗客房
+  - 版本4：纸窗客房
+通用英文：
+  - 版本1：guest room with shoji windows, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：guest room with shoji windows, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：guest room with shoji windows, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：daybed in a quiet shoji-window guest room, soft diffused daylight
+中文注释：
+  - 版本1：纸窗客房；窗景或窗侧光；晨间光线。
+  - 版本2：纸窗客房；窗景或窗侧光；午后光线。
+  - 版本3：纸窗客房；窗景或窗侧光；暖色光或暖色布置。
+  - 版本4：纸窗客房；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\纸窗客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S148
+
+[S149]
+场景名称：远山景宽窗边
+场景：远山景宽窗边，柔和窗侧日光
+通用英文：broad window overlooking distant mountains, soft side-window daylight
+中文注释：远山景宽窗边，柔和窗侧日光；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\远山景宽窗边.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S149

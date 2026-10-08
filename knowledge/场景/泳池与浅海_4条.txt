@@ -1,0 +1,38 @@
+泳池与浅海场景提示词
+条目数量：4
+
+[W001]
+场景名称：清澈浅水泳池
+场景：清澈泳池浅水台阶区，水深不超过腰部；午后柔和散射光，青蓝色水面和浅色池壁。
+通用英文：Clear turquoise swimming pool shallow ledge, water no deeper than waist; soft afternoon daylight, pale pool tiles.
+中文注释：清澈泳池浅水台阶区，水深不超过腰部；午后柔和散射光，青蓝色水面和浅色池壁。
+在用角色：泳装小南
+参考图片：
+参考记录：
+
+[W002]
+场景名称：海湾平静浅水
+场景：安静海湾近岸浅水，低浪与清楚海平线；清晨柔和光线。
+通用英文：Calm sheltered bay shallow water near shore, small gentle ripples and clear horizon, soft early morning daylight.
+中文注释：安静海湾近岸浅水，低浪与清楚海平线；清晨柔和光线。
+在用角色：泳装小南
+参考图片：
+参考记录：
+
+[W003]
+场景名称：泳池深水浮游区
+场景：宽敞泳池水面，背景池边远离人物；自然日光，水面折射清楚但不夸张。
+通用英文：Spacious swimming pool surface with distant pool edge; natural daylight and believable modest refraction.
+中文注释：宽敞泳池水面，背景池边远离人物；自然日光，水面折射清楚但不夸张。
+在用角色：泳装小南
+参考图片：
+参考记录：
+
+[W004]
+场景名称：海岸岩石浅滩
+场景：平整安全的近岸浅滩和远处岩石，不在锋利岩石上承重；阴天柔和光。
+通用英文：Safe level coastal shallows with distant rocks, soft overcast daylight, no weight bearing on sharp rocks.
+中文注释：平整安全的近岸浅滩和远处岩石，不在锋利岩石上承重；阴天柔和光。
+在用角色：泳装小南
+参考图片：
+参考记录：

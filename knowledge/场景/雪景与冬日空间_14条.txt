@@ -1,0 +1,171 @@
+雪景与冬日空间场景提示词
+条目数量：14
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S221]
+场景名称：冬季海岸露台
+场景：冬季海岸露台
+通用英文：A believable winter coastal terrace setting with natural ambient daylight, realistic furniture and soft background detail. Light snow outside, soft reflected winter light.
+中文注释：冬季海岸露台；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\冬季海岸露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S221
+
+[S222]
+场景名称：冬日客厅
+场景：冬日客厅；自然镜头虚化
+通用英文：cozy lodge living room with upholstered sofa. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：冬日客厅；自然镜头虚化；沙发。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\冬日客厅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S222
+
+[S223]
+场景名称：冬日木屋窗台
+场景：冬日木屋窗台
+通用英文：A believable winter cabin windowsill setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：冬日木屋窗台；窗台。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\冬日木屋窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S223
+
+[S224]
+场景名称：圣诞休息室
+场景：
+  - 版本1：圣诞休息室；暖色光线、自然镜头虚化
+  - 版本2：节日休息室
+  - 版本3：节日休息室
+通用英文：
+  - 版本1：holiday lounge with warm tree lights. Soft directional light, believable reflected fill and natural lens bokeh.
+  - 版本2：festive lounge, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：festive lounge, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：圣诞休息室；暖色光线、自然镜头虚化；暖色光或暖色布置。
+  - 版本2：节日休息室；晨间光线。
+  - 版本3：节日休息室；暖色光或暖色布置。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\圣诞休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S224
+
+[S225]
+场景名称：圣诞回廊
+场景：圣诞回廊
+通用英文：A believable Christmas corridor setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：圣诞回廊。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\圣诞回廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S225
+
+[S226]
+场景名称：壁炉休息室
+场景：
+  - 版本1：壁炉休息室
+  - 版本2：壁炉客厅
+  - 版本3：壁炉客厅
+  - 版本4：壁炉客厅
+通用英文：
+  - 版本1：A believable fireplace lounge location with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：fireplace living room, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：fireplace living room, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：fireplace living room, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：壁炉休息室；壁炉。
+  - 版本2：壁炉客厅；晨间光线；壁炉。
+  - 版本3：壁炉客厅；窗景或窗侧光；午后光线；壁炉。
+  - 版本4：壁炉客厅；暖色光或暖色布置；壁炉。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\壁炉休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S226
+
+[S228]
+场景名称：夜雪客房
+场景：
+  - 版本1：夜雪客房
+  - 版本2：夜雪客房
+通用英文：
+  - 版本1：guest room overlooking snowy night, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：guest room overlooking snowy night, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：夜雪客房；晨间光线。
+  - 版本2：夜雪客房；窗景或窗侧光；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\夜雪客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S228
+
+[S230]
+场景名称：雪山客房
+场景：
+  - 版本1：雪山客房
+  - 版本2：雪山客房
+  - 版本3：雪山客房
+通用英文：
+  - 版本1：snowy mountain-view room, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：snowy mountain-view room, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：snowy mountain-view room, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：雪山客房；晨间光线。
+  - 版本2：雪山客房；窗景或窗侧光；午后光线。
+  - 版本3：雪山客房；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪山客房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S230
+
+[S232]
+场景名称：雪景城市矮墙
+场景：雪景城市矮墙
+通用英文：A believable snowy urban low wall setting with natural ambient daylight, realistic furniture and soft background detail. Light snow outside, soft reflected winter light.
+中文注释：雪景城市矮墙；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪景城市矮墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S232
+
+[S233]
+场景名称：雪景庭院矮墙
+场景：
+  - 版本1：雪景庭院矮墙
+  - 版本2：雪景古庭矮墙
+通用英文：
+  - 版本1：A believable snowy courtyard low wall setting with natural ambient daylight, realistic furniture and soft background detail. Light snow outside, soft reflected winter light.
+  - 版本2：A believable snowy traditional courtyard low wall setting with natural ambient daylight, realistic furniture and soft background detail. Light snow outside, soft reflected winter light.
+中文注释：
+  - 版本1：雪景庭院矮墙；雪景。
+  - 版本2：雪景古庭矮墙；雪景。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\雪景庭院矮墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S233
+
+[S234]
+场景名称：雪景日式露台
+场景：雪景日式露台
+通用英文：A believable snowy Japanese-style terrace setting with natural ambient daylight, realistic furniture and soft background detail. Light snow outside, soft reflected winter light.
+中文注释：雪景日式露台；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪景日式露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S234
+
+[S235]
+场景名称：雪景石台
+场景：雪景石台
+通用英文：A believable snowy stone deck setting with natural ambient daylight, realistic furniture and soft background detail. Light snow outside, soft reflected winter light.
+中文注释：雪景石台；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪景石台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S235
+
+[S236]
+场景名称：雪景窗边
+场景：雪景窗边；窗边自然光或窗景、雪景、自然镜头虚化
+通用英文：broad lodge window seat with snow outside. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：雪景窗边；窗边自然光或窗景、雪景、自然镜头虚化；窗景或窗侧光；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪景窗边.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S236
+
+[S237]
+场景名称：雪景阳台
+场景：雪景阳台；雪景、自然镜头虚化
+通用英文：covered balcony overlooking fresh snow. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：雪景阳台；雪景、自然镜头虚化；雪景。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\雪景阳台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S237

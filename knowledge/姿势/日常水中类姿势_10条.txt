@@ -1,0 +1,59 @@
+日常水中动作模块：只描述肢体；水深、场所和光线由场景模块指定。
+
+1. 浅水站立拂发
+姿势：双足稳定落地，膝盖柔和放松，躯干端正；一手拂耳侧头发，另一手自然垂放，侧头看镜头。
+英文提示词参考：Stand upright with both feet grounded and knees relaxed; one hand brushes hair beside the ear, other arm rests down; turn head slightly toward camera.
+参考图片：{project_root}\姿势\姿势参考图\浅水站立拂发.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\c1599dbccff04431bd8e1157c41c0c5d\metadata.json
+
+2. 扶沿漂浮并腿
+姿势：双手分开放在身前水平边缘，双臂轻弯承托；躯干和双腿沿同一方向舒展，双腿自然并拢，头抬起看向前方。
+英文提示词参考：Both hands separately rest on a horizontal support ahead, elbows gently bent; torso and two legs extend in one coherent direction, legs comfortably together, head raised toward the front.
+参考图片：{project_root}\姿势\姿势参考图\扶沿漂浮并腿.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\44116cfd01a5402fac9c79defa291240\metadata.json
+
+3. 浅水慢步回望
+姿势：一足小步迈向前，另一足随后，双臂自然平衡，肩部轻转，回望镜头。
+英文提示词参考：Take a small forward step with the other foot following, arms naturally balancing; gently turn shoulders and look back at camera.
+
+4. 扶沿侧身微笑
+姿势：身体三分侧向，一手扶腰高水平边缘，另一手放松垂下，双足稳定落地，头转向镜头。
+英文提示词参考：Three-quarter stance, one hand on a waist-high horizontal support, other arm relaxed, both feet grounded, head turned toward camera.
+参考图片：{project_root}\姿势\姿势参考图\扶沿侧身微笑.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\38da43cc623945ea809b7d3504d5e7d3\metadata.json
+
+5. 坐沿双腿垂下
+姿势：臀部稳坐宽平边缘，双手分放在身侧支撑面上，双膝自然靠近，两条小腿平行垂下，身体端正。
+英文提示词参考：Sit securely on a broad edge, hands separately on the support beside hips, knees comfortably close, both lower legs hanging parallel, torso upright.
+参考图片：{project_root}\姿势\姿势参考图\坐沿双腿垂下.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\a8049a11ce614c0089d8057caa975db5\metadata.json
+
+6. 扶栏踏阶回望
+姿势：一脚踏在高一级台面，另一脚落在下一级，一手轻扶栏杆，另一臂放松，肩部轻转回望。
+英文提示词参考：One foot on a higher step, the other on the lower step, one hand lightly on a rail, other arm relaxed; gently turn shoulders to look back.
+参考图片：{project_root}\姿势\姿势参考图\扶栏踏阶回望.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\ea92928086af421f9ba58915a9165e9b\metadata.json
+
+7. 双手轻捧水
+姿势：双足站稳，膝轻曲；双手自然相邻呈浅碗形放在腰前，手腕放松，低头看向掌心。
+英文提示词参考：Feet stable with soft knees; cup both hands loosely together in a shallow bowl in front of the waist, wrists relaxed, look down toward palms.
+参考图片：{project_root}\姿势\姿势参考图\双手轻捧水.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\942370fede754840a038214eb4bad9a8\metadata.json
+
+8. 仰漂舒展
+姿势：躯干仰向上，背与骨盆保持自然连续，两臂在两侧微张、双手放松，两腿同向伸展，头颈自然。
+英文提示词参考：Float supine with coherent relaxed back and pelvis; arms slightly out at sides, hands relaxed; two legs extended in the same direction, head and neck neutral.
+参考图片：{project_root}\姿势\姿势参考图\仰漂舒展.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\3fe899e9346440bb96ba31214db599b7\metadata.json
+
+9. 俯身扶板打腿
+姿势：双手分握同一块浮板的左右侧边，双臂前伸，头抬起，躯干向后延伸，两腿交替小幅打腿。
+英文提示词参考：Hold opposite sides of one kickboard with two hands, arms extended forward and head up; torso trails behind with two legs making small alternating kicks.
+参考图片：{project_root}\姿势\姿势参考图\俯身扶板打腿.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\3b5c3dbde19f415ca4ccb61d6ffbf8dc\metadata.json
+
+10. 浅水侧蹲抬眼
+姿势：双足稳定支撑，双膝随脚尖自然弯曲，臀部降低，躯干微前倾，一手轻放膝上，另一手放松，侧脸抬眼。
+英文提示词参考：Lower hips into a stable shallow squat with knees tracking toes, torso slightly forward; one hand rests on knee, other relaxed, side face looks up.
+参考图片：{project_root}\姿势\姿势参考图\浅水侧蹲抬眼.png
+参考记录：{project_root}\角色图集\泳装小南\other\workbench\images\54b748230cb840099a5996d10f16c13c\metadata.json

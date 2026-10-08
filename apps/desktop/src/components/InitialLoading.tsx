@@ -1,4 +1,5 @@
 import { Sparkles } from "lucide-react";
+import { PRODUCT_NAME, PRODUCT_TAGLINE } from "../lib/brand";
 
 interface InitialLoadingProps {
   message?: string;
@@ -13,8 +14,8 @@ export function InitialLoading({ message = "正在初始化桌面核心与 AI �
             <Sparkles size={22} />
           </div>
           <div>
-            <div className="brand-title">Anime Pic Manage</div>
-            <div className="brand-subtitle">本地智能图片工作台</div>
+            <div className="brand-title">{PRODUCT_NAME}</div>
+            <div className="brand-subtitle">{PRODUCT_TAGLINE}</div>
           </div>
         </div>
 

@@ -1,0 +1,36 @@
+街道与广场场景提示词
+条目数量：3
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S054]
+场景名称：城市露台
+场景：
+  - 版本1：城市露台；夕阳、侧光
+  - 版本2：城市露台；夕阳
+通用英文：
+  - 版本1：A contemporary resort rooftop deck with glass railings and distant buildings, subtle sunset side light and realistic colors. No ornate white columns.
+  - 版本2：A rooftop deck with glass railing and distant buildings, subtle sunset light, realistic colors.
+中文注释：
+  - 版本1：城市露台；夕阳、侧光；白色立柱；落日光线。
+  - 版本2：城市露台；夕阳；落日光线。
+在用角色：夏日黑土、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\城市露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S054
+
+[S055]
+场景名称：步行广场
+场景：步行广场、傍晚金色光线
+通用英文：open pedestrian square at golden hour, distant buildings softly blurred
+中文注释：步行广场、傍晚金色光线；日落金色光线；背景自然虚化。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\步行广场.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S055
+
+[S056]
+场景名称：街巷
+场景：街巷；日光、窗边自然光或窗景、雪景
+通用英文：A real winter pedestrian street with snow on rooftops and softly lit shop windows, normal daylight and realistic snow texture.
+中文注释：街巷；日光、窗边自然光或窗景、雪景；窗景或窗侧光；雪景。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\街巷.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S056

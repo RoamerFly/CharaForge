@@ -48,6 +48,7 @@ import type {
   WorkerRuntimeSettings,
 } from "@anime-pic-manage/shared-types";
 import { invokeCore, isTauriRuntime } from "../lib/tauri";
+import { PRODUCT_NAME, PRODUCT_NAME_EN, PRODUCT_TAGLINE } from "../lib/brand";
 import { open } from "@tauri-apps/plugin-dialog";
 import {
   applyUiFontSize,
@@ -913,8 +914,8 @@ export function AboutUpdateModal({
         <div className="modal-body">
           <div className="about-version-row">
             <div>
-              <strong>Anime Pic Manage</strong>
-              <small>本地优先的动漫图片识别与整理工具</small>
+              <strong>{PRODUCT_NAME} · {PRODUCT_NAME_EN}</strong>
+              <small>{PRODUCT_TAGLINE}</small>
             </div>
             <span className="soft-badge blue">v{currentVersion}</span>
           </div>

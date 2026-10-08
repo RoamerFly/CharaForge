@@ -1,0 +1,309 @@
+咖啡馆与茶室场景提示词
+条目数量：23
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S152]
+场景名称：传统茶室门廊
+场景：传统茶室门廊，柔和夕阳侧光
+通用英文：traditional tearoom veranda, gentle sunset side light
+中文注释：传统茶室门廊，柔和夕阳侧光；落日光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\传统茶室门廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S152
+
+[S153]
+场景名称：冬季咖啡吧
+场景：
+  - 版本1：冬季咖啡吧
+  - 版本2：咖啡馆餐台；暖色光线、自然镜头虚化
+通用英文：
+  - 版本1：A believable winter cafe counter setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：winter cafe counter with warm reflected light. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：
+  - 版本1：冬季咖啡吧。
+  - 版本2：咖啡馆餐台；暖色光线、自然镜头虚化；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\冬季咖啡吧.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S153
+
+[S155]
+场景名称：古街咖啡馆
+场景：古街咖啡馆
+通用英文：A believable old-street cafe setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：古街咖啡馆。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古街咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S155
+
+[S157]
+场景名称：古街茶馆
+场景：
+  - 版本1：古街茶馆
+  - 版本2：古街传统茶馆，柔和午后晚光
+  - 版本3：古街茶吧
+  - 版本4：古街茶吧
+  - 版本5：古街茶吧
+  - 版本6：古街茶吧
+通用英文：
+  - 版本1：wooden chair in an old-town tea lounge, warm ambient light
+  - 版本2：traditional old-town tea lounge, soft late-afternoon light
+  - 版本3：old-town tea counter, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：old-town tea counter, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本5：old-town tea counter, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本6：A believable old-street tea counter setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：古街茶馆；暖色光或暖色布置。
+  - 版本2：古街传统茶馆，柔和午后晚光；午后光线。
+  - 版本3：古街茶吧；晨间光线。
+  - 版本4：古街茶吧；窗景或窗侧光；午后光线。
+  - 版本5：古街茶吧；暖色光或暖色布置。
+  - 版本6：古街茶吧。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古街茶馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S157
+
+[S158]
+场景名称：咖啡馆
+场景：
+  - 版本1：咖啡馆；日光、窗边自然光或窗景
+  - 版本2：咖啡馆；窗边自然光或窗景
+  - 版本3：咖啡馆；窗边自然光或窗景
+  - 版本4：咖啡馆；窗边自然光或窗景
+  - 版本5：安静咖啡馆窗边、午后柔光
+通用英文：
+  - 版本1：A bright resort cafe with wooden furniture and indoor potted plants, daylight from a window; no ocean or white terrace columns.
+  - 版本2：A bright resort cafe with wooden chairs, a small table, plants and large windows, natural window light, photographic indoor exposure.
+  - 版本3：A cafe with wooden chairs, a small table, plants and large windows, natural window light.
+  - 版本4：Bright indoor cafe with plants and natural window light.
+  - 版本5：quiet cafe window table in soft afternoon daylight
+中文注释：
+  - 版本1：咖啡馆；日光、窗边自然光或窗景；盆栽；窗景或窗侧光。
+  - 版本2：咖啡馆；窗边自然光或窗景；窗景或窗侧光。
+  - 版本3：咖啡馆；窗边自然光或窗景；窗景或窗侧光。
+  - 版本4：咖啡馆；窗边自然光或窗景；窗景或窗侧光。
+  - 版本5：安静咖啡馆窗边、午后柔光；窗景或窗侧光；午后光线。
+在用角色：夏日黑土、日向花火、漂泊小南白鹤
+参考图片：{project_root}\场景\场景参考图\咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S158
+
+[S160]
+场景名称：城堡咖啡馆
+场景：城堡咖啡馆
+通用英文：A believable castle cafe setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：城堡咖啡馆。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\城堡咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S160
+
+[S161]
+场景名称：城堡酒廊
+场景：城堡酒廊；自然镜头虚化
+通用英文：castle lounge with dark wooden high stool. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：城堡酒廊；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\城堡酒廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S161
+
+[S162]
+场景名称：城市咖啡吧
+场景：城市咖啡吧
+通用英文：A believable urban cafe counter setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：城市咖啡吧。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\城市咖啡吧.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S162
+
+[S163]
+场景名称：城市露台咖啡馆
+场景：城市露台咖啡馆
+通用英文：A believable urban terrace cafe setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：城市露台咖啡馆。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\城市露台咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S163
+
+[S164]
+场景名称：壁炉酒廊
+场景：壁炉酒廊；暖色光线、自然镜头虚化
+通用英文：winter lodge bar beside a warm fireplace. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：壁炉酒廊；暖色光线、自然镜头虚化；暖色光或暖色布置；壁炉。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\壁炉酒廊.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S164
+
+[S168]
+场景名称：木质茶室
+场景：
+  - 版本1：木质茶室
+  - 版本2：木质茶室
+  - 版本3：木质茶室
+  - 版本4：木质茶室桌边、窗侧柔光
+  - 版本5：木质茶吧
+通用英文：
+  - 版本1：wooden tearoom, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：wooden tearoom, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：wooden tearoom, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：wooden tearoom study table with soft side-window light
+  - 版本5：A believable wooden tea counter setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：木质茶室；晨间光线。
+  - 版本2：木质茶室；窗景或窗侧光；午后光线。
+  - 版本3：木质茶室；暖色光或暖色布置。
+  - 版本4：木质茶室桌边、窗侧柔光；窗景或窗侧光。
+  - 版本5：木质茶吧。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\木质茶室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S168
+
+[S170]
+场景名称：榻榻米茶室
+场景：
+  - 版本1：榻榻米茶室
+  - 版本2：明亮榻榻米茶室的宽软垫，纸窗过滤日光
+通用英文：
+  - 版本1：traditional tatami sitting room with shoji-filtered light
+  - 版本2：broad padded floor mat in a bright tatami tearoom, shoji-filtered daylight
+中文注释：
+  - 版本1：榻榻米茶室。
+  - 版本2：明亮榻榻米茶室的宽软垫，纸窗过滤日光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\榻榻米茶室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S170
+
+[S172]
+场景名称：海滨咖啡馆
+场景：
+  - 版本1：海滨咖啡馆；暖色光线、自然镜头虚化
+  - 版本2：海滨咖啡吧
+通用英文：
+  - 版本1：open-air seaside cafe, warm late afternoon. Soft directional light, believable reflected fill and natural lens bokeh.
+  - 版本2：A believable seaside cafe counter setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：海滨咖啡馆；暖色光线、自然镜头虚化；午后光线；暖色光或暖色布置。
+  - 版本2：海滨咖啡吧。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海滨咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S172
+
+[S173]
+场景名称：海滨茶馆
+场景：海滨茶馆，柔和午后晚光
+通用英文：seaside tea lounge, soft late-afternoon light
+中文注释：海滨茶馆，柔和午后晚光；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\海滨茶馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S173
+
+[S174]
+场景名称：灯笼茶台
+场景：灯笼茶台
+通用英文：Japanese tea terrace with a waist-high table. Real camera perspective, soft believable light, subtle grain and authentic fabric detail.
+中文注释：灯笼茶台。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\灯笼茶台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S174
+
+[S175]
+场景名称：灯笼茶室
+场景：
+  - 版本1：灯笼茶室；灯笼照明
+  - 版本2：传统灯笼茶室，柔和暖色晚光
+通用英文：
+  - 版本1：elegant lantern-lit Japanese tea lounge. Real camera perspective, soft believable light, subtle grain and authentic fabric detail.
+  - 版本2：traditional lantern-lit tearoom, gentle warm evening light
+中文注释：
+  - 版本1：灯笼茶室；灯笼照明；灯笼。
+  - 版本2：传统灯笼茶室，柔和暖色晚光；暖色光或暖色布置；灯笼。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\灯笼茶室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S175
+
+[S176]
+场景名称：白金茶室
+场景：白金茶室
+通用英文：A believable white-and-gold tea room location with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：白金茶室。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\白金茶室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S176
+
+[S177]
+场景名称：码头咖啡馆
+场景：
+  - 版本1：码头咖啡馆
+  - 版本2：码头咖啡馆
+  - 版本3：码头咖啡馆
+  - 版本4：码头咖啡馆
+  - 版本5：码头咖啡馆，柔和暖色晚光
+通用英文：
+  - 版本1：marina cafe, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：marina cafe, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：marina cafe, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：A believable marina cafe setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本5：marina cafe, gentle warm evening light
+中文注释：
+  - 版本1：码头咖啡馆；晨间光线。
+  - 版本2：码头咖啡馆；窗景或窗侧光；午后光线。
+  - 版本3：码头咖啡馆；暖色光或暖色布置。
+  - 版本4：码头咖啡馆。
+  - 版本5：码头咖啡馆，柔和暖色晚光；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\码头咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S177
+
+[S178]
+场景名称：竹庭茶吧
+场景：竹庭茶吧
+通用英文：A believable bamboo garden tea counter setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：竹庭茶吧；竹林或竹屏。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹庭茶吧.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S178
+
+[S179]
+场景名称：节日咖啡馆
+场景：
+  - 版本1：节日咖啡馆
+  - 版本2：节日咖啡馆
+  - 版本3：节日咖啡馆
+  - 版本4：节日咖啡馆
+通用英文：
+  - 版本1：festive cafe, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：festive cafe, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：festive cafe, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：A believable festive cafe setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：节日咖啡馆；晨间光线。
+  - 版本2：节日咖啡馆；窗景或窗侧光；午后光线。
+  - 版本3：节日咖啡馆；暖色光或暖色布置。
+  - 版本4：节日咖啡馆。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\节日咖啡馆.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S179
+
+[S180]
+场景名称：花园餐台
+场景：花园餐台；傍晚、自然镜头虚化
+通用英文：tropical garden dining terrace, soft evening light. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：花园餐台；傍晚、自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\花园餐台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S180
+
+[S181]
+场景名称：茶室窗台
+场景：茶室窗台
+通用英文：wide low window seat in a traditional tearoom, soft window light
+中文注释：茶室窗台；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\茶室窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S181
+
+[S182]
+场景名称：金色茶室
+场景：金色茶室
+通用英文：A believable golden tea room setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：金色茶室。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\金色茶室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S182

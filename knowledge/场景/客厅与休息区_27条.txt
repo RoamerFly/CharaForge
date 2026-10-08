@@ -1,0 +1,351 @@
+客厅与休息区场景提示词
+条目数量：27
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S089]
+场景名称：古典休息室
+场景：
+  - 版本1：古典休息室
+  - 版本2：古典客厅；自然镜头虚化
+通用英文：
+  - 版本1：classic white-and-gold lounge with broad upholstered sofa. Real camera perspective, soft believable light, subtle grain and authentic fabric detail.
+  - 版本2：classic white lounge with a broad upholstered sofa. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：
+  - 版本1：古典休息室；沙发。
+  - 版本2：古典客厅；自然镜头虚化；沙发。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古典休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S089
+
+[S091]
+场景名称：古城休息区
+场景：
+  - 版本1：古城休息区
+  - 版本2：古城休息室
+通用英文：
+  - 版本1：A believable old-town resting area setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable old-town lounge setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：古城休息区。
+  - 版本2：古城休息室。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古城休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S091
+
+[S093]
+场景名称：古堡休息室
+场景：古堡休息室；自然镜头虚化
+通用英文：classic castle lounge with a broad velvet sofa. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：古堡休息室；自然镜头虚化；沙发。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古堡休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S093
+
+[S095]
+场景名称：古街休息室临庭院开窗宽沙发
+场景：古街休息室临庭院开窗宽沙发，柔和午后侧光
+通用英文：broad sofa in an old-town sitting room beside an open garden window, soft afternoon side light
+中文注释：古街休息室临庭院开窗宽沙发，柔和午后侧光；窗景或窗侧光；沙发；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\古街休息室临庭院开窗宽沙发.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S095
+
+[S096]
+场景名称：城市会客厅
+场景：城市会客厅
+通用英文：A believable urban reception lounge setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：城市会客厅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\城市会客厅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S096
+
+[S097]
+场景名称：室内休息区
+场景：
+  - 版本1：室内休息区；窗边自然光或窗景
+  - 版本2：室内休息区；窗边自然光或窗景
+  - 版本3：酒店房间座椅；窗边自然光或窗景
+通用英文：
+  - 版本1：A modern hotel lounge with large windows, pale neutral sofas and natural window light, no sea visible.
+  - 版本2：Modern indoor hotel lounge with window light and wooden table.
+  - 版本3：A bright modern hotel lounge with floor-to-ceiling windows, neutral furniture and natural window light. No ocean visible.
+中文注释：
+  - 版本1：室内休息区；窗边自然光或窗景；窗景或窗侧光；沙发。
+  - 版本2：室内休息区；窗边自然光或窗景；窗景或窗侧光。
+  - 版本3：酒店房间座椅；窗边自然光或窗景；窗景或窗侧光。
+在用角色：冬日玖辛奈、夏日黑土、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\室内休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S097
+
+[S098]
+场景名称：宫殿躺椅
+场景：宫殿躺椅；自然镜头虚化
+通用英文：sunlit palace lounge with broad pale chaise. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：宫殿躺椅；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\宫殿躺椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S098
+
+[S099]
+场景名称：度假花园休息区
+场景：度假花园休息区，温暖漫射日光
+通用英文：resort garden sitting area, warm diffused daylight
+中文注释：度假花园休息区，温暖漫射日光；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\度假花园休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S099
+
+[S100]
+场景名称：庭院休息区
+场景：
+  - 版本1：庭院休息区
+  - 版本2：庭院休息区
+  - 版本3：庭院休息区
+  - 版本4：庭院休息室
+  - 版本5：古庭客厅
+通用英文：
+  - 版本1：courtyard lounge, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：courtyard lounge, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：courtyard lounge, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：A believable courtyard lounge setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本5：A believable traditional courtyard living room setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：庭院休息区；晨间光线。
+  - 版本2：庭院休息区；窗景或窗侧光；午后光线。
+  - 版本3：庭院休息区；暖色光或暖色布置。
+  - 版本4：庭院休息室。
+  - 版本5：古庭客厅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S100
+
+[S102]
+场景名称：庭院躺椅
+场景：庭院躺椅
+通用英文：quiet Japanese courtyard with broad cushioned chaise. Real camera perspective, soft believable light, subtle grain and authentic fabric detail.
+中文注释：庭院躺椅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院躺椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S102
+
+[S103]
+场景名称：日式休息区
+场景：
+  - 版本1：日式休息区
+  - 版本2：日式休息室
+  - 版本3：日式客厅
+通用英文：
+  - 版本1：A believable Japanese-style resting area setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable Japanese-style lounge setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本3：A believable Japanese-style living room setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：日式休息区。
+  - 版本2：日式休息室。
+  - 版本3：日式客厅。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\日式休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S103
+
+[S106]
+场景名称：暖光休息区
+场景：
+  - 版本1：暖光休息区
+  - 版本2：暖光休息区
+  - 版本3：暖光沙发区
+通用英文：
+  - 版本1：warmly lit lounge, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：warmly lit lounge, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：A believable warmly lit sofa area setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：暖光休息区；晨间光线。
+  - 版本2：暖光休息区；窗景或窗侧光；午后光线。
+  - 版本3：暖光沙发区；沙发。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\暖光休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S106
+
+[S108]
+场景名称：木屋休息区
+场景：木屋休息区
+通用英文：A believable cabin resting area setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：木屋休息区。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\木屋休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S108
+
+[S109]
+场景名称：木质休息区
+场景：木质休息区
+通用英文：broad cushioned platform in a sunlit wood-panelled room
+中文注释：木质休息区。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\木质休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S109
+
+[S110]
+场景名称：枫庭休息室
+场景：枫庭休息室
+通用英文：broad sofa in a maple-courtyard lounge, soft morning window light
+中文注释：枫庭休息室；枫树；窗景或窗侧光；沙发；晨间光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\枫庭休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S110
+
+[S111]
+场景名称：海景休息室
+场景：
+  - 版本1：海景休息室
+  - 版本2：海景客厅
+  - 版本3：海滨休息室
+  - 版本4：海滨休息室
+  - 版本5：海滨休息室
+  - 版本6：海滨休息室；窗边自然光或窗景
+  - 版本7：海滨度假休息区
+通用英文：
+  - 版本1：A believable ocean-view lounge location with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable ocean-view living room setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本3：seaside lounge, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：seaside lounge, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本5：seaside lounge, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本6：A bright beach resort lounge with a linen sofa, pale furnishings and natural window light.
+  - 版本7：A believable seaside resort resting area setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：海景休息室。
+  - 版本2：海景客厅。
+  - 版本3：海滨休息室；晨间光线。
+  - 版本4：海滨休息室；窗景或窗侧光；午后光线。
+  - 版本5：海滨休息室；暖色光或暖色布置。
+  - 版本6：海滨休息室；窗边自然光或窗景；窗景或窗侧光；沙发。
+  - 版本7：海滨度假休息区。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\海景休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S111
+
+[S115]
+场景名称：灯笼休息室
+场景：
+  - 版本1：灯笼休息室
+  - 版本2：灯笼照明木质休息室软垫，柔和暖色晚光
+通用英文：
+  - 版本1：sofa in a lantern-lit courtyard lounge at dusk
+  - 版本2：cushion in a lantern-lit wood-panelled lounge, soft warm evening light
+中文注释：
+  - 版本1：灯笼休息室；沙发；灯笼。
+  - 版本2：灯笼照明木质休息室软垫，柔和暖色晚光；暖色光或暖色布置；灯笼。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\灯笼休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S115
+
+[S117]
+场景名称：石墙客厅
+场景：石墙客厅
+通用英文：A believable stone-walled living room setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：石墙客厅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\石墙客厅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S117
+
+[S118]
+场景名称：石廊休息区
+场景：
+  - 版本1：石廊休息区；自然镜头虚化
+  - 版本2：石廊躺椅；自然镜头虚化
+通用英文：
+  - 版本1：stone corridor with an upholstered armchair. Soft directional light, believable reflected fill and natural lens bokeh.
+  - 版本2：stone arcade with a broad dark upholstered chaise. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：
+  - 版本1：石廊休息区；自然镜头虚化。
+  - 版本2：石廊躺椅；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\石廊休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S118
+
+[S120]
+场景名称：竹园客厅
+场景：
+  - 版本1：竹园客厅
+  - 版本2：竹园客厅
+  - 版本3：竹园客厅
+  - 版本4：竹园客厅
+通用英文：
+  - 版本1：bamboo garden sitting room, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：bamboo garden sitting room, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：bamboo garden sitting room, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本4：comfortable chaise in a bamboo garden sitting room, afternoon side light
+中文注释：
+  - 版本1：竹园客厅；竹林或竹屏；晨间光线。
+  - 版本2：竹园客厅；竹林或竹屏；窗景或窗侧光；午后光线。
+  - 版本3：竹园客厅；竹林或竹屏；暖色光或暖色布置。
+  - 版本4：竹园客厅；竹林或竹屏；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹园客厅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S120
+
+[S121]
+场景名称：竹屏庭院休息区
+场景：竹屏庭院休息区，温暖漫射日光
+通用英文：courtyard sitting area with bamboo screens, warm diffused daylight
+中文注释：竹屏庭院休息区，温暖漫射日光；竹林或竹屏；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹屏庭院休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S121
+
+[S122]
+场景名称：竹帘休息室
+场景：竹帘休息室
+通用英文：daybed in a bamboo-blind sitting room, soft morning light
+中文注释：竹帘休息室；竹林或竹屏；晨间光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹帘休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S122
+
+[S123]
+场景名称：艺术休息区
+场景：
+  - 版本1：艺术休息区
+  - 版本2：艺术客厅
+通用英文：
+  - 版本1：A believable art-themed resting area setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable art-themed living room setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：艺术休息区。
+  - 版本2：艺术客厅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\艺术休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S123
+
+[S125]
+场景名称：花园扶手椅
+场景：花园扶手椅；自然镜头虚化
+通用英文：walled flowering garden with an elegant armchair. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：花园扶手椅；自然镜头虚化；花卉。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\花园扶手椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S125
+
+[S126]
+场景名称：花园躺椅
+场景：花园躺椅
+通用英文：A believable garden chaise lounge location with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：花园躺椅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\花园躺椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S126
+
+[S127]
+场景名称：藤编休息区
+场景：藤编休息区
+通用英文：rattan lounge, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：藤编休息区；窗景或窗侧光；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\藤编休息区.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S127
+
+[S128]
+场景名称：金色休息室
+场景：金色休息室；暖色光线、自然镜头虚化
+通用英文：warm palace lounge with a high stool. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：金色休息室；暖色光线、自然镜头虚化；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\金色休息室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S128

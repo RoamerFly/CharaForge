@@ -52,6 +52,7 @@ import {
 } from "./lib/scan-session";
 import { isScanActive, scanStateFromPhase, type ScanState } from "./lib/scan-state";
 import { InitialLoading } from "./components/InitialLoading";
+import { PRODUCT_NAME, PRODUCT_NAME_EN } from "./lib/brand";
 import {
   WorkspacePage,
   RecognitionPage,
@@ -624,8 +625,8 @@ function App() {
       <aside className="sidebar">
         <div className="brand">
           <div>
-            <div className="brand-title">Anime Pic Manage</div>
-            <div className="brand-subtitle">让图片更有条理</div>
+            <div className="brand-title">{PRODUCT_NAME}</div>
+            <div className="brand-subtitle">{PRODUCT_NAME_EN}</div>
           </div>
         </div>
         <nav className="nav-list" aria-label="主导航">
@@ -676,7 +677,7 @@ function App() {
             <div className="eyebrow">工作台 / {pageTitle}</div>
             <h1>{pageTitle}</h1>
             {location.pathname === "/" && (
-              <p className="topbar-subtitle">管理本地动漫图片，从这里开始</p>
+              <p className="topbar-subtitle">管理角色与本地图片，从这里开始</p>
             )}
             {recognitionPaths.has(location.pathname) && (
               <p className="topbar-subtitle">识别、复核并校正图片中的动漫角色</p>

@@ -1,0 +1,318 @@
+庭院与园林场景提示词
+条目数量：28
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S018]
+场景名称：乡间栈道
+场景：乡间栈道；暖色光线
+通用英文：A wooden boardwalk with ornamental grasses and distant cottages, warm afternoon light.
+中文注释：乡间栈道；暖色光线；午后光线；暖色光或暖色布置。
+在用角色：漂泊佩恩-萝莉道、漂泊小南白鹤
+参考图片：{project_root}\场景\场景参考图\乡间栈道.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S018
+
+[S019]
+场景名称：传统庭院
+场景：
+  - 版本1：传统庭院
+  - 版本2：传统庭院树荫、石灯笼
+通用英文：
+  - 版本1：traditional courtyard under even soft daylight
+  - 版本2：traditional courtyard with dappled shade and stone lanterns
+中文注释：
+  - 版本1：传统庭院。
+  - 版本2：传统庭院树荫、石灯笼；灯笼。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\传统庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S019
+
+[S021]
+场景名称：公园
+场景：
+  - 版本1：公园；日光
+  - 版本2：公园；日光
+通用英文：
+  - 版本1：A quiet park with broad leafy trees, green grass and a paved path, soft cloudy daylight.
+  - 版本2：Leafy park path with green grass, soft cloudy daylight.
+中文注释：
+  - 版本1：公园；日光；绿树树荫；草地；阴天柔光。
+  - 版本2：公园；日光；绿树树荫；草地；阴天柔光。
+在用角色：冬日玖辛奈、泳装小南、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\公园.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S021
+
+[S023]
+场景名称：台阶
+场景：庭院中的浅石阶，旁有盆栽或小喷泉，柔和自然光，台阶高度与人体比例合理。
+通用英文：Shallow stone steps in a landscaped courtyard, with potted plants or a small fountain nearby, soft natural daylight and plausible step height.
+中文注释：庭院中的浅石阶，旁有盆栽或小喷泉，柔和自然光，台阶高度与人体比例合理。
+在用角色：泳装小南、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\台阶.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S023
+
+[S024]
+场景名称：夜色庭院
+场景：夜色庭院；灯笼照明、自然镜头虚化
+通用英文：lantern-lit garden veranda at blue hour. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：夜色庭院；灯笼照明、自然镜头虚化；灯笼。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\夜色庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S024
+
+[S025]
+场景名称：安静度假花园石坪
+场景：安静度假花园石坪，傍晚金光
+通用英文：quiet resort garden paving, golden-hour light
+中文注释：安静度假花园石坪，傍晚金光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\安静度假花园石坪.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S025
+
+[S026]
+场景名称：宫殿露台
+场景：宫殿露台；暖色光线、自然镜头虚化
+通用英文：palace balcony with warm late-afternoon light. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：宫殿露台；暖色光线、自然镜头虚化；午后光线；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\宫殿露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S026
+
+[S027]
+场景名称：庭院
+场景：庭院
+通用英文：A stone courtyard with potted plants, simple fountain and open shade.
+中文注释：庭院；石质庭院；盆栽；喷泉；开放阴影下的柔光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S027
+
+[S030]
+场景名称：庭院石坪
+场景：庭院石坪
+通用英文：sheltered courtyard stone paving, soft overcast daylight
+中文注释：庭院石坪；石铺地面；阴天散射光。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\庭院石坪.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S030
+
+[S031]
+场景名称：庭院石露台
+场景：
+  - 版本1：庭院石露台
+  - 版本2：庭院宽石露台，柔和阴天日光
+通用英文：
+  - 版本1：open stone terrace overlooking a garden, soft morning light
+  - 版本2：wide courtyard stone terrace, gentle overcast daylight
+中文注释：
+  - 版本1：庭院石露台；晨间光线。
+  - 版本2：庭院宽石露台，柔和阴天日光；阴天散射光。
+在用角色：漂泊佩恩-萝莉道
+参考图片：{project_root}\场景\场景参考图\庭院石露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S031
+
+[S032]
+场景名称：庭院窗台
+场景：
+  - 版本1：庭院窗台
+  - 版本2：庭院窗边；窗边自然光或窗景
+通用英文：
+  - 版本1：A believable courtyard windowsill setting with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：wide wooden window seat overlooking a courtyard.
+中文注释：
+  - 版本1：庭院窗台；窗台。
+  - 版本2：庭院窗边；窗边自然光或窗景；窗景或窗侧光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S032
+
+[S034]
+场景名称：庭院花架
+场景：庭院花架、午后柔和阳光
+通用英文：garden flowering trellis in gentle afternoon sunlight
+中文注释：庭院花架、午后柔和阳光；花卉；午后光线。
+在用角色：日向花火、泳装小南
+参考图片：{project_root}\场景\场景参考图\庭院花架.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S034
+
+[S035]
+场景名称：庭院长椅
+场景：
+  - 版本1：庭院长椅
+  - 版本2：古庭长椅
+  - 版本3：石庭长椅
+通用英文：
+  - 版本1：A believable courtyard bench location with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本2：A believable traditional courtyard bench location with natural ambient daylight, realistic furniture and soft background detail.
+  - 版本3：A believable stone courtyard bench location with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：
+  - 版本1：庭院长椅；长椅。
+  - 版本2：古庭长椅；长椅。
+  - 版本3：石庭长椅；石质庭院；长椅。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院长椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S035
+
+[S036]
+场景名称：有落叶的安静庭院
+场景：有落叶的安静庭院，柔和傍晚金光
+通用英文：quiet courtyard with scattered fallen leaves, gentle golden-hour light
+中文注释：有落叶的安静庭院，柔和傍晚金光。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\有落叶的安静庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S036
+
+[S038]
+场景名称：枫叶庭院石坪
+场景：
+  - 版本1：枫叶庭院石坪，柔和晨光
+  - 版本2：小雨后枫叶庭院石坪，柔和晨光
+通用英文：
+  - 版本1：maple courtyard stone paving, soft morning daylight
+  - 版本2：stone paving in a maple courtyard after light rain, soft morning daylight
+中文注释：
+  - 版本1：枫叶庭院石坪，柔和晨光；石铺地面；枫树；晨间光线。
+  - 版本2：小雨后枫叶庭院石坪，柔和晨光；石铺地面；枫树；晨间光线；雨后或小雨环境。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\枫叶庭院石坪.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S038
+
+[S039]
+场景名称：枫园步道
+场景：枫园步道
+通用英文：maple garden pathway at golden hour, soft warm light
+中文注释：枫园步道；枫树；日落金色光线；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\枫园步道.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S039
+
+[S040]
+场景名称：枫庭露台
+场景：
+  - 版本1：枫庭露台
+  - 版本2：枫庭露台
+  - 版本3：枫庭露台
+通用英文：
+  - 版本1：maple courtyard terrace, soft morning daylight, realistic furniture appropriate to the pose and subtle background detail
+  - 版本2：maple courtyard terrace, gentle afternoon window light, realistic furniture appropriate to the pose and subtle background detail
+  - 版本3：maple courtyard terrace, warm evening ambient light, realistic furniture appropriate to the pose and subtle background detail
+中文注释：
+  - 版本1：枫庭露台；枫树；晨间光线。
+  - 版本2：枫庭露台；枫树；窗景或窗侧光；午后光线。
+  - 版本3：枫庭露台；枫树；暖色光或暖色布置。
+在用角色：神驹小南时装
+参考图片：{project_root}\场景\场景参考图\枫庭露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S040
+
+[S041]
+场景名称：棕榈庭院
+场景：棕榈庭院；灯笼照明、傍晚、自然镜头虚化
+通用英文：palm courtyard with evening lanterns. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：棕榈庭院；灯笼照明、傍晚、自然镜头虚化；棕榈植被；灯笼。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\棕榈庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S041
+
+[S042]
+场景名称：棕榈庭院木墙
+场景：棕榈庭院木墙，柔和反射日光
+通用英文：wooden wall in a palm garden, soft reflected daylight
+中文注释：棕榈庭院木墙，柔和反射日光；棕榈植被。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\棕榈庭院木墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S042
+
+[S043]
+场景名称：樱花庭院
+场景：樱花庭院
+通用英文：courtyard armchair beside pale blossoms. Real camera perspective, soft believable light, subtle grain and authentic fabric detail.
+中文注释：樱花庭院。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\樱花庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S043
+
+[S044]
+场景名称：白石庭院
+场景：白石庭院；自然镜头虚化
+通用英文：pale stone courtyard with flowering trees. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：白石庭院；自然镜头虚化；石质庭院；花卉。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\白石庭院.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S044
+
+[S046]
+场景名称：竹园木墙
+场景：竹园木墙，柔和反射日光
+通用英文：wooden wall in a bamboo garden, soft reflected daylight
+中文注释：竹园木墙，柔和反射日光；竹林或竹屏。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹园木墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S046
+
+[S047]
+场景名称：竹庭露台
+场景：竹庭露台
+通用英文：bamboo-lined courtyard terrace, soft late-afternoon light
+中文注释：竹庭露台；竹林或竹屏；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹庭露台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S047
+
+[S048]
+场景名称：竹篱旁有遮蔽的庭院石坪
+场景：竹篱旁有遮蔽的庭院石坪，柔和均匀日光
+通用英文：sheltered stone courtyard near a bamboo fence, soft even daylight
+中文注释：竹篱旁有遮蔽的庭院石坪，柔和均匀日光；石质庭院；竹林或竹屏。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\竹篱旁有遮蔽的庭院石坪.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S048
+
+[S049]
+场景名称：绿叶花园白墙
+场景：绿叶花园白墙，淡雅阴天日光
+通用英文：white plaster wall in a leafy garden, pale cloudy daylight
+中文注释：绿叶花园白墙，淡雅阴天日光；绿树树荫；阴天柔光。
+在用角色：神驹小南时装
+参考图片：{project_root}\场景\场景参考图\绿叶花园白墙.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S049
+
+[S051]
+场景名称：花园
+场景：
+  - 版本1：花园；日光
+  - 版本2：花园
+  - 版本3：花园；日光
+  - 版本4：花园；日光
+  - 版本5：绿植花园石径、早晨柔光
+通用英文：
+  - 版本1：A flowering garden with a pale stone path, leafy shade and a wooden bench, soft morning daylight.
+  - 版本2：A stone courtyard with potted plants, simple fountain and open shade.
+  - 版本3：A quiet park with broad leafy trees, green grass and a paved path, soft cloudy daylight.
+  - 版本4：A shaded botanical garden with softly filtered daylight.
+  - 版本5：leafy garden stone path in soft morning daylight
+中文注释：
+  - 版本1：花园；日光；花卉；绿树树荫；长椅；晨间光线。
+  - 版本2：花园；石质庭院；盆栽；喷泉；开放阴影下的柔光。
+  - 版本3：花园；日光；绿树树荫；草地；阴天柔光。
+  - 版本4：花园；日光。
+  - 版本5：绿植花园石径、早晨柔光；绿树树荫；晨间光线。
+在用角色：日向花火、泳装小南、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\花园.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S051
+
+[S052]
+场景名称：花园窗台
+场景：花园窗台
+通用英文：A believable garden windowsill setting with natural ambient daylight, realistic furniture and soft background detail.
+中文注释：花园窗台；窗台。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\花园窗台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S052
+
+[S053]
+场景名称：露台花台
+场景：露台花台；自然镜头虚化
+通用英文：palace terrace beside a waist-high table. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：露台花台；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\露台花台.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S053

@@ -1,0 +1,96 @@
+阅读展览与摄影棚场景提示词
+条目数量：9
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S183]
+场景名称：书房座椅
+场景：书房座椅；自然镜头虚化
+通用英文：old study with a sturdy carved chair. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：书房座椅；自然镜头虚化。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\书房座椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S183
+
+[S184]
+场景名称：室内艺术工作室
+场景：室内；日光
+通用英文：Real indoor art room with pale walls, daylight and wooden floor.
+中文注释：室内；日光；木质地板。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\室内艺术工作室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S184
+
+[S185]
+场景名称：展厅
+场景：展厅
+通用英文：A contemporary indoor gallery with pale walls, framed abstract artwork and wood floors, diffuse indoor light.
+中文注释：展厅；漫射柔光。
+在用角色：冬日玖辛奈、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\展厅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S185
+
+[S187]
+场景名称：度假阅读室
+场景：度假阅读室，柔和午后窗光
+通用英文：resort reading lounge, soft afternoon window light
+中文注释：度假阅读室，柔和午后窗光；窗景或窗侧光；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\度假阅读室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S187
+
+[S188]
+场景名称：庭院阅读室编织地毯
+场景：庭院阅读室编织地毯，午后柔和侧光
+通用英文：woven rug in a courtyard reading room, gentle afternoon side light
+中文注释：庭院阅读室编织地毯，午后柔和侧光；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\庭院阅读室编织地毯.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S188
+
+[S189]
+场景名称：摄影棚
+场景：
+  - 版本1：摄影棚
+  - 版本2：摄影棚
+通用英文：
+  - 版本1：A real photography studio with a matte light-gray seamless backdrop, diffuse studio light and realistic shadows, no seaside scenery.
+  - 版本2：A real photography studio, matte gray seamless backdrop, diffused studio light and realistic floor shadows.
+中文注释：
+  - 版本1：摄影棚；漫射柔光。
+  - 版本2：摄影棚。
+在用角色：冬日玖辛奈、夏日黑土、日向花火、漂泊佩恩-萝莉道、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\摄影棚.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S189
+
+[S190]
+场景名称：木屋书房
+场景：木屋书房；暖色光线、自然镜头虚化
+通用英文：warm timber study beside a reading chair. Soft directional light, believable reflected fill and natural lens bokeh.
+中文注释：木屋书房；暖色光线、自然镜头虚化；暖色光或暖色布置。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\木屋书房.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S190
+
+[S191]
+场景名称：木质阅读室
+场景：
+  - 版本1：木质阅读室，柔和午后窗光
+  - 版本2：木质阅读室
+通用英文：
+  - 版本1：wood-panelled reading lounge, soft afternoon window light
+  - 版本2：wide sofa in a wooden reading lounge, afternoon side-window light
+中文注释：
+  - 版本1：木质阅读室，柔和午后窗光；窗景或窗侧光；午后光线。
+  - 版本2：木质阅读室；窗景或窗侧光；沙发；午后光线。
+在用角色：
+参考图片：{project_root}\场景\场景参考图\木质阅读室.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S191
+
+[S192]
+场景名称：独立书店
+场景：独立书店、暖色环境光
+通用英文：small independent bookstore with warm ambient light
+中文注释：独立书店、暖色环境光；暖色光或暖色布置。
+在用角色：日向花火
+参考图片：{project_root}\场景\场景参考图\独立书店.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S192

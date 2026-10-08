@@ -1,0 +1,8 @@
+适用角色：泳装小南。
+来源：2026-10-08，grok-imagine及grok-imagine-image-quality的下腰站立带纸翼对照。
+
+约束：多张参考图展示同一个人、同一朵纸花、同一套衣装和鞋履，不能把不同角度所见的纸花各复制一次。全图只允许一朵紫色纸玫瑰，固定在角色自身右侧发间；因视角而自然遮挡是正常的，不能为了同时复现两张参考而在另一侧或发髻另加纸花。鞋履以衣装正面参考04和鞋履参考07为准：前脚背横向宽白带，紫色鞋底与独立粗跟，无脚踝带、脚踝扣、交叉绕脚带或额外后跟包带。翼部参考仅控制纸翼结构、材质与前倾方向，不覆盖主脸、纸花数量或鞋履。
+
+英文提示词参考：All references show the SAME person, ONE paper rose and ONE outfit, seen from different views. Merge the shared identity; do not duplicate accessories from separate images. Exactly one lavender paper rose on her anatomical right side, with natural occlusion allowed. Never add a second rose to the opposite temple or bun. Preserve the sandals from the outfit and footwear references: one broad transverse white forefoot band, purple sole and separate chunky heel, with no ankle strap, ankle buckle, crossing straps or added heel enclosure. Wing references control ONLY wing structure, material and orientation, not the face, accessory count or footwear.
+
+中文注释：将多视图理解为同一套物体的不同观察角度，避免两侧各复制一朵纸花；翼部参考与身份、鞋履分工，禁止额外踝带。后续生成可追加此段到主提示词，本次模型对照没有事后改写已经提交的提示词，也没有假设接口支持独立negative参数。

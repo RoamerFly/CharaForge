@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "date": "2026-10-08",
+  "kind": "legacy-service-snapshot",
+  "ui_integrated": false,
+  "runtime_ready": false,
+  "credentials_included": false,
+  "sources": [
+    {
+      "file": "agent/__init__.py",
+      "sha256": "8f3f608640ad58a27f0a3ed9adbca170b017065083812c55c9218eaf95e65174",
+      "source_sha256": "8f3f608640ad58a27f0a3ed9adbca170b017065083812c55c9218eaf95e65174"
+    },
+    {
+      "file": "agent/context.py",
+      "sha256": "06cccd3602335bdc7daee1dd09c0e1914da71bff0ef46cd641964714832349ba",
+      "source_sha256": "06cccd3602335bdc7daee1dd09c0e1914da71bff0ef46cd641964714832349ba"
+    },
+    {
+      "file": "agent/provider.py",
+      "sha256": "1b146d7d7ecaa3fd5a8d2c7042d4efeb803793baf0bb8703a2deb0314ad9c22d",
+      "source_sha256": "8fa68a047cb23af970adaf373a294f07c0c4a9e00342df7d6d60a8368b97a050"
+    },
+    {
+      "file": "agent/runtime.py",
+      "sha256": "bb2b311670ab6fa2fc58f8a21d43a6e33d3df9cdaa29ed88d05808a8385eb7d3",
+      "source_sha256": "bb2b311670ab6fa2fc58f8a21d43a6e33d3df9cdaa29ed88d05808a8385eb7d3"
+    },
+    {
+      "file": "agent/store.py",
+      "sha256": "31cbfb3f6cc1941dfb27e2ddea4bda2e284e80b6465e50e2cbad013fb56ecbb0",
+      "source_sha256": "31cbfb3f6cc1941dfb27e2ddea4bda2e284e80b6465e50e2cbad013fb56ecbb0"
+    },
+    {
+      "file": "agent/tools.py",
+      "sha256": "14623d0bafef905537ec385392f98c77f719493258a5905fa7c928b46368e23f",
+      "source_sha256": "14623d0bafef905537ec385392f98c77f719493258a5905fa7c928b46368e23f"
+    },
+    {
+      "file": "agent/transfer.py",
+      "sha256": "772694ae51c96e1c8bd21e2792d48d218da3840b777c6c563b603a4725089ec1",
+      "source_sha256": "772694ae51c96e1c8bd21e2792d48d218da3840b777c6c563b603a4725089ec1"
+    },
+    {
+      "file": "agent/worker.py",
+      "sha256": "c441a2d8031d984bf6c2e3a7e9d9b51e2ccda7412d0edde00185134065943b07",
+      "source_sha256": "c441a2d8031d984bf6c2e3a7e9d9b51e2ccda7412d0edde00185134065943b07"
+    },
+    {
+      "file": "api_client.py",
+      "sha256": "c20cdba43088573849a8e250a5d68a593080abb23fab353a23a4554d2e82142f",
+      "source_sha256": "c20cdba43088573849a8e250a5d68a593080abb23fab353a23a4554d2e82142f"
+    },
+    {
+      "file": "codex_channel.py",
+      "sha256": "8bcb289ddccd0c8ab299b3a451808089470372d2cd8761caf858bcec64484e17",
+      "source_sha256": "8bcb289ddccd0c8ab299b3a451808089470372d2cd8761caf858bcec64484e17"
+    },
+    {
+      "file": "masking.py",
+      "sha256": "0f073e83fc95e3d4aa3654639a91e4f591ffa3a1c8057d270049c49dfd0ac043",
+      "source_sha256": "0f073e83fc95e3d4aa3654639a91e4f591ffa3a1c8057d270049c49dfd0ac043"
+    },
+    {
+      "file": "paths.py",
+      "sha256": "fe896ced237911c5fef4d4d4cdf54edfdece8674aaabb7742a77374d443f3b96",
+      "source_sha256": "fe896ced237911c5fef4d4d4cdf54edfdece8674aaabb7742a77374d443f3b96"
+    },
+    {
+      "file": "provenance.py",
+      "sha256": "b42e8aede674ab88df50b91e36b6b682b268eb8fc95c1005f00850c228690b73",
+      "source_sha256": "b42e8aede674ab88df50b91e36b6b682b268eb8fc95c1005f00850c228690b73"
+    },
+    {
+      "file": "quality.py",
+      "sha256": "788cd88df226bcb6965b9e722300f9a45881315c1d0fece9e482317bf968b1c3",
+      "source_sha256": "788cd88df226bcb6965b9e722300f9a45881315c1d0fece9e482317bf968b1c3"
+    },
+    {
+      "file": "request_codec.py",
+      "sha256": "3de00af2a8f0ae7f7b49b59c7b9c4c07f4e0d81d56d1a2ec17cc42fea310fa68",
+      "source_sha256": "3de00af2a8f0ae7f7b49b59c7b9c4c07f4e0d81d56d1a2ec17cc42fea310fa68"
+    },
+    {
+      "file": "settings.py",
+      "sha256": "3d709cce35c4a8f009f0fdeaeb35185003a11b387570f306fffa726b0a22db82",
+      "source_sha256": "3d709cce35c4a8f009f0fdeaeb35185003a11b387570f306fffa726b0a22db82"
+    },
+    {
+      "file": "status_storage.py",
+      "sha256": "71529e9fad082b85439c39a063cbdcfd4674e333d5416b3d663447e68cdfa876",
+      "source_sha256": "71529e9fad082b85439c39a063cbdcfd4674e333d5416b3d663447e68cdfa876"
+    },
+    {
+      "file": "workbench.py",
+      "sha256": "ce5fcccd0e65d059e660e1705872120e6d4797467bf583894a54ef66687e5179",
+      "source_sha256": "ce5fcccd0e65d059e660e1705872120e6d4797467bf583894a54ef66687e5179"
+    }
+  ],
+  "knowledge_files": 27,
+  "text_normalization": "UTF-8 LF; provider.py extra blank EOF removed"
+}

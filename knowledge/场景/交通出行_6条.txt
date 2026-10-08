@@ -1,0 +1,108 @@
+交通出行场景提示词
+条目数量：6
+说明：参考图片与参考记录各最多一个示例；当前场景参考为单独生成并验收的无人物空场。在用角色按当前正式图集枚举。
+
+[S238]
+场景名称：列车车厢
+场景：
+  - 版本1：列车车厢；日光、窗边自然光或窗景、运动模糊仅限窗外
+  - 版本2：列车车厢
+  - 版本3：列车车厢；日光
+  - 版本4：高铁大窗旁座椅、白昼绿色郊野
+通用英文：
+  - 版本1：Visible train window, plausible seat and table geometry, soft daylight, slight motion blur outside only.
+  - 版本2：Real train cabin, luggage safely beside seat, soft afternoon sunlight and blurred landscape outside.
+  - 版本3：Modern train cabin, country landscape outside, ordinary daylight.
+  - 版本4：high-speed train seat beside large window, passing green countryside in daylight
+中文注释：
+  - 版本1：列车车厢；日光、窗边自然光或窗景、运动模糊仅限窗外；窗景或窗侧光；运动模糊仅用于窗外。
+  - 版本2：列车车厢；午后光线；背景自然虚化。
+  - 版本3：列车车厢；日光。
+  - 版本4：高铁大窗旁座椅、白昼绿色郊野；窗景或窗侧光。
+在用角色：冬日玖辛奈、夏日黑土、日向花火、泳装小南、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\列车车厢.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S238
+
+[S239]
+场景名称：地铁车厢
+场景：
+  - 版本1：地铁车厢；窗边自然光或窗景、较空的环境
+  - 版本2：地铁车厢；窗边自然光或窗景
+  - 版本3：地铁车厢
+  - 版本4：地铁车厢座椅；傍晚、较空的环境
+  - 版本5：地铁车厢座椅
+  - 版本6：蓝色地铁座椅、金属车门与竖扶手，冷色均匀顶光
+  - 版本7：较空地铁过道、金属竖杆和冷色顶光
+  - 版本8：较空车厢、纵深座椅及竖扶手，冷色柔和顶光
+  - 版本9：车窗旁座椅、冷色柔和顶光与隧道反光
+  - 版本10：地铁车门区、不可读路线示意图、冷色柔光
+通用英文：
+  - 版本1：silver handrails, blue seats and dark windows, uncluttered nearby space. Carriage doors and handrails form coherent vertical lines.
+  - 版本2：pale gray doors with slim windows, faint reflections and orange seats further away. Carriage doors and handrails form coherent vertical lines.
+  - 版本3：blue seats, a carriage connection with ribbed rubber surround and a few indistinct distant commuters. Carriage doors and handrails form coherent vertical lines.
+  - 版本4：a blue bench seat and brushed metal double doors, mostly empty evening train. Carriage doors and handrails form coherent vertical lines.
+  - 版本5：gray upholstered bench, a yellow vertical pole and softly blurred commuters several meters away. Carriage doors and handrails form coherent vertical lines.
+  - 版本6：blue subway bench, brushed metal doors and vertical handrails, cool even overhead light
+  - 版本7：quiet subway carriage aisle with coherent metal poles, cool top light
+  - 版本8：mostly empty carriage with receding benches and vertical handrails, gentle cool overhead light
+  - 版本9：subway bench near window, cool soft overhead lighting, tunnel reflections
+  - 版本10：subway door area and abstract non-legible route map, soft cool lighting
+中文注释：
+  - 版本1：地铁车厢；窗边自然光或窗景、较空的环境；窗景或窗侧光；扶手；蓝色座椅；车门或门框。
+  - 版本2：地铁车厢；窗边自然光或窗景；窗景或窗侧光；扶手；车门或门框。
+  - 版本3：地铁车厢；扶手；蓝色座椅；车门或门框。
+  - 版本4：地铁车厢座椅；傍晚、较空的环境；长椅；扶手；车门或门框。
+  - 版本5：地铁车厢座椅；长椅；背景自然虚化；扶手；车门或门框。
+  - 版本6：蓝色地铁座椅、金属车门与竖扶手，冷色均匀顶光；长椅；偏冷光线；扶手；车门或门框。
+  - 版本7：较空地铁过道、金属竖杆和冷色顶光；偏冷光线。
+  - 版本8：较空车厢、纵深座椅及竖扶手，冷色柔和顶光；偏冷光线；扶手。
+  - 版本9：车窗旁座椅、冷色柔和顶光与隧道反光；窗景或窗侧光；长椅；偏冷光线。
+  - 版本10：地铁车门区、不可读路线示意图、冷色柔光；偏冷光线。
+在用角色：冬日玖辛奈、夏日黑土、日向花火、泳装小南、漂泊佩恩-萝莉道、漂泊小南白鹤、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\地铁车厢.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S239
+
+[S244]
+场景名称：明亮车站候车厅
+场景：明亮车站候车厅、柔光和远处虚化旅客
+通用英文：bright station waiting hall with soft daylight and distant travellers out of focus
+中文注释：明亮车站候车厅、柔光和远处虚化旅客。
+在用角色：泳装小南
+参考图片：{project_root}\场景\场景参考图\明亮车站候车厅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S244
+
+[S245]
+场景名称：渡轮客舱窗边座椅
+场景：渡轮客舱窗边座椅；侧光
+通用英文：Real ferry interior with sea visible outside and natural side light.
+中文注释：渡轮客舱窗边座椅；侧光。
+在用角色：泳装小南、漂泊佩恩-萝莉道
+参考图片：{project_root}\场景\场景参考图\渡轮客舱窗边座椅.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S245
+
+[S246]
+场景名称：观光巴士窗边
+场景：观光巴士窗边；日光、窗边自然光或窗景
+通用英文：Plausible bus seat and window, countryside outside, natural diffuse daylight.
+中文注释：观光巴士窗边；日光、窗边自然光或窗景；窗景或窗侧光；漫射柔光。
+在用角色：冬日玖辛奈
+参考图片：{project_root}\场景\场景参考图\观光巴士窗边.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S246
+
+[S247]
+场景名称：飞机客舱
+场景：
+  - 版本1：飞机客舱；窗边自然光或窗景
+  - 版本2：飞机客舱；窗边自然光或窗景
+  - 版本3：飞机窗边与合理机舱结构、舷窗柔光
+通用英文：
+  - 版本1：Realistic curved airplane cabin wall and oval window with clouds outside, soft window light.
+  - 版本2：Realistic airplane wall and oval window, clouds outside, diffuse light.
+  - 版本3：airplane window seat and coherent cabin interior, soft window light
+中文注释：
+  - 版本1：飞机客舱；窗边自然光或窗景；窗景或窗侧光。
+  - 版本2：飞机客舱；窗边自然光或窗景；窗景或窗侧光；漫射柔光。
+  - 版本3：飞机窗边与合理机舱结构、舷窗柔光；窗景或窗侧光。
+在用角色：冬日玖辛奈、夏日黑土、日向花火、泳装小南、神驹小南原造型、神驹小南时装
+参考图片：{project_root}\场景\场景参考图\飞机客舱.png
+参考记录：{project_root}\other\reports\姿势场景参考与五姿势-20261007\任务.json :: scene-S247
