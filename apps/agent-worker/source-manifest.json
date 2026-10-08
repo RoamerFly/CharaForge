@@ -12,6 +12,11 @@
       "source_sha256": "8f3f608640ad58a27f0a3ed9adbca170b017065083812c55c9218eaf95e65174"
     },
     {
+      "file": "agent/config.py",
+      "source_sha256": "f96d884eb22c630ba6c3be74e2acaaf0229c99b790c1b55fee983bb1f16b635f",
+      "sha256": "f96d884eb22c630ba6c3be74e2acaaf0229c99b790c1b55fee983bb1f16b635f"
+    },
+    {
       "file": "agent/context.py",
       "sha256": "06cccd3602335bdc7daee1dd09c0e1914da71bff0ef46cd641964714832349ba",
       "source_sha256": "06cccd3602335bdc7daee1dd09c0e1914da71bff0ef46cd641964714832349ba"
@@ -20,6 +25,11 @@
       "file": "agent/provider.py",
       "sha256": "1b146d7d7ecaa3fd5a8d2c7042d4efeb803793baf0bb8703a2deb0314ad9c22d",
       "source_sha256": "8fa68a047cb23af970adaf373a294f07c0c4a9e00342df7d6d60a8368b97a050"
+    },
+    {
+      "file": "agent/repair.py",
+      "source_sha256": "9b3470fc4c149a8a1987ece02c503cab9b8be86d25cadba758a1495567d2475a",
+      "sha256": "9b3470fc4c149a8a1987ece02c503cab9b8be86d25cadba758a1495567d2475a"
     },
     {
       "file": "agent/runtime.py",

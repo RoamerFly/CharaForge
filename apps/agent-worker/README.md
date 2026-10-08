@@ -1,6 +1,6 @@
 # Agent / Cloud Worker 迁移入口
 
-`legacy/` 保存旧角色生图工作台中无 Qt 的服务依赖闭包：18 个 Python 源文件，含任务、规划、API、审核、蒙版和备份服务。`source-manifest.json` 记录来源快照哈希。
+`legacy/` 保存旧角色生图工作台中无 Qt 的服务依赖闭包：20 个 Python 源文件，含任务、规划、API、审核、蒙版和备份服务。`source-manifest.json` 记录来源与导入快照哈希；`python apps/agent-worker/validate_snapshot.py` 不启动服务即可检查文件哈希和包内依赖。
 
 当前是迁移快照，**未接入 Tauri，也不能直接当成可启动的独立服务**。原代码仍假定其应用目录、配置和全局工作根目录；接入前必须提供独立项目上下文、路径与凭据注入、统一资源服务和版本化 IPC。不要复制用户的旧 config、auth.json、数据库或图片到本目录。
 
