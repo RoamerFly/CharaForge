@@ -6,7 +6,7 @@ h1, h2, h3, p {
 
 h1 {
   color: var(--mint-ink);
-  font-size: calc(26 * var(--ui-font-step, 1px));
+  font-size: calc(21 * var(--ui-font-step, 1px));
   letter-spacing: -.02em;
   line-height: 1.2;
   font-weight: 700;

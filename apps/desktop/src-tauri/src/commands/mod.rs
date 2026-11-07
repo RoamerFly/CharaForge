@@ -1,8 +1,12 @@
 pub mod annotations;
 pub mod app_settings;
+pub mod character_workspace;
+pub mod cloud;
 pub mod comfy;
 pub mod cuda;
 pub mod dataset;
+pub mod generation_batch;
+pub mod generation_catalog;
 pub mod library;
 pub mod models;
 pub mod personal_model;
@@ -16,9 +20,13 @@ pub mod workflow_graph;
 
 pub use annotations::*;
 pub use app_settings::*;
+pub use character_workspace::*;
+pub use cloud::*;
 pub use comfy::*;
 pub use cuda::*;
 pub use dataset::*;
+pub use generation_batch::*;
+pub use generation_catalog::*;
 pub use library::*;
 pub use models::*;
 pub use personal_model::*;

@@ -10,6 +10,7 @@ import {
   FolderOpen,
   Info,
   Play,
+  Settings2,
   X,
 } from "lucide-react";
 import type {
@@ -50,43 +51,10 @@ import {
   type FolderTreeNode,
 } from "../components/ScanFolderTree";
 import { ImageContextMenu } from "../components/ContextMenu";
-import type { DemoPerson, PreviewFile, ScanController } from "../types";
+import type { PreviewFile, ScanController } from "../types";
 
 const MAX_ANNOTATION_HISTORY = 50;
 
-const demoPeople: DemoPerson[] = [
-  {
-    id: "person-01",
-    title: "人物 01",
-    bbox: { left: 16, top: 14, width: 35, height: 62 },
-    confidence: 0.94,
-    status: "high",
-    source: { person_index: 0 },
-    candidates: [
-      { label: "character_tag_alpha", score: 0.94 },
-      { label: "character_tag_beta", score: 0.03 },
-      { label: "character_tag_gamma", score: 0.01 },
-      { label: "character_tag_delta", score: 0.01 },
-      { label: "character_tag_epsilon", score: 0.01 },
-    ],
-  },
-  {
-    id: "person-02",
-    title: "人物 02",
-    bbox: { left: 58, top: 22, width: 28, height: 54 },
-    confidence: 0.78,
-    status: "review",
-    source: { person_index: 1 },
-    margin: 0.06,
-    consistency: 0.82,
-    reason: "候选间距较小",
-    candidates: [
-      { label: "character_tag_beta", score: 0.78 },
-      { label: "character_tag_gamma", score: 0.72 },
-      { label: "character_tag_alpha", score: 0.08 },
-    ],
-  },
-];
 
 export function clamp01(value: number): number {
   return Number.isFinite(value) ? Math.max(0, Math.min(1, value)) : 0;
@@ -636,19 +604,6 @@ export function ClassificationPage({
   );
 
   const peopleForCurrentImage: InspectorPerson[] = useMemo(() => {
-    if (isDemo) {
-      return demoPeople.map((p) => ({
-        id: p.id,
-        title: p.title,
-        confidence: p.confidence,
-        status: p.status,
-        candidates: p.candidates,
-        personIndex: p.source.person_index,
-        margin: p.margin,
-        consistency: p.consistency,
-        reason: p.reason,
-      }));
-    }
     if (!selectedResult) return [];
     return realPeople.map((person) => {
       const annotation = annotationForPerson(person);
@@ -656,7 +611,7 @@ export function ClassificationPage({
         ? { ...person, title: annotation.label_name || person.title }
         : person;
     });
-  }, [annotationForPerson, isDemo, realPeople, selectedResult]);
+  }, [annotationForPerson, realPeople, selectedResult]);
 
   const displaySource = selectedResult
     ? convertFileSrc(selectedResult.path)
@@ -1016,16 +971,16 @@ export function ClassificationPage({
           <span className="toolbar-icon">
             <FolderOpen size={17} />
           </span>
-          <div>
-            <span className="eyebrow">CURRENT LIBRARY</span>
+          <div title={library?.path ?? "选择图库后开始识别"}>
             <strong>{library?.display_name ?? "尚未选择图库"}</strong>
-            <small>
-              {library?.path ?? "选择目录后，真实扫描任务会显示在这里"}
-            </small>
           </div>
         </div>
 
         <div className="toolbar-actions">
+          <details className="recognition-scan-options">
+            <summary><Settings2 size={15} aria-hidden="true" /> 扫描设置</summary>
+            <div className="recognition-options-popover">
+          <label className="recognition-model-label">识别模型</label>
           <div
             className="model-selector-container"
             title="选择本次识别扫描所使用的模型"
@@ -1033,6 +988,7 @@ export function ClassificationPage({
             <BrainCircuit size={14} />
             <select
               className="model-select-dropdown"
+              aria-label="识别模型"
               value={
                 controller.selectedModelVersion === null
                   ? "default"
@@ -1046,8 +1002,8 @@ export function ClassificationPage({
               }}
               disabled={scanBusy}
             >
-              <option value="default">自动融合模型 (默认推荐)</option>
-              <option value="0">基础通用模型 (不含个人学习)</option>
+              <option value="default">自动融合模型（推荐）</option>
+              <option value="0">基础通用模型</option>
               {personalStatus?.versions
                 .filter((v) => isUsablePersonalModelVersion(v))
                 .map((v) => (
@@ -1076,6 +1032,8 @@ export function ClassificationPage({
             />
             <span>跳过已标注</span>
           </label>
+            </div>
+          </details>
 
           <button
             className="ghost-button"
@@ -1097,7 +1055,7 @@ export function ClassificationPage({
             title="从扫描目录树或磁盘中选择一个目录识别"
           >
             <FolderOpen size={15} />
-            选择目录识别
+            目录识别
           </button>
           <button
             className="ghost-button"
@@ -1105,7 +1063,7 @@ export function ClassificationPage({
             disabled={scanBusy}
           >
             <FileImage size={15} />
-            预览单图
+            单图预览
           </button>
 
           {scanState === "running" || scanState === "pausing" ? (
@@ -1238,6 +1196,7 @@ export function ClassificationPage({
       <div className="workbench-layout-unified">
         <div className="workbench-main-col">
           <AnnotationCanvas
+            fitToAvailableSpace
             imageSrc={displaySource}
             imageSize={selectedResult?.image_size}
             annotations={annotations}

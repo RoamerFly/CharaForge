@@ -1,31 +1,23 @@
-import { Sparkles } from "lucide-react";
-import { PRODUCT_NAME, PRODUCT_TAGLINE } from "../lib/brand";
+import brandIcon from "../assets/charaforge-icon.png";
+import { PRODUCT_NAME, PRODUCT_NAME_EN } from "../lib/brand";
 
 interface InitialLoadingProps {
   message?: string;
 }
 
-export function InitialLoading({ message = "正在初始化桌面核心与 AI 推理环境…" }: InitialLoadingProps) {
+export function InitialLoading({ message = "正在打开创作空间…" }: InitialLoadingProps) {
   return (
     <div className="initial-loading-screen" role="status" aria-live="polite">
       <div className="initial-loading-card">
-        <div className="initial-loading-brand">
-          <div className="brand-mark">
-            <Sparkles size={22} />
-          </div>
-          <div>
-            <div className="brand-title">{PRODUCT_NAME}</div>
-            <div className="brand-subtitle">{PRODUCT_TAGLINE}</div>
-          </div>
+        <div className="initial-loading-art" aria-hidden="true">
+          <span className="loading-frame loading-frame-back" />
+          <span className="loading-frame loading-frame-front" />
+          <img src={brandIcon} alt="" width="96" height="96" />
         </div>
-
-        <div className="initial-spinner-wrap">
-          <div className="initial-spinner" aria-hidden="true" />
-          <div className="initial-spinner-glow" aria-hidden="true" />
-        </div>
-
+        <h1 className="initial-loading-title">{PRODUCT_NAME}</h1>
+        <span className="initial-loading-name">{PRODUCT_NAME_EN}</span>
+        <div className="initial-loading-track" aria-hidden="true"><span /></div>
         <p className="initial-loading-text">{message}</p>
-        <span className="initial-loading-subtext">本地优先 · 正在准备安全文件沙箱与模型环境</span>
       </div>
     </div>
   );

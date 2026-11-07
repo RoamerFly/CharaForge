@@ -3,6 +3,7 @@ import { AlertTriangle, X } from "lucide-react";
 import type { SimilarityGroupItem } from "@anime-pic-manage/shared-types";
 import { isTauriRuntime, normalizePreviewPath } from "../lib/tauri";
 import { formatBytes } from "./SimilarityGroupCard";
+import { ImagePreviewDialog } from "./ImagePreviewDialog";
 
 export function SimilarityDeleteConfirmModal({
   show,
@@ -27,7 +28,7 @@ export function SimilarityDeleteConfirmModal({
             <AlertTriangle size={20} />
             <h3>确认执行永久删除？</h3>
           </div>
-          <button className="icon-close" onClick={onClose}>
+          <button className="icon-close" aria-label="关闭删除确认" onClick={onClose}>
             <X size={18} />
           </button>
         </div>
@@ -67,32 +68,11 @@ export function SimilarityImagePreviewModal({
   const imgSrc = isTauriRuntime() ? convertFileSrc(normalizePreviewPath(item.path)) : item.path;
 
   return (
-    <div className="modal-backdrop" onClick={onClose}>
-      <div
-        className="image-preview-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-label={`查看大图：${fileName ?? "图片"}`}
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="preview-modal-header">
-          <div className="preview-filename">{fileName}</div>
-          <button className="icon-close" onClick={onClose}>
-            <X size={20} />
-          </button>
-        </div>
-        <div className="preview-modal-body">
-          <img src={imgSrc} alt="Preview" className="large-preview-img" />
-        </div>
-        <div className="preview-modal-footer">
-          <span>
-            分辨率: {item.dimensions[0]}x{item.dimensions[1]}
-          </span>
-          <span>体积: {formatBytes(item.file_size)}</span>
-          <span>清晰度评分: {item.clarity_score}</span>
-          <span>路径: {item.path}</span>
-        </div>
-      </div>
-    </div>
+    <ImagePreviewDialog
+      source={imgSrc}
+      title={fileName ?? "图片预览"}
+      description={`${item.dimensions[0]} × ${item.dimensions[1]} · ${formatBytes(item.file_size)} · 清晰度 ${item.clarity_score}`}
+      onClose={onClose}
+    />
   );
 }

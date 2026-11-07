@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { convertFileSrc } from "@tauri-apps/api/core";
 import {
   ChevronLeft,
@@ -7,10 +7,10 @@ import {
   Maximize2,
   Trash2,
   Users,
-  X,
 } from "lucide-react";
 import type { LibraryScanResult } from "@anime-pic-manage/shared-types";
 import { isTauriRuntime, normalizePreviewPath } from "../lib/tauri";
+import { ImagePreviewDialog } from "./ImagePreviewDialog";
 
 interface FilmstripProps {
   results: LibraryScanResult[];
@@ -32,15 +32,6 @@ export function Filmstrip({
   onContextMenu,
 }: FilmstripProps) {
   const [previewResult, setPreviewResult] = useState<LibraryScanResult | null>(null);
-
-  useEffect(() => {
-    if (!previewResult) return;
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setPreviewResult(null);
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [previewResult]);
 
   if (results.length === 0) return null;
 
@@ -70,14 +61,10 @@ export function Filmstrip({
     <section className="filmstrip-container panel-card" aria-label="扫描图片底片栏">
       <div className="filmstrip-header">
         <div className="filmstrip-header-meta">
-          <span className="eyebrow">IMAGE FILMSTRIP</span>
-          <strong>已扫描 {results.length} 张图片</strong>
+          <strong title={modelVersionName ? `识别模型 ${modelVersionName}` : undefined}>{results.length} 张图片</strong>
           <span className="filmstrip-badge">
             <Users size={12} /> {totalPeople} 个人物
           </span>
-          {modelVersionName && (
-            <span className="filmstrip-model-pill">模型: {modelVersionName}</span>
-          )}
           {onOpenDirectoryTree && (
             <button
               type="button"
@@ -199,42 +186,12 @@ export function Filmstrip({
       </div>
 
       {previewResult && (
-        <div className="modal-backdrop" onClick={() => setPreviewResult(null)}>
-          <div
-            className="filmstrip-lightbox"
-            role="dialog"
-            aria-modal="true"
-            aria-label={`大图查看：${previewFileName}`}
-            onClick={(event) => event.stopPropagation()}
-          >
-            <div className="filmstrip-lightbox-header">
-              <strong>{previewFileName}</strong>
-              <small>{previewResult.path}</small>
-              <button
-                type="button"
-                className="icon-close"
-                onClick={() => setPreviewResult(null)}
-                aria-label="关闭大图"
-              >
-                <X size={18} />
-              </button>
-            </div>
-            <div className="filmstrip-lightbox-body">
-              <img src={previewSrc} alt={previewFileName} />
-            </div>
-            <div className="filmstrip-lightbox-footer">
-              <span>
-                {previewResult.image_size[0]} × {previewResult.image_size[1]} px
-              </span>
-              <span>
-                {previewResult.people.length > 0
-                  ? `${previewResult.people.length} 个人物`
-                  : "无人物"}
-              </span>
-              <span className="muted">按 Esc 或点击空白处关闭</span>
-            </div>
-          </div>
-        </div>
+        <ImagePreviewDialog
+          source={previewSrc}
+          title={previewFileName}
+          description={`${previewResult.image_size[0]} × ${previewResult.image_size[1]} · ${previewResult.people.length} 个人物`}
+          onClose={() => setPreviewResult(null)}
+        />
       )}
     </section>
   );

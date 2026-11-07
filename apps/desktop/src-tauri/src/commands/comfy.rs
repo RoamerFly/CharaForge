@@ -1,12 +1,16 @@
 //! Tauri commands that drive the user's own ComfyUI installation.
 
+use super::character_workspace::target_root;
 use crate::app_settings::AppSettings;
+use crate::character_workspace;
+use crate::character_workspace::CharacterTarget;
 use crate::comfy::{
     describe_device, read_version, resolve_paths, ComfyClient, ComfyError, ComfyGenerateRequest,
     ComfyGenerateResult, ComfyGeneratedImage, ComfyModelList, ComfyPaths, ComfyProgress,
     ComfyStatus, WorkflowTemplate,
 };
 use crate::ipc::{core_error, failure, normalize_request_id, success, IpcEnvelope};
+use crate::path_utils::display_path;
 use crate::state::AppState;
 use serde_json::Value;
 use std::path::{Path, PathBuf};
@@ -485,6 +489,7 @@ pub async fn comfy_models(
 pub async fn comfy_generate(
     app: AppHandle,
     request: ComfyGenerateRequest,
+    character_target: Option<CharacterTarget>,
     request_id: Option<String>,
 ) -> IpcEnvelope<ComfyGenerateResult> {
     let request_id = normalize_request_id(request_id);
@@ -504,7 +509,7 @@ pub async fn comfy_generate(
             )
         }
     };
-    let paths = match resolve_paths(
+    let _paths = match resolve_paths(
         &settings.comfy_root,
         &settings.comfy_output_dir,
         settings.comfy_port,
@@ -586,6 +591,32 @@ pub async fn comfy_generate(
         );
     }
 
+    let prepared = (|| -> Result<PathBuf, String> {
+        let state = app.state::<AppState>();
+        let root = target_root(&state, character_target.as_ref())?;
+        character_workspace::new_candidate_folder(
+            &root,
+            character_target.as_ref().map(|target| target.name.as_str()),
+        )
+        .map_err(|error| error.to_string())
+    })();
+    let output_dir = match prepared {
+        Ok(folder) => folder,
+        Err(error) => {
+            return failure(
+                "comfy.generate",
+                request_id.clone(),
+                core_error(
+                    &request_id,
+                    "CHARACTER_OUTPUT_UNAVAILABLE",
+                    &error,
+                    None,
+                    false,
+                ),
+            )
+        }
+    };
+
     let cancel_flag = {
         let state = app.state::<AppState>();
         state.comfy_cancel.store(false, Ordering::Release);
@@ -594,7 +625,7 @@ pub async fn comfy_generate(
 
     emit_progress(&app, "queued", 0, 0, "正在提交工作流…".to_string(), None);
     let client_id = uuid::Uuid::new_v4().to_string();
-    let prompt_id = match client.queue_prompt(prompt, &client_id).await {
+    let prompt_id = match client.queue_prompt(prompt.clone(), &client_id).await {
         Ok(prompt_id) => prompt_id,
         Err(error) => {
             return failure(
@@ -675,7 +706,6 @@ pub async fn comfy_generate(
         );
     }
 
-    let output_dir = PathBuf::from(&paths.output_dir);
     let total = images.len();
     let mut saved = Vec::with_capacity(total);
     for (index, image) in images.iter().enumerate() {
@@ -717,6 +747,39 @@ pub async fn comfy_generate(
         }
     }
 
+    {
+        let record = serde_json::json!({
+            "engine": "ComfyUI",
+            "prompt_id": prompt_id,
+            "status": "待审核",
+            "request": request,
+            "workflow": prompt,
+            "images": saved.iter().map(|image| &image.filename).collect::<Vec<_>>(),
+        });
+        let write_result = serde_json::to_vec_pretty(&record)
+            .map_err(std::io::Error::other)
+            .and_then(|bytes| std::fs::write(output_dir.join("request.json"), bytes));
+        if let Err(error) = write_result {
+            return failure(
+                "comfy.generate",
+                request_id.clone(),
+                core_error(
+                    &request_id,
+                    "CHARACTER_RECORD_SAVE_FAILED",
+                    &format!(
+                        "候选图片已保存至 {}，但写入请求记录失败。",
+                        display_path(&output_dir)
+                    ),
+                    Some(error.to_string()),
+                    false,
+                ),
+            );
+        }
+        for image in &saved {
+            let _ = crate::models::allow_asset_file(&app, Path::new(&image.path));
+        }
+    }
+
     emit_progress(
         &app,
         "completed",
@@ -731,7 +794,7 @@ pub async fn comfy_generate(
         ComfyGenerateResult {
             prompt_id,
             images: saved,
-            output_dir: paths.output_dir,
+            output_dir: display_path(&output_dir),
             elapsed_ms: started.elapsed().as_millis() as u64,
             seed: request.seed,
         },
@@ -753,59 +816,32 @@ pub fn comfy_templates(app: AppHandle, request_id: Option<String>) -> IpcEnvelop
 }
 
 #[tauri::command]
-pub fn comfy_open_output(app: AppHandle, request_id: Option<String>) -> IpcEnvelope<String> {
+pub fn comfy_open_output(
+    app: AppHandle,
+    character_target: Option<CharacterTarget>,
+    request_id: Option<String>,
+) -> IpcEnvelope<String> {
     let request_id = normalize_request_id(request_id);
-    let settings = match load_settings(&app) {
-        Ok(settings) => settings,
-        Err(error) => {
-            return failure(
-                "comfy.open_output",
-                request_id.clone(),
-                core_error(&request_id, "SETTINGS_READ_FAILED", &error, None, true),
-            )
-        }
-    };
-    let paths = match resolve_paths(
-        &settings.comfy_root,
-        &settings.comfy_output_dir,
-        settings.comfy_port,
-    ) {
-        Ok(paths) => paths,
-        Err(error) => {
-            return failure(
-                "comfy.open_output",
-                request_id.clone(),
-                core_error(
-                    &request_id,
-                    "COMFY_NOT_CONFIGURED",
-                    &error.to_string(),
-                    None,
-                    false,
-                ),
-            )
-        }
-    };
-    if let Err(error) = std::fs::create_dir_all(&paths.output_dir) {
-        return failure(
-            "comfy.open_output",
-            request_id.clone(),
-            core_error(
-                &request_id,
-                "COMFY_OUTPUT_DIR_FAILED",
-                &error.to_string(),
-                None,
-                true,
-            ),
-        );
-    }
-    if let Err(error) = crate::commands::show_item_in_folder(paths.output_dir.clone()) {
-        return failure(
+    let result = (|| -> Result<String, String> {
+        let state = app.state::<AppState>();
+        let root = target_root(&state, character_target.as_ref())?;
+        let folder = character_workspace::pending_folder(
+            &root,
+            character_target.as_ref().map(|target| target.name.as_str()),
+        )
+        .map_err(|error| error.to_string())?;
+        let path = display_path(&folder);
+        crate::commands::show_item_in_folder(path.clone())?;
+        Ok(path)
+    })();
+    match result {
+        Ok(path) => success("comfy.open_output", request_id, path),
+        Err(error) => failure(
             "comfy.open_output",
             request_id.clone(),
             core_error(&request_id, "COMFY_OPEN_FAILED", &error, None, true),
-        );
+        ),
     }
-    success("comfy.open_output", request_id, paths.output_dir)
 }
 
 /// Pull `images` entries out of a ComfyUI history payload.

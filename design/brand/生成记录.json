@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-07",
+  "mode": "built-in",
+  "tool": "image_gen",
+  "asset": "charaforge-icon-master.png",
+  "prompt": "Create ONE original Windows application icon for a character creation and portrait-image studio. Interpret the MEANING of the Chinese name 角色工坊: a workshop where characters are shaped and visual identities are crafted. ABSOLUTELY NO TEXT, no Chinese glyphs, no Latin letters, no C monogram, no numbers. Icon concept: one clear warm-ivory sculpted human head-and-shoulders silhouette centered inside a simple upright portrait/artboard frame, with one short elegant mint drawing stylus crossing the lower-right frame edge and a tiny creative glint at its tip. The human bust must be the primary recognizable shape, the stylus conveys craftsmanship and the frame conveys character images. Combine these as ONE cohesive bold logo, not a collection of separate tiny pictograms. Deep emerald green rounded-square satin tile, ivory primary forms, pale jade accent. Restrained premium creative desktop software aesthetic, broad clean strokes, strong negative space, extremely readable at 32px, gentle surface depth rather than glossy toy-like 3D. Centered square composition, about 88 percent filled, genuinely transparent exterior outside the rounded tile. No face details, no scene, no real person, no hammer, no gears, no brain, no robot, no wordmark, no mockup, no multiple versions.",
+  "decision": "按角色塑造与创作工坊的名称语义设计。最终标志为人物半身像、画框与创作笔，不包含文字或字母。",
+  "conversion": "Tauri icon CLI 生成 Windows ICO 和各尺寸 PNG；界面使用 256px 派生图，保留透明通道。"
+}

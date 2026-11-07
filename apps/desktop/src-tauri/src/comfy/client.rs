@@ -182,7 +182,15 @@ impl ComfyClient {
             .map_err(|error| ComfyError::Request(error.to_string()))?;
         std::fs::create_dir_all(output_dir)
             .map_err(|error| ComfyError::Io(format!("{}: {error}", output_dir.display())))?;
-        let target = output_dir.join(&image.filename);
+        let filename = Path::new(&image.filename);
+        if filename.file_name() != Some(filename.as_os_str())
+            || image.filename.contains(['/', '\\', ':'])
+        {
+            return Err(ComfyError::Response(
+                "ComfyUI 返回了无效的图片文件名。".into(),
+            ));
+        }
+        let target = output_dir.join(filename);
         std::fs::write(&target, &bytes)
             .map_err(|error| ComfyError::Io(format!("{}: {error}", target.display())))?;
         Ok(target)

@@ -9,7 +9,6 @@ import {
   Filter,
   FolderArchive,
   FolderOpen,
-  HardDrive,
   Layers,
   Loader2,
   Play,
@@ -595,9 +594,7 @@ export function SimilarityWorkbench({
               <FolderOpen size={18} />
             </span>
             <div>
-              <span className="eyebrow">TARGET FOLDER</span>
-              <strong>{library?.display_name ?? "尚未选择图库"}</strong>
-              <small>{library?.path ?? "请先选择图库以开始相似度分析"}</small>
+              <strong title={library?.path}>{library?.display_name ?? "尚未选择图库"}</strong>
             </div>
           </div>
 
@@ -616,7 +613,7 @@ export function SimilarityWorkbench({
               className="threshold-selector"
               title="相似度阈值：推荐 85% 识别差分与微小压缩，95% 以上仅匹配几乎完全重复"
             >
-              <span className="control-label">匹配灵敏度:</span>
+              <span className="control-label">相似阈值</span>
               <input
                 type="range"
                 min="0.70"
@@ -626,6 +623,7 @@ export function SimilarityWorkbench({
                 disabled={scanning}
                 onChange={(e) => setThreshold(parseFloat(e.target.value))}
                 className="threshold-slider"
+                aria-label="相似匹配阈值"
               />
               <span className="threshold-value">{Math.round(threshold * 100)}%</span>
             </div>
@@ -701,18 +699,13 @@ export function SimilarityWorkbench({
             <div className="overview-stats">
               <div className="stat-badge">
                 <Layers size={14} />
-                <span>相似分组:</span>
+                <span>分组</span>
                 <strong>{groups.length} 组</strong>
               </div>
               <div className="stat-badge">
                 <Sparkles size={14} />
-                <span>冗余/差分图片:</span>
+                <span>重复与差分</span>
                 <strong>{totalDuplicates} 张</strong>
-              </div>
-              <div className="stat-badge highlight">
-                <HardDrive size={14} />
-                <span>可释放空间:</span>
-                <strong>{formatBytes(decisionSummary.freedBytes)}</strong>
               </div>
             </div>
 
@@ -723,14 +716,14 @@ export function SimilarityWorkbench({
                 onClick={handleApplyAllRecommended}
                 title="所有分组自动将最佳画质设为保留，其余设为隔离"
               >
-                <Sparkles size={13} /> 全部应用推荐
+                <Sparkles size={13} /> 应用推荐
               </button>
               <button
                 className="ghost-button compact"
                 onClick={handleResetAllKeep}
                 title="重置所有图片决策为保留"
               >
-                <RotateCcw size={13} /> 全部重置保留
+                <RotateCcw size={13} /> 全部保留
               </button>
 
               <div className="filter-divider" />
@@ -793,11 +786,11 @@ export function SimilarityWorkbench({
       ) : (
         <section className="similarity-empty-state panel-card">
           <FileSearch size={36} className="empty-icon" />
-          <h3>尚未发现相似图片</h3>
+          <h3>{library ? "开始分析相似图片" : "选择图库"}</h3>
           <p>
             {library
-              ? "点击上方「开始相似分析」，引擎将自动为您建立图像感知特征并进行组群聚类。"
-              : "请先在上方选择一个本地图片库目录。"}
+              ? "分析后可并排查看图片，选择保留或隔离。"
+              : "选择本地图片目录后开始分析。"}
           </p>
         </section>
       )}
@@ -810,13 +803,13 @@ export function SimilarityWorkbench({
               保留: <strong>{decisionSummary.keepCount}</strong>
             </span>
             <span className="gov-metric">
-              隔离归档: <strong>{decisionSummary.archiveCount}</strong>
+              隔离 <strong>{decisionSummary.archiveCount}</strong>
             </span>
             <span className="gov-metric danger">
-              永久删除: <strong>{decisionSummary.deleteCount}</strong>
+              永久删除 <strong>{decisionSummary.deleteCount}</strong>
             </span>
             <span className="gov-metric highlight">
-              删除可释放: <strong>{formatBytes(decisionSummary.freedBytes)}</strong>
+              可释放 <strong>{formatBytes(decisionSummary.freedBytes)}</strong>
             </span>
           </div>
 
@@ -828,6 +821,7 @@ export function SimilarityWorkbench({
                 value={archiveDirName}
                 onChange={(e) => setArchiveDirName(e.target.value)}
                 placeholder="_duplicates"
+                aria-label="隔离文件夹名称"
               />
             </div>
 

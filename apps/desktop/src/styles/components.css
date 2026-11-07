@@ -1,92 +1,78 @@
 /* Standalone UI components: Initial loading overlay, model selector, context menu */
 
-/* Initial Loading Screen */
+/* Brand reveal: layered portrait cards, then the studio is ready. */
 .initial-loading-screen {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle at center, #1e263d 0%, #101625 100%);
-  color: #f1f4fb;
-  backdrop-filter: blur(12px);
-  animation: fadeIn .3s ease-out;
+  position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center;
+  background: #f3f8f5; color: var(--mint-ink);
+}
+.initial-loading-card { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 32px; }
+.initial-loading-art { position: relative; display: grid; place-items: center; width: 148px; height: 148px; margin-bottom: 24px; }
+.initial-loading-art img { z-index: 2; object-fit: contain; animation: studio-logo-reveal .6s cubic-bezier(.2,.8,.2,1) both; }
+.loading-frame { position: absolute; width: 106px; height: 118px; border: 1px solid #8db6a3; border-radius: 14px; background: #e4f1e9; }
+.loading-frame-back { transform: translate(-12px, -5px) rotate(-12deg); animation: studio-frame-reveal .65s ease-out both; }
+.loading-frame-front { transform: translate(12px, -1px) rotate(10deg); animation: studio-frame-reveal .65s .08s ease-out both; }
+.initial-loading-title { font-size: calc(25 * var(--ui-font-step, 1px)); font-weight: 700; letter-spacing: .04em; }
+.initial-loading-name { margin-top: 6px; color: var(--mint-text); font-size: calc(12 * var(--ui-font-step, 1px)); letter-spacing: .08em; }
+.initial-loading-track { width: 160px; height: 3px; overflow: hidden; margin: 30px 0 16px; border-radius: 4px; background: #dce9e1; }
+.initial-loading-track span { display: block; height: 100%; width: 45%; border-radius: inherit; background: #18815d; animation: studio-loading-travel 1.6s ease-in-out infinite; }
+.initial-loading-text { font-size: calc(12 * var(--ui-font-step, 1px)); color: var(--mint-text); }
+@keyframes studio-logo-reveal { from { opacity: 0; transform: translateY(8px) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes studio-frame-reveal { from { opacity: 0; } to { opacity: 1; } }
+@keyframes studio-loading-travel { from { transform: translateX(-110%); } to { transform: translateX(330%); } }
+@media (prefers-reduced-motion: reduce) {
+  .initial-loading-art img, .loading-frame, .initial-loading-track span { animation: none; }
+  .initial-loading-track span { width: 100%; opacity: .6; }
 }
 
-.initial-loading-card {
+/* Native modal keeps focus and Escape behavior inside the dialog. */
+.studio-dialog { width: min(440px, calc(100vw - 48px)); padding: 24px; border: 1px solid var(--mint-line-strong); border-radius: 16px; color: var(--mint-ink); background: #fff; box-shadow: 0 24px 80px #163d2e30; }
+.studio-dialog::backdrop { background: #102c2266; }
+.studio-dialog form { display: grid; gap: 18px; }
+.studio-dialog-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.studio-dialog-heading h2 { font-size: calc(18 * var(--ui-font-step, 1px)); }
+.studio-dialog-hint { font-size: calc(12 * var(--ui-font-step, 1px)); color: var(--mint-text); }
+.studio-dialog-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.studio-image-dialog { width: min(1500px, 96vw); height: 94dvh; max-width: 96vw; max-height: 94dvh; padding: 0; border: 1px solid var(--mint-line-strong); border-radius: 12px; background: #fff; color: var(--mint-ink); }
+.studio-image-dialog[open] { display: flex; flex-direction: column; }
+.studio-image-dialog::backdrop { background: #102c22c7; }
+.studio-image-heading {
   display: flex;
-  flex-direction: column;
+  flex-shrink: 0;
   align-items: center;
-  text-align: center;
-  padding: 40px 48px;
-  background: rgba(26, 35, 54, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 40px rgba(117, 107, 231, 0.2);
-  max-width: 440px;
-  width: 90%;
-}
-
-.initial-loading-brand {
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
   gap: 12px;
-  margin-bottom: 28px;
-}
-
-.initial-loading-brand .brand-title {
-  color: #ffffff;
-  font-size: calc(18 * var(--ui-font-step, 1px));
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.initial-loading-brand .brand-subtitle {
-  color: #94a3b8;
-  font-size: calc(11 * var(--ui-font-step, 1px));
-  margin-top: 2px;
-}
-
-.initial-spinner-wrap {
-  position: relative;
-  width: 76px;
-  height: 76px;
-  margin: 12px 0 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.initial-spinner {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  border: 3.5px solid rgba(123, 140, 255, 0.18);
-  border-top-color: #7b8cff;
-  border-right-color: #a971ea;
-  animation: initialSpin 1.1s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
-}
-
-.initial-spinner-glow {
-  position: absolute;
-  inset: 4px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(123, 140, 255, 0.25) 0%, transparent 70%);
-  animation: pulseGlow 2s ease-in-out infinite alternate;
-}
-
-.initial-loading-text {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--mint-line);
   font-size: calc(13 * var(--ui-font-step, 1px));
-  font-weight: 600;
-  color: #e2e8f0;
-  margin-bottom: 8px;
 }
 
-.initial-loading-subtext {
-  font-size: calc(11 * var(--ui-font-step, 1px));
-  color: #8391a8;
-  line-height: 1.5;
+.studio-image-heading strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.studio-image-description {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border-top: 1px solid var(--mint-line);
+  color: var(--mint-text);
+  font-size: calc(12 * var(--ui-font-step));
+}
+
+.studio-image-canvas {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  background: #eaf0ec;
+}
+
+.studio-image-canvas img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Model Selector Dropdown in Toolbar */

@@ -1,7 +1,11 @@
 pub mod app_settings;
+mod character_workspace;
+mod cloud;
 pub mod comfy;
 pub mod commands;
 pub mod database;
+mod generation_batch;
+mod generation_catalog;
 pub mod ipc;
 pub mod kohya;
 pub mod kohya_runner;
@@ -125,6 +129,18 @@ pub fn run() {
             update_app_settings,
             worker_environment_status,
             install_worker_environment,
+            generation_api_profiles,
+            save_generation_api_profile,
+            probe_generation_subscription,
+            cloud_generate,
+            import_generation_reference,
+            character_library,
+            create_character_workspace,
+            generation_catalog,
+            generation_batch_create,
+            generation_batch_list,
+            generation_batch_next,
+            generation_batch_update,
             comfy_status,
             comfy_start,
             comfy_stop,

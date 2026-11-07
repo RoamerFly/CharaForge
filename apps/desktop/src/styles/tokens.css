@@ -2,7 +2,7 @@
 :root {
   font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
   color: #17372f;
-  background: #edf8f2;
+  background: #f3f8f5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   /* Every font-size declaration is expressed as `calc(N * var(--ui-font-step))`,
@@ -10,14 +10,14 @@
   --ui-font-step: 1px;
   --mint-ink: #17372f;
   --mint-text: #526f67;
-  --mint-muted: #7d968e;
+  --mint-muted: #627d72;
   --mint-primary: #10955f;
   --mint-primary-dark: #08784b;
   --mint-soft: #e1f6e9;
   --mint-line: rgba(42, 137, 96, .16);
   --mint-line-strong: rgba(35, 133, 89, .28);
-  --mint-glass: rgba(255, 255, 255, .7);
-  --mint-shadow: 0 16px 38px rgba(25, 104, 70, .08);
+  --mint-glass: #fff;
+  --mint-shadow: 0 2px 8px rgba(25, 104, 70, .035);
 }
 
 * {
@@ -35,10 +35,7 @@ body {
   min-height: 100vh;
   height: 100%;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 78% -18%, rgba(166, 230, 190, .48), transparent 38%),
-    radial-gradient(circle at 2% 92%, rgba(205, 242, 218, .5), transparent 32%),
-    linear-gradient(135deg, #f3fcf7 0%, #eaf7f0 100%);
+  background: #f3f8f5;
 }
 
 button,
@@ -48,6 +45,22 @@ a {
 
 button {
   cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--mint-primary-dark);
+  outline-offset: 3px;
+}
+
+summary { cursor: pointer; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 a {

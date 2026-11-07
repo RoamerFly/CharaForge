@@ -1,7 +1,7 @@
 /* Workspace dashboard and shared workspace tabs */
 
 .workspace-page {
-  gap: 16px;
+  gap: 12px;
   padding: 2px 0 10px;
 }
 
@@ -44,42 +44,41 @@
   border: 1px solid var(--mint-line);
   background: var(--mint-glass);
   box-shadow: var(--mint-shadow);
-  backdrop-filter: blur(18px) saturate(125%);
 }
 
 .workspace-overview {
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) auto auto;
+  grid-template-columns: minmax(180px, 1fr) auto auto;
   align-items: center;
-  gap: clamp(24px, 4vw, 68px);
-  min-height: 164px;
-  padding: 24px 30px;
-  border-radius: 18px;
+  gap: 20px;
+  min-height: 102px;
+  padding: 16px 20px;
+  border-radius: 12px;
 }
 
 .workspace-library-identity {
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
 }
 
 .workspace-card-icon {
-  width: 68px;
-  height: 68px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
-  flex: 0 0 68px;
+  flex: 0 0 42px;
   color: var(--mint-primary);
   border: 1px solid rgba(44, 150, 100, .08);
-  border-radius: 50%;
+  border-radius: 10px;
   background: linear-gradient(145deg, rgba(225, 247, 234, .96), rgba(206, 239, 219, .72));
 }
 
 .workspace-card-icon.compact {
-  width: 58px;
-  height: 58px;
-  flex-basis: 58px;
+  width: 38px;
+  height: 38px;
+  flex-basis: 38px;
 }
 
 .workspace-library-copy {
@@ -88,7 +87,7 @@
 
 .workspace-library-copy h2 {
   color: var(--mint-ink);
-  font-size: calc(17 * var(--ui-font-step, 1px));
+  font-size: calc(12 * var(--ui-font-step, 1px));
   letter-spacing: -.02em;
 }
 
@@ -101,7 +100,7 @@
 }
 
 .workspace-library-copy strong {
-  margin-top: 10px;
+  margin-top: 6px;
   color: var(--mint-primary-dark);
   font-size: calc(16 * var(--ui-font-step, 1px));
 }
@@ -120,11 +119,11 @@
 }
 
 .workspace-status-item {
-  min-width: 155px;
+  min-width: 120px;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 7px 24px;
+  padding: 5px 14px;
 }
 
 .workspace-status-item + .workspace-status-item {
@@ -175,24 +174,24 @@
 
 .workspace-library-button {
   min-width: 132px;
-  min-height: 48px;
+  min-height: 38px;
 }
 
 .workspace-scan-control {
   min-width: 0;
-  min-height: 300px;
-  padding: 28px 30px 24px;
-  border-radius: 18px;
+  min-height: 190px;
+  padding: 18px 20px;
+  border-radius: 12px;
 }
 
 .workspace-scan-header {
   justify-content: flex-start;
-  gap: 18px;
+  gap: 12px;
 }
 
 .workspace-scan-header .soft-badge {
   margin-left: auto;
-  padding: 9px 14px;
+  padding: 5px 10px;
   border-radius: 999px;
   color: var(--mint-primary-dark);
   background: var(--mint-soft);
@@ -204,12 +203,12 @@
 
 .workspace-scan-header h3 {
   color: var(--mint-ink);
-  font-size: calc(18 * var(--ui-font-step, 1px));
+  font-size: calc(15 * var(--ui-font-step, 1px));
 }
 
 .workspace-scan-body {
   display: block;
-  margin-top: 22px;
+  margin-top: 16px;
 }
 
 .workspace-scan-status {
@@ -290,15 +289,15 @@
 
 .workspace-bottom-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 330px;
-  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 12px;
   align-items: stretch;
 }
 
 .workspace-recent {
   min-width: 0;
-  padding: 20px 22px;
-  border-radius: 18px;
+  padding: 16px 20px;
+  border-radius: 12px;
 }
 
 .workspace-recent .panel-header {
@@ -371,7 +370,7 @@
 
 .workspace-recent-empty {
   display: flex;
-  min-height: 76px;
+  min-height: 54px;
   align-items: center;
   gap: 10px;
   margin-top: 8px;
@@ -446,7 +445,13 @@
   font-weight: 700;
 }
 
-@media (max-width: 1200px) {
+/* Shortcuts replace the large explanatory feature card. */
+.workspace-shortcuts { display: grid; align-content: start; gap: 10px; }
+.workspace-shortcut { display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 14px 16px; border: 1px solid var(--mint-line); border-radius: 10px; background: #fff; color: var(--mint-primary-dark); font-size: calc(13 * var(--ui-font-step, 1px)); text-align: left; }
+.workspace-shortcut span { flex: 1; }
+.workspace-shortcut:hover { background: var(--mint-soft); }
+
+@media (max-width: 950px) {
   .workspace-overview {
     grid-template-columns: minmax(280px, 1fr) auto;
   }
@@ -465,7 +470,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .workspace-overview {
     grid-template-columns: 1fr;
     gap: 18px;

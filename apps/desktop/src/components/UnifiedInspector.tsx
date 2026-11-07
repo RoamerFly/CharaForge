@@ -3,15 +3,11 @@ import {
   BrainCircuit,
   Check,
   ChevronRight,
-  Edit3,
-  Info,
   PlusCircle,
   Redo2,
   Save,
   Trash2,
   Undo2,
-  UsersRound,
-  X,
   Zap,
 } from "lucide-react";
 import type { AnnotationSource, CharacterIdentity, NormalizedBoundingBox } from "@anime-pic-manage/shared-types";
@@ -96,7 +92,6 @@ export function UnifiedInspector({
   filter,
   onChangeFilter,
   editorMode,
-  onToggleEditor,
   onAddNewBox,
   activeAnnotation,
   labelDraft,
@@ -110,7 +105,6 @@ export function UnifiedInspector({
   dirty,
   onUndo,
   onRedo,
-  onCancelEdits,
   onSaveAnnotations,
   saveLoading,
   personalModelReady,
@@ -145,18 +139,7 @@ export function UnifiedInspector({
       {/* 顶部标题与模式切换 */}
       <div className="inspector-top-header">
         <div>
-          <div className="eyebrow">INSPECTOR & REVIEW</div>
-          <h3>识别检查与标注</h3>
-        </div>
-        <div className="inspector-top-actions">
-          <button
-            type="button"
-            className={`ghost-button annotation-toggle ${editorMode ? "active" : ""}`}
-            onClick={onToggleEditor}
-            title={editorMode ? "退出标注编辑模式" : "进入画框与分类编辑"}
-          >
-            {editorMode ? <><X size={13} /> 退出编辑</> : <><Edit3 size={13} /> 标注模式</>}
-          </button>
+          <h3>角色复核</h3>
         </div>
       </div>
 
@@ -164,6 +147,8 @@ export function UnifiedInspector({
       <div className="filter-tabs" role="tablist" aria-label="人物状态过滤">
         <button
           type="button"
+          role="tab"
+          aria-selected={filter === "all"}
           className={`filter-tab ${filter === "all" ? "active" : ""}`}
           onClick={() => onChangeFilter("all")}
         >
@@ -171,6 +156,8 @@ export function UnifiedInspector({
         </button>
         <button
           type="button"
+          role="tab"
+          aria-selected={filter === "high"}
           className={`filter-tab ${filter === "high" ? "active" : ""}`}
           onClick={() => onChangeFilter("high")}
         >
@@ -178,6 +165,8 @@ export function UnifiedInspector({
         </button>
         <button
           type="button"
+          role="tab"
+          aria-selected={filter === "review"}
           className={`filter-tab ${filter === "review" ? "active" : ""}`}
           onClick={() => onChangeFilter("review")}
         >
@@ -185,6 +174,8 @@ export function UnifiedInspector({
         </button>
         <button
           type="button"
+          role="tab"
+          aria-selected={filter === "unknown"}
           className={`filter-tab ${filter === "unknown" ? "active" : ""}`}
           onClick={() => onChangeFilter("unknown")}
         >
@@ -194,13 +185,15 @@ export function UnifiedInspector({
 
       {/* 人物选择横向滑块/列表 */}
       {visiblePeople.length > 0 ? (
-        <div className="inspector-people-pills" role="tablist">
+        <div className="inspector-people-pills" role="tablist" aria-label="图片中的人物">
           {visiblePeople.map((person) => {
             const isSelected = person.id === activePerson?.id;
             return (
               <button
                 key={person.id}
                 type="button"
+                role="tab"
+                aria-selected={isSelected}
                 className={`inspector-person-pill ${person.status} ${isSelected ? "selected" : ""}`}
                 onClick={() => onSelectPerson(person.id)}
               >
@@ -232,8 +225,8 @@ export function UnifiedInspector({
           {/* Top-5 候选紧凑网格 */}
           <div className="inspector-candidate-section">
             <div className="inspector-subheading">
-              <span>TOP-5 候选</span>
-              <small className="muted">快捷键 1~5 一键指派</small>
+              <span>候选角色</span>
+              <small className="muted" title="按数字键 1–5 指派候选角色">1–5 快捷指派</small>
             </div>
             <div className="inspector-candidate-list">
               {activePerson.candidates.slice(0, 5).map((candidate, idx) => {
@@ -276,7 +269,6 @@ export function UnifiedInspector({
       {editorMode && (
         <section className="inspector-edit-box">
           <div className="inspector-edit-header">
-            <div className="eyebrow">LABEL ASSIGNMENT</div>
             <span className="soft-badge blue">
               {activeAnnotation?.source === "manual" ? "人工标注" : "模型草稿"}
             </span>
@@ -310,14 +302,14 @@ export function UnifiedInspector({
           </div>
 
           {activeAnnotation && (
-            <div className="inspector-bbox-info">
+            <details className="inspector-box-details"><summary>选框位置与尺寸</summary><div className="inspector-bbox-info">
               <span>
                 位置: X {Math.round(activeAnnotation.bbox.x * 100)}% / Y {Math.round(activeAnnotation.bbox.y * 100)}%
               </span>
               <span>
                 尺寸: {Math.round(activeAnnotation.bbox.width * 100)}% × {Math.round(activeAnnotation.bbox.height * 100)}%
               </span>
-            </div>
+            </div></details>
           )}
 
           {/* 快捷操作栏 */}
@@ -328,6 +320,7 @@ export function UnifiedInspector({
               onClick={onUndo}
               disabled={!canUndo}
               title="撤销 (Ctrl+Z)"
+              aria-label="撤销标注修改"
             >
               <Undo2 size={13} />
             </button>
@@ -337,6 +330,7 @@ export function UnifiedInspector({
               onClick={onRedo}
               disabled={!canRedo}
               title="重做 (Ctrl+Y)"
+              aria-label="重做标注修改"
             >
               <Redo2 size={13} />
             </button>
@@ -366,7 +360,9 @@ export function UnifiedInspector({
       )}
 
       {/* 底部个人模型状态徽章入口与独立再训练按钮 */}
-      <div className="inspector-footer-model">
+      <details className="inspector-model-details">
+        <summary>个人模型 <span>{verifiedSampleCount ?? 0} 个样本</span></summary>
+        <div className="inspector-footer-model">
         <div className="inspector-model-badge">
           <BrainCircuit size={15} />
           <div>
@@ -410,6 +406,7 @@ export function UnifiedInspector({
           )}
         </div>
       </div>
+      </details>
       </div>
       {footer && <div className="inspector-filmstrip">{footer}</div>}
     </aside>

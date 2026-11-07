@@ -1,7 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { AlertCircle, ChevronLeft, ChevronRight, Edit3, Image as ImageIcon, Plus, Sparkles, X } from "lucide-react";
+import { AlertCircle, ChevronLeft, ChevronRight, Edit3, Image as ImageIcon, Maximize2, Plus, Sparkles, X } from "lucide-react";
 import type { NormalizedBoundingBox } from "@anime-pic-manage/shared-types";
 import type { EditableAnnotation, PersonStatus } from "./UnifiedInspector";
+import { ImagePreviewDialog } from "./ImagePreviewDialog";
 
 type ResizeHandle = "nw" | "n" | "ne" | "e" | "se" | "s" | "sw" | "w";
 
@@ -38,6 +39,7 @@ interface AnnotationCanvasProps {
   hasPrevImage?: boolean;
   hasNextImage?: boolean;
   onContextMenu?: (e: React.MouseEvent) => void;
+  fitToAvailableSpace?: boolean;
 }
 
 export function AnnotationCanvas({
@@ -60,14 +62,40 @@ export function AnnotationCanvas({
   hasPrevImage = false,
   hasNextImage = false,
   onContextMenu,
+  fitToAvailableSpace = false,
 }: AnnotationCanvasProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLImageElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<DragState | null>(null);
   const resizeDragRef = useRef<{ startY: number; startHeight: number } | null>(null);
   const [imageLoadError, setImageLoadError] = useState<string | null>(null);
   const [creatingMode, setCreatingMode] = useState(false);
   const [draftBox, setDraftBox] = useState<NormalizedBoundingBox | null>(null);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [viewportSize, setViewportSize] = useState({ width: 0, height: 0 });
+  const [loadedSize, setLoadedSize] = useState({ source: "", width: 0, height: 0 });
+
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setViewportSize({ width: entry.contentRect.width, height: entry.contentRect.height });
+    });
+    observer.observe(viewport);
+    return () => observer.disconnect();
+  }, []);
+
+  const intrinsicSize = imageSize ?? (loadedSize.source === imageSrc ? [loadedSize.width, loadedSize.height] : null);
+  const aspectRatio = intrinsicSize && intrinsicSize[0] > 0 && intrinsicSize[1] > 0
+    ? intrinsicSize[0] / intrinsicSize[1]
+    : null;
+  const stageSize = aspectRatio && viewportSize.width > 0 && viewportSize.height > 0
+    ? {
+        width: Math.min(viewportSize.width, viewportSize.height * aspectRatio),
+        height: Math.min(viewportSize.height, viewportSize.width / aspectRatio),
+      }
+    : undefined;
   const DEFAULT_CANVAS_HEIGHT = 340;
   const [viewportHeight, setViewportHeight] = useState<number>(() => {
     try {
@@ -331,6 +359,16 @@ export function AnnotationCanvas({
           )}
         </div>
         <div className="canvas-actions">
+          <button
+            type="button"
+            className="ghost-button canvas-tool-btn"
+            disabled={!imageSrc}
+            onClick={() => setPreviewOpen(true)}
+            aria-label="全屏查看当前图片"
+            title="全屏查看当前图片"
+          >
+            <Maximize2 size={14} />
+          </button>
           {editorMode && (
             <>
               <button
@@ -366,8 +404,9 @@ export function AnnotationCanvas({
 
       {/* 主图片展示区：固定/受控高度，杜绝切换不同长宽比图片引起的抖动 */}
       <div
+        ref={viewportRef}
         className="canvas-viewport"
-        style={{ height: `${viewportHeight}px` }}
+        style={fitToAvailableSpace ? undefined : { height: `${viewportHeight}px` }}
         onContextMenu={(e) => {
           if (!creatingMode && onContextMenu) {
             e.preventDefault();
@@ -411,12 +450,7 @@ export function AnnotationCanvas({
         {imageSrc ? (
           <div
             className="canvas-stage"
-            style={{
-              aspectRatio:
-                imageSize && imageSize[0] > 0 && imageSize[1] > 0
-                  ? `${imageSize[0]} / ${imageSize[1]}`
-                  : undefined,
-            }}
+            style={stageSize}
           >
             <img
               ref={imgRef}
@@ -424,6 +458,11 @@ export function AnnotationCanvas({
               alt="待识别图片"
               className="canvas-image"
               draggable={false}
+              onLoad={(event) => setLoadedSize({
+                source: imageSrc,
+                width: event.currentTarget.naturalWidth,
+                height: event.currentTarget.naturalHeight,
+              })}
               onError={() => setImageLoadError("图片加载失败，请确认文件路径仍然有效。")}
             />
 
@@ -492,7 +531,7 @@ export function AnnotationCanvas({
         )}
 
         {/* 右下角手动拉伸展示框高度手柄 */}
-        <div
+        {!fitToAvailableSpace && <div
           className="canvas-viewport-resize-handle"
           onPointerDown={handleResizePointerDown}
           onPointerMove={handleResizePointerMove}
@@ -502,7 +541,7 @@ export function AnnotationCanvas({
           title="按住鼠标拖拽调整展示框高度；双击重置为默认高度"
         >
           <span className="resize-handle-grip" />
-        </div>
+        </div>}
       </div>
 
       {imageLoadError && (
@@ -512,14 +551,18 @@ export function AnnotationCanvas({
       )}
 
       {/* 底部小图例 */}
-      <div className="canvas-footer-legend">
+      <details className="canvas-help">
+        <summary>图例与快捷键</summary>
+        <div className="canvas-footer-legend">
         <span><span className="legend-dot high" /> 高置信度</span>
         <span><span className="legend-dot review" /> 待复核/已标注</span>
         <span><span className="legend-dot unknown" /> 未识别</span>
         <span className="canvas-hotkeys-hint">
           快捷键：N 画框 · Delete 删框 · Ctrl+Z 撤销 · 1~5 赋名
         </span>
-      </div>
+        </div>
+      </details>
+      <ImagePreviewDialog source={previewOpen ? imageSrc ?? null : null} title="当前图片" onClose={() => setPreviewOpen(false)} />
     </div>
   );
 }

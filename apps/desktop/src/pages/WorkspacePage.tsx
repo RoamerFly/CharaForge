@@ -3,7 +3,7 @@ import {
   ChevronRight,
   Clock3,
   Cpu,
-  Database,
+  ImagePlus,
   FolderOpen,
   Play,
   ScanSearch,
@@ -71,7 +71,7 @@ export function WorkspacePage({
             <FolderOpen size={27} />
           </span>
           <div className="workspace-library-copy">
-            <h2 id="workspace-overview-title">图库与环境</h2>
+            <h2 id="workspace-overview-title">当前图库</h2>
             <strong>{library?.display_name ?? "尚未选择图库"}</strong>
             <small>
               {library?.path ? normalizeDisplayPath(library.path) : "选择目录后开始"}
@@ -84,19 +84,6 @@ export function WorkspacePage({
             <span>
               <small>推理引擎</small>
               <strong>{loading ? "检查中" : workerLabel(workerStatus)}</strong>
-            </span>
-          </div>
-          <div className="workspace-status-item">
-            <span className="workspace-status-icon"><Database size={21} /></span>
-            <span>
-              <small>数据库</small>
-              <strong>
-                {loading
-                  ? "检查中"
-                  : status?.database.status === "ready"
-                    ? "已就绪"
-                    : "需检查"}
-              </strong>
             </span>
           </div>
         </div>
@@ -118,7 +105,6 @@ export function WorkspacePage({
           <div className="panel-header workspace-scan-header">
             <span className="workspace-card-icon compact"><UserRound size={23} /></span>
             <div>
-              <div className="eyebrow">ROLE RECOGNITION</div>
               <h3 id="workspace-quick-start-title">角色识别任务</h3>
             </div>
             <span
@@ -144,15 +130,9 @@ export function WorkspacePage({
                       ? "扫描已取消，已保留返回结果"
                       : controller.state === "failed"
                         ? controller.error ?? "扫描失败，请检查内置推理引擎"
-                        : "选择图库后开始真实识别"}
+                        : library ? "可以开始识别" : "选择图库后开始识别"}
               </strong>
-              <small>
-                {active && progress?.path
-                  ? progress.path
-                  : library?.path
-                    ? normalizeDisplayPath(library.path)
-                    : "尚未选择图库"}
-              </small>
+              {active && progress?.path && <small>{progress.path}</small>}
               {active && (
                 <div className="workspace-progress-inline">
                   <div className="progress-track">
@@ -238,7 +218,6 @@ export function WorkspacePage({
         >
         <div className="panel-header">
           <div>
-            <div className="eyebrow">RECENT ACTIVITY</div>
             <h3 id="workspace-recent-title">最近一次结果</h3>
           </div>
           {recentScan && (
@@ -298,28 +277,21 @@ export function WorkspacePage({
           <div className="workspace-recent-empty">
             <Clock3 size={18} />
             <span>
-              还没有已完成的扫描任务。在角色识别中开始扫描后，结果会持久保存在本机。
+              暂无扫描记录
             </span>
           </div>
         )}
         </section>
 
+        <div className="workspace-shortcuts">
+        <button className="workspace-shortcut" onClick={() => onNavigate("/generate")}><ImagePlus size={21} /><span>AI 生图</span><ChevronRight size={16} /></button>
         <button
-          className="quick-start-card similarity"
+          className="workspace-shortcut"
           onClick={() => onNavigate("/similarity")}
         >
-          <span className="quick-start-icon">
-            <ScanSearch size={25} />
-          </span>
-          <span>
-            <strong>相似图片分析</strong>
-            <small>感知哈希与特征聚类，发现相似的图片内容。</small>
-          </span>
-          <span className="quick-start-action">
-            进入相似计算
-            <ChevronRight size={17} />
-          </span>
+          <ScanSearch size={21} /><span>相似图片分析</span><ChevronRight size={16} />
         </button>
+        </div>
       </div>
     </div>
   );

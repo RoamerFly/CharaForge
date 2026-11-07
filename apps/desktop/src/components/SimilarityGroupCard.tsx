@@ -1,6 +1,6 @@
 import React from "react";
 import { convertFileSrc } from "@tauri-apps/api/core";
-import { Archive, Check, Film, Folder, Maximize2, Sparkles, Trash2 } from "lucide-react";
+import { Archive, Check, Film, Folder, Maximize2, MoreHorizontal, Sparkles, Trash2 } from "lucide-react";
 import type {
   SimilarityDecisionAction,
   SimilarityGroup,
@@ -81,8 +81,11 @@ export const SimilarityGroupCard = React.memo(function SimilarityGroupCard({
             onClick={() => onApplyRecommended(group.group_id)}
             title="自动将最高画质设为保留，其余设为隔离归档"
           >
-            <Sparkles size={13} /> 推荐配置
+            <Sparkles size={13} /> 应用推荐
           </button>
+          <details className="group-more-actions">
+            <summary aria-label={`分组 ${groupIdx + 1} 的更多操作`} title="更多操作"><MoreHorizontal size={17} /></summary>
+            <div className="group-actions-menu">
           <button
             className="group-action-btn ghost"
             onClick={() => onKeepAll(group.group_id)}
@@ -104,6 +107,8 @@ export const SimilarityGroupCard = React.memo(function SimilarityGroupCard({
           >
             <Trash2 size={13} /> 删除非推荐
           </button>
+            </div>
+          </details>
         </div>
       </div>
 
@@ -182,6 +187,12 @@ export const SimilarityGroupCard = React.memo(function SimilarityGroupCard({
                 <div className="item-filename" title={item.path}>
                   {fileName}
                 </div>
+                <div className="item-quick-specs">
+                  <span>{w} × {h}</span>
+                  <span>{formatBytes(item.file_size)}</span>
+                </div>
+                <details className="item-metadata">
+                  <summary>文件详情</summary>
                 <div className="item-directory" title={parentDirectory}>
                   <Folder size={11} />
                   <span>{parentDirectory}</span>
@@ -204,23 +215,27 @@ export const SimilarityGroupCard = React.memo(function SimilarityGroupCard({
                 {item.recommend_reason && (
                   <div className="recommend-reason-text">{item.recommend_reason}</div>
                 )}
+                </details>
 
                 {/* 治理动作单选切换 */}
                 <div className="item-decision-selector">
                   <button
                     className={`decision-chip keep ${item.decision === "keep" ? "active" : ""}`}
+                    aria-pressed={item.decision === "keep"}
                     onClick={() => onItemDecisionChange(group.group_id, item.path, "keep")}
                   >
                     <Check size={12} /> 保留
                   </button>
                   <button
                     className={`decision-chip archive ${item.decision === "archive" ? "active" : ""}`}
+                    aria-pressed={item.decision === "archive"}
                     onClick={() => onItemDecisionChange(group.group_id, item.path, "archive")}
                   >
                     <Archive size={12} /> 隔离
                   </button>
                   <button
                     className={`decision-chip delete ${item.decision === "delete" ? "active" : ""}`}
+                    aria-pressed={item.decision === "delete"}
                     onClick={() => onItemDecisionChange(group.group_id, item.path, "delete")}
                   >
                     <Trash2 size={12} /> 删除

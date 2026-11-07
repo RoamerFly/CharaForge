@@ -1,3 +1,4 @@
+import { ComfySettingsPanel, LoraTrainingSettingsPanel } from "../components/GenerationSettingsPanels";
 import { useCallback, useEffect, useState } from "react";
 import { listen } from "@tauri-apps/api/event";
 import {
@@ -24,14 +25,10 @@ import {
 } from "lucide-react";
 import type {
   AppSettings,
-  ComfyModelList,
-  ComfyStatus,
   CudaInstallProgress,
   CudaRuntimeStatus,
   EnvironmentInstallProgress,
   GpuInventory,
-  KohyaEnvironment,
-  KohyaStatus,
   LegacyModelCache,
   ModelInventory,
   ModelInventoryEntry,
@@ -335,7 +332,7 @@ export function WorkerRuntimeSettingsPanel({
         <div>
           <h3>推理运行环境</h3>
           <p>
-            选择本机推理引擎；切换会停止旧进程，并在下次检查时使用新方式。
+            本地识别环境；切换运行方式会重启引擎。
           </p>
         </div>
       </div>
@@ -343,7 +340,7 @@ export function WorkerRuntimeSettingsPanel({
         <label htmlFor="worker-runtime-mode">
           <strong>运行方式</strong>
           <small>
-            内置推理引擎适合日常识别；兼容环境用于缺少内置引擎时的备用运行。
+            日常使用内置引擎，缺失时可选兼容环境。
           </small>
         </label>
         <div className="runtime-mode-actions">
@@ -383,6 +380,7 @@ export function WorkerRuntimeSettingsPanel({
           </select>
         </div>
       </div>
+      <details className="studio-disclosure"><summary>运行路径与设备详情</summary>
       <div className="settings-row runtime-path-row">
         <div>
           <strong>当前解析路径</strong>
@@ -411,11 +409,12 @@ export function WorkerRuntimeSettingsPanel({
         </div>
         <code title={deviceLabel}>{deviceLabel}</code>
       </div>
+      </details>
       <div className="settings-field settings-field-stacked">
         <div>
           <strong>独立 AI 运行环境</strong>
           <small>
-            程序本体保持轻量；CPU/GPU Worker 与 Python 环境只在首次使用或环境版本变化时单独准备，应用升级会继续复用。
+            用于本地识别；使用云端生图可跳过准备。
           </small>
         </div>
         <div className="generation-inline">
@@ -448,8 +447,7 @@ export function WorkerRuntimeSettingsPanel({
         <div>
           <strong>网络代理</strong>
           <small>
-            用于 CUDA、模型和 Hugging Face 下载；默认使用本机代理 127.0.0.1:7890，留空即可直连。
-            修改后会自动重启推理引擎。
+            用于下载与云端生图；留空直连，保存后会重启推理引擎。
           </small>
         </div>
         <input
@@ -461,6 +459,8 @@ export function WorkerRuntimeSettingsPanel({
           aria-label="网络代理"
         />
       </div>
+      <details className="studio-disclosure settings-advanced">
+        <summary>CUDA 运行库</summary>
       <div className="settings-field settings-field-stacked">
         <div>
           <strong>CUDA 运行时目录（可选）</strong>
@@ -533,13 +533,14 @@ export function WorkerRuntimeSettingsPanel({
           </small>
         </div>
       </div>
+      </details>
+      <details className="studio-disclosure settings-advanced">
+        <summary>任务优先级与运行能力</summary>
       <div className="settings-field settings-field-stacked">
         <div>
           <strong>后台任务优先级</strong>
           <small>
-            推理引擎、ComfyUI 与 LoRA 训练都以子进程运行。选「低调」时它们会让出 CPU
-            给桌面和其他程序，机器不会卡；选「普通」时跑得更快，但长时间扫描可能让界面发涩。
-            调整后会自动重启推理引擎。
+            低调模式减少 CPU 占用，保存后重启引擎。
           </small>
         </div>
         <div className="generation-inline">
@@ -554,13 +555,11 @@ export function WorkerRuntimeSettingsPanel({
             <option value="below_normal">低调（推荐，不抢 CPU）</option>
             <option value="normal">普通（跑满 CPU，更快）</option>
           </select>
-          <small>线程数仍由「识别配置」与「相似度配置」分别控制。</small>
         </div>
       </div>
       <div className="runtime-capabilities" aria-live="polite">
         <div className="runtime-capabilities-heading">
           <strong>运行能力</strong>
-          <small>实际导入 dghs-imgutils 与 ONNX Runtime 模块，不加载模型。</small>
         </div>
         {capabilities ? (
           <>
@@ -609,6 +608,7 @@ export function WorkerRuntimeSettingsPanel({
           </div>
         )}
       </div>
+      </details>
     </section>
   );
 }
@@ -1036,18 +1036,12 @@ function AppearanceSettingsPanel({
         </div>
         <div>
           <h3>界面显示</h3>
-          <p>调整界面文字大小，改动会立即预览，保存后下次启动仍然生效。</p>
         </div>
       </div>
 
-      <div className="settings-field settings-field-stacked">
+      <div className="settings-field">
         <div>
           <strong>界面字号</strong>
-          <small>
-            以 {UI_FONT_BASE_PX}px 为基准整体缩放界面文字，可拖动滑块无级调整，
-            或用 − / + 按 {UI_FONT_STEP_PX}px 步进（{UI_FONT_MIN_PX}–
-            {UI_FONT_MAX_PX}px）。
-          </small>
         </div>
         <div className="font-size-control">
           <button
@@ -1091,439 +1085,10 @@ function AppearanceSettingsPanel({
         </div>
       </div>
 
-      <div className="settings-field-note">
-        字号影响整个应用的文字（含识别检查、相似计算与设置页），不会改变图片与文件本身。
-      </div>
-
     </section>
   );
 }
 
-function ComfySettingsPanel({
-  settings,
-  onChange,
-}: {
-  settings: AppSettings;
-  onChange: (patch: Partial<AppSettings>) => void;
-}) {
-  const [status, setStatus] = useState<ComfyStatus | null>(null);
-  const [checking, setChecking] = useState(false);
-  const [models, setModels] = useState<ComfyModelList | null>(null);
-
-  const check = useCallback(async () => {
-    setChecking(true);
-    const response = await invokeCore<ComfyStatus>("comfy_status", "comfy.status");
-    if (response.payload) {
-      setStatus(response.payload);
-      if (response.payload.running) {
-        const list = await invokeCore<ComfyModelList>("comfy_models", "comfy.models");
-        setModels(list.payload ?? null);
-      }
-    }
-    setChecking(false);
-  }, []);
-
-  useEffect(() => {
-    void check();
-  }, [check]);
-
-  const pickDirectory = async (key: "comfy_root" | "comfy_output_dir") => {
-    const selected = await open({
-      directory: true,
-      multiple: false,
-      title: key === "comfy_root" ? "选择 ComfyUI 安装目录（含 ComfyUI 与 python 的文件夹）" : "选择生成图输出目录",
-    });
-    if (typeof selected === "string" && selected.trim()) {
-      onChange({ [key]: selected.trim() } as Partial<AppSettings>);
-    }
-  };
-
-  const statusText = !status
-    ? "尚未检测"
-    : !status.configured
-      ? "未配置目录"
-      : !status.installed
-        ? status.error ?? "目录无效"
-        : status.running
-          ? `运行中${status.version ? ` · v${status.version}` : ""}${
-              status.device ? ` · ${status.device}` : ""
-            }${status.vram_gb ? ` · ${status.vram_gb} GB 显存` : ""}`
-          : `已停止${status.version ? ` · v${status.version}` : ""}`;
-
-  return (
-    <section className="settings-section">
-      <div className="settings-heading">
-        <div className="settings-heading-icon">
-          <ImagePlus size={19} />
-        </div>
-        <div>
-          <h3>AI 生图（ComfyUI）</h3>
-          <p>
-            使用你自己安装的 ComfyUI（不会随本应用分发）。填好目录后即可在「AI 生图」页面启动与出图。
-          </p>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>ComfyUI 目录</strong>
-          <small>
-            指向包含 <code>ComfyUI</code> 与 <code>python</code> 两层的目录，例如
-            <code>E:\freetime\AI_Draw\ComfyUI-aki\ComfyUI-aki-v3</code>；也接受直接指向 <code>ComfyUI</code> 本体。
-          </small>
-        </div>
-        <div className="generation-inline">
-          <input
-            type="text"
-            className="settings-text-input settings-text-input-wide"
-            value={settings.comfy_root}
-            placeholder="E:\\path\\to\\ComfyUI-aki-v3"
-            onChange={(event) => onChange({ comfy_root: event.target.value })}
-          />
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void pickDirectory("comfy_root")}
-          >
-            选择目录
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>生成图输出目录</strong>
-          <small>
-            留空则使用 <code>&lt;ComfyUI 根目录&gt;\Images\generated-manage</code>
-            （带 <code>-manage</code> 后缀，便于和你在 ComfyUI 网页端自己出的图区分）。
-          </small>
-        </div>
-        <div className="generation-inline">
-          <input
-            type="text"
-            className="settings-text-input settings-text-input-wide"
-            value={settings.comfy_output_dir}
-            placeholder="留空使用默认目录"
-            onChange={(event) =>
-              onChange({ comfy_output_dir: event.target.value })
-            }
-          />
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void pickDirectory("comfy_output_dir")}
-          >
-            选择目录
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field">
-        <div>
-          <strong>端口</strong>
-          <small>与 ComfyUI 启动参数一致，默认 8188。</small>
-        </div>
-        <input
-          type="number"
-          min={1024}
-          max={65535}
-          className="settings-text-input"
-          value={settings.comfy_port}
-          onChange={(event) =>
-            onChange({ comfy_port: Number(event.target.value) })
-          }
-        />
-      </div>
-
-      <div className="settings-field">
-        <div>
-          <strong>低显存模式（--lowvram）</strong>
-          <small>显存 ≤ 8GB 建议开启；6GB 显卡跑 SDXL 基本必须开。</small>
-        </div>
-        <label className="switch-control">
-          <input
-            type="checkbox"
-            checked={settings.comfy_low_vram}
-            onChange={(event) =>
-              onChange({ comfy_low_vram: event.target.checked })
-            }
-          />
-          <span>{settings.comfy_low_vram ? "已启用" : "已关闭"}</span>
-        </label>
-      </div>
-
-      <div className="settings-field">
-        <div>
-          <strong>随应用自动启动</strong>
-          <small>打开「AI 生图」页面时，如果 ComfyUI 未运行则自动启动它。</small>
-        </div>
-        <label className="switch-control">
-          <input
-            type="checkbox"
-            checked={settings.comfy_auto_start}
-            onChange={(event) =>
-              onChange({ comfy_auto_start: event.target.checked })
-            }
-          />
-          <span>{settings.comfy_auto_start ? "已启用" : "已关闭"}</span>
-        </label>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>当前状态</strong>
-          <small>{statusText}</small>
-        </div>
-        <div className="generation-inline">
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void check()}
-            disabled={checking}
-          >
-            {checking ? (
-              <LoaderCircle size={15} className="spin" />
-            ) : (
-              <Activity size={15} />
-            )}
-            检测
-          </button>
-          {models && (
-            <span className="muted">
-              发现 {models.checkpoints.length} 个 checkpoint、{models.loras.length} 个 LoRA
-            </span>
-          )}
-        </div>
-      </div>
-
-      <div className="settings-field-note">
-        ComfyUI 采用 GPL-3.0 许可，本应用只调用你本机已安装的实例，不打包、不修改它的代码；生图与训练所需的模型与 LoRA 许可证由各自上游决定。
-      </div>
-    </section>
-  );
-}
-
-function LoraTrainingSettingsPanel({
-  settings,
-  onChange,
-}: {
-  settings: AppSettings;
-  onChange: (patch: Partial<AppSettings>) => void;
-}) {
-  const [status, setStatus] = useState<KohyaStatus | null>(null);
-  const [environment, setEnvironment] = useState<KohyaEnvironment | null>(null);
-  const [checking, setChecking] = useState(false);
-  const [probing, setProbing] = useState(false);
-
-  const check = useCallback(async () => {
-    setChecking(true);
-    const response = await invokeCore<KohyaStatus>("kohya_status", "kohya.status");
-    setStatus(response.payload ?? null);
-    setChecking(false);
-  }, []);
-
-  useEffect(() => {
-    void check();
-  }, [check]);
-
-  const probe = async () => {
-    setProbing(true);
-    const response = await invokeCore<KohyaEnvironment>(
-      "kohya_probe_environment",
-      "kohya.probe",
-    );
-    setEnvironment(response.payload ?? null);
-    setProbing(false);
-  };
-
-  const pickPath = async (key: keyof AppSettings, mode: "directory" | "file") => {
-    const selected = await open({
-      directory: mode === "directory",
-      multiple: false,
-      title:
-        mode === "directory"
-          ? key === "lora_trainer_root"
-            ? "选择 kohya_ss 或 sd-scripts 目录"
-            : "选择 LoRA 输出目录"
-          : key === "lora_trainer_python"
-            ? "选择训练用的 python.exe"
-            : "选择训练底模（.safetensors）",
-    });
-    if (typeof selected === "string" && selected.trim()) {
-      onChange({ [key]: selected.trim() } as Partial<AppSettings>);
-    }
-  };
-
-  const statusText = !status
-    ? "尚未检测"
-    : !status.configured
-      ? status.error ?? "未配置"
-      : !status.installed
-        ? status.error ?? "找不到可用的 Python"
-        : `已就绪 · ${status.python_source} · ${status.trainers.join(" / ")}`;
-
-  const environmentText = !environment
-    ? null
-    : environment.error
-      ? `环境异常：${environment.error}`
-      : `Python ${environment.python_version ?? "?"} · torch ${environment.torch_version ?? "未安装"}${
-          environment.cuda_available
-            ? ` · CUDA ${environment.cuda_version ?? "?"} ${environment.device_name ?? ""}`
-            : " · 仅 CPU"
-        }${environment.bitsandbytes_version ? ` · bitsandbytes ${environment.bitsandbytes_version}` : ""}`;
-
-  return (
-    <section className="settings-section">
-      <div className="settings-heading">
-        <div className="settings-heading-icon">
-          <SlidersHorizontal size={19} />
-        </div>
-        <div>
-          <h3>LoRA 训练（kohya / sd-scripts）</h3>
-          <p>
-            训练同样只驱动你本机已安装的训练器，本应用不打包、不下载 kohya_ss 或 sd-scripts。
-            填好下面几项后，就能在「AI 生图」页把导出的训练集一键训练成 LoRA。
-          </p>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>训练器目录</strong>
-          <small>
-            kohya_ss 根目录（含 <code>sd-scripts</code>）或直接指向 <code>sd-scripts</code>，
-            里面需要有 <code>train_network.py</code> 或 <code>sdxl_train_network.py</code>。
-          </small>
-        </div>
-        <div className="generation-inline">
-          <input
-            type="text"
-            className="settings-text-input settings-text-input-wide"
-            value={settings.lora_trainer_root}
-            placeholder="E:\\path\\to\\kohya_ss"
-            onChange={(event) => onChange({ lora_trainer_root: event.target.value })}
-          />
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void pickPath("lora_trainer_root", "directory")}
-          >
-            选择目录
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>训练用 Python</strong>
-          <small>留空会自动使用训练器目录下的 <code>venv</code>，再不行才回退到系统 PATH。</small>
-        </div>
-        <div className="generation-inline">
-          <input
-            type="text"
-            className="settings-text-input settings-text-input-wide"
-            value={settings.lora_trainer_python}
-            placeholder="留空自动探测"
-            onChange={(event) => onChange({ lora_trainer_python: event.target.value })}
-          />
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void pickPath("lora_trainer_python", "file")}
-          >
-            选择文件
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>训练底模</strong>
-          <small>
-            必须是 <code>.safetensors</code>，且与要训练的 LoRA 家族一致（SD1.5 的 LoRA 不能配 SDXL 底模）。
-          </small>
-        </div>
-        <div className="generation-inline">
-          <input
-            type="text"
-            className="settings-text-input settings-text-input-wide"
-            value={settings.lora_trainer_base_model}
-            placeholder="E:\\models\\anime.safetensors"
-            onChange={(event) => onChange({ lora_trainer_base_model: event.target.value })}
-          />
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void pickPath("lora_trainer_base_model", "file")}
-          >
-            选择文件
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>LoRA 输出目录</strong>
-          <small>留空则输出到训练集同级的 <code>lora-models</code>。</small>
-        </div>
-        <div className="generation-inline">
-          <input
-            type="text"
-            className="settings-text-input settings-text-input-wide"
-            value={settings.lora_trainer_output_dir}
-            placeholder="留空使用默认目录"
-            onChange={(event) => onChange({ lora_trainer_output_dir: event.target.value })}
-          />
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void pickPath("lora_trainer_output_dir", "directory")}
-          >
-            选择目录
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field settings-field-stacked">
-        <div>
-          <strong>训练器状态</strong>
-          <small>{statusText}</small>
-          {environmentText && <small>{environmentText}</small>}
-        </div>
-        <div className="generation-inline">
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void check()}
-            disabled={checking}
-          >
-            {checking ? <LoaderCircle size={15} className="spin" /> : <Activity size={15} />}
-            检测训练器
-          </button>
-          <button
-            type="button"
-            className="ghost-button"
-            onClick={() => void probe()}
-            disabled={probing || !status?.installed}
-          >
-            {probing ? <LoaderCircle size={15} className="spin" /> : <Cpu size={15} />}
-            检查 torch / CUDA
-          </button>
-        </div>
-      </div>
-
-      <div className="settings-field-note">
-        kohya_ss 与 sd-scripts 是独立项目（各有自己的许可证），本应用只调用它们、不打包也不修改；
-        训练产生的 LoRA 版权与使用限制由训练者与底模许可证共同决定。
-      </div>
-    </section>
-  );
-}
-
-/**
- * Character recognizer inventory: pick the active model and install extra
- * ones from the shipped catalog (the Worker performs the download).
- */
 function ReferenceLibrarySection({
   settings,
   onChange,
@@ -1597,12 +1162,9 @@ function ReferenceLibrarySection({
     <>
       <div className="settings-field settings-field-stacked">
         <div>
-          <strong>参考图识别（模型里没有的角色）</strong>
+          <strong>参考图识别</strong>
           <small>
-            识别模型的标签表决定它能认出谁；像一些冷门角色不在表里，无论怎么扫描都是「未识别」。
-            用人工矫正过的样本建一个参考库后，扫描会对**非高置信**的人物做相似度匹配，
-            命中就给出「参考匹配 xx%」。CCIP 后端判别力最好（实测 AUC 1.000），需要额外下载模型；
-            embedding 后端复用当前识别模型、无需下载。
+            用人工矫正样本补充角色。CCIP 需下载模型，embedding 复用当前模型。
           </small>
         </div>
         <div className="generation-inline">
@@ -1634,7 +1196,7 @@ function ReferenceLibrarySection({
             disabled={busy || !isTauriRuntime()}
           >
             {busy ? <LoaderCircle size={15} className="spin" /> : <Sparkles size={15} />}
-            用矫正结果建立参考库
+            建立参考库
           </button>
           {status?.exists && (
             <button
@@ -1890,19 +1452,16 @@ function ModelSettingsPanel({
         </div>
         <div>
           <h3>模型配置</h3>
-          <p>
-            这里汇总随安装包自带、可从 Hugging Face 下载以及已经缓存到本机的全部模型。
-          </p>
         </div>
       </div>
 
+      <details className="studio-disclosure model-storage-details">
+        <summary>模型与缓存目录</summary>
       <div className="settings-field settings-field-stacked">
         <div>
           <strong>存储位置</strong>
           <small>
-            角色识别模型与检测模型下载到模型目录；打标、参考匹配模型走软件自带的数据目录
-            （data\hf-cache）。两者都在软件目录内，复制或删除整个软件目录即可迁移或彻底清理。
-            “删除”只清理这两个目录里的模型文件。
+            识别与检测模型放在模型目录，打标与参考匹配模型放在缓存目录。
           </small>
         </div>
         <div className="model-path-list">
@@ -1937,6 +1496,7 @@ function ModelSettingsPanel({
         </div>
       </div>
 
+      </details>
       <div className="model-toolbar">
         <span>
           {inventory
@@ -2190,7 +1750,6 @@ function RecognitionSettingsPanel({
         </div>
         <div>
           <h3>识别配置</h3>
-          <p>控制角色识别推理使用多少 CPU 线程，以及扫描时的默认行为。</p>
         </div>
       </div>
 
@@ -2200,7 +1759,7 @@ function RecognitionSettingsPanel({
         <div>
           <strong>ONNX 推理线程数</strong>
           <small>
-            单次推理内部的 CPU 并行度，数值越大越快，但会占用更多核心；显卡执行时该值不影响 GPU 运算。
+            控制 CPU 推理并行度，数值越高占用越多。
           </small>
         </div>
         <select
@@ -2220,7 +1779,7 @@ function RecognitionSettingsPanel({
       <div className="settings-field">
         <div>
           <strong>默认跳过已标注图片</strong>
-          <small>识别扫描时默认只处理未人工标注的图片，避免覆盖此前的标注与再训练样本。</small>
+          <small>复用已保存的人工标注。</small>
         </div>
         <label className="switch-control">
           <input
@@ -2234,9 +1793,6 @@ function RecognitionSettingsPanel({
         </label>
       </div>
 
-      <div className="settings-field-note">
-        识别任务由单个 AI Worker 顺序执行：线程数控制的是每次模型推理的并行度，而不是同时处理多张图片。显卡与 CUDA 运行时请在“基础配置”中设置。
-      </div>
     </section>
   );
 }
@@ -2256,7 +1812,6 @@ function SimilaritySettingsPanel({
         </div>
         <div>
           <h3>相似度配置</h3>
-          <p>相似度扫描使用本地感知哈希与颜色直方图算法，并行度直接决定特征提取速度。</p>
         </div>
       </div>
 
@@ -2264,7 +1819,7 @@ function SimilaritySettingsPanel({
         <div>
           <strong>特征提取并行度</strong>
           <small>
-            同时解码与计算多少张图片的特征。数值越高越快，但会占用更多 CPU 与磁盘 IO。
+            数值越高，占用的 CPU 与磁盘资源越多。
           </small>
         </div>
         <select
@@ -2286,7 +1841,7 @@ function SimilaritySettingsPanel({
         <div>
           <strong>默认匹配灵敏度</strong>
           <small>
-            新扫描的初始阈值，仍可在相似计算页面临时调整。推荐 85% 识别差分与重压缩。
+            默认 85%，可在相似计算页临时调整。
           </small>
         </div>
         <div className="settings-slider">
@@ -2307,7 +1862,6 @@ function SimilaritySettingsPanel({
       <div className="settings-field">
         <div>
           <strong>默认包含子目录</strong>
-          <small>新扫描默认递归遍历所选目录下的所有子文件夹。</small>
         </div>
         <label className="switch-control">
           <input
@@ -2325,7 +1879,7 @@ function SimilaritySettingsPanel({
         <div>
           <strong>默认归档文件夹名</strong>
           <small>
-            执行“隔离归档”时在该图片所在目录下创建的子文件夹名称，不能包含路径分隔符。
+            在原图目录下创建，填写文件夹名即可。
           </small>
         </div>
         <input
@@ -2538,13 +2092,13 @@ export function SettingsPage({
               key={item.id}
               role="tab"
               aria-selected={tab === item.id}
+              title={item.hint}
               className={`settings-tab${tab === item.id ? " active" : ""}`}
               onClick={() => setTab(item.id)}
             >
               <Icon size={16} />
               <span>
                 <strong>{item.label}</strong>
-                <small>{item.hint}</small>
               </span>
             </button>
           );
@@ -2552,42 +2106,49 @@ export function SettingsPage({
       </div>
 
       {tab === "environment" && (
-        <div className="settings-stack">
-          <AppearanceSettingsPanel
-            settings={settings}
-            onChange={patchSettings}
-          />
-          <WorkerRuntimeSettingsPanel
-            status={status}
-            gpus={gpus}
-            compute={compute}
-            mode={runtimeMode}
-            device={runtimeDevice}
-            busy={savingSettings}
-            onChangeMode={setRuntimeMode}
-            onChangeDevice={setRuntimeDevice}
-            cudaRuntimeDir={settings.cuda_runtime_dir}
-            onChangeCudaRuntimeDir={(value) =>
-              patchSettings({ cuda_runtime_dir: value })
-            }
-            networkProxy={settings.network_proxy}
-            onChangeNetworkProxy={(value) => patchSettings({ network_proxy: value })}
-            onCudaInstalled={() => {
-              void probeCompute().catch(() => undefined);
-              void onRefresh?.();
-            }}
-            backgroundPriority={settings.background_priority}
-            onChangeBackgroundPriority={(value) =>
-              patchSettings({ background_priority: value })
-            }
-          />
-          <EnvironmentCheckSection
-            status={status}
-            gpus={gpus}
-            compute={compute}
-            onProbeCompute={probeCompute}
-            onRefresh={onRefresh}
-          />
+        <div className="settings-environment-grid">
+          <div className="settings-environment-main">
+            <WorkerRuntimeSettingsPanel
+              status={status}
+              gpus={gpus}
+              compute={compute}
+              mode={runtimeMode}
+              device={runtimeDevice}
+              busy={savingSettings}
+              onChangeMode={setRuntimeMode}
+              onChangeDevice={setRuntimeDevice}
+              cudaRuntimeDir={settings.cuda_runtime_dir}
+              onChangeCudaRuntimeDir={(value) =>
+                patchSettings({ cuda_runtime_dir: value })
+              }
+              networkProxy={settings.network_proxy}
+              onChangeNetworkProxy={(value) => patchSettings({ network_proxy: value })}
+              onCudaInstalled={() => {
+                void probeCompute().catch(() => undefined);
+                void onRefresh?.();
+              }}
+              backgroundPriority={settings.background_priority}
+              onChangeBackgroundPriority={(value) =>
+                patchSettings({ background_priority: value })
+              }
+            />
+          </div>
+          <div className="settings-environment-side">
+            <AppearanceSettingsPanel
+              settings={settings}
+              onChange={patchSettings}
+            />
+            <details className="settings-section settings-check-details">
+              <summary>环境状态检查</summary>
+            <EnvironmentCheckSection
+              status={status}
+              gpus={gpus}
+              compute={compute}
+              onProbeCompute={probeCompute}
+              onRefresh={onRefresh}
+            />
+            </details>
+          </div>
         </div>
       )}
 
@@ -2610,10 +2171,10 @@ export function SettingsPage({
       )}
 
       {tab === "comfy" && (
-        <>
+        <div className="settings-grid">
           <ComfySettingsPanel settings={settings} onChange={patchSettings} />
           <LoraTrainingSettingsPanel settings={settings} onChange={patchSettings} />
-        </>
+        </div>
       )}
 
       {(settingsNotice || settingsError) && (

@@ -27,5 +27,6 @@ zip = "4"
 chrono = { version = "0.4", features = ["serde"] }
 # Local ComfyUI is reached over plain HTTP on 127.0.0.1, so no TLS backend is
 # required; keeping default features off avoids extra native build steps.
-reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "multipart"] }
 sha2 = "0.10"
+base64 = "0.22"

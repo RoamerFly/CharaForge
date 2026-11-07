@@ -53,6 +53,7 @@ import {
 import { isScanActive, scanStateFromPhase, type ScanState } from "./lib/scan-state";
 import { InitialLoading } from "./components/InitialLoading";
 import { PRODUCT_NAME, PRODUCT_NAME_EN } from "./lib/brand";
+import brandIcon from "./assets/charaforge-icon.png";
 import {
   WorkspacePage,
   RecognitionPage,
@@ -609,21 +610,24 @@ function App() {
   }, [location.pathname]);
 
   const runtimeLabel = warming
-    ? "AI 推理环境正在启动"
+    ? "推理环境启动中"
+    : loading
+      ? "正在连接核心"
     : status?.database.status === "ready"
-      ? "本地核心已连接"
+      ? "核心已连接"
       : isTauriRuntime()
         ? "桌面核心未连接"
         : "浏览器预览模式";
 
   if (!initialLoaded && loading) {
-    return <InitialLoading message="正在初始化本地核心与 AI 推理环境…" />;
+    return <InitialLoading message="正在连接本地核心…" />;
   }
 
   return (
     <div className="app-shell">
       <aside className="sidebar">
         <div className="brand">
+          <img className="brand-icon" src={brandIcon} alt="" width="36" height="36" />
           <div>
             <div className="brand-title">{PRODUCT_NAME}</div>
             <div className="brand-subtitle">{PRODUCT_NAME_EN}</div>
@@ -654,10 +658,6 @@ function App() {
           ))}
         </nav>
         <div className="sidebar-footer">
-          <div className="privacy-note">
-            <Info size={15} />
-            <span>本地管理 · AI 助力</span>
-          </div>
           <a
             className="sidebar-link"
             href={issuesUrl}
@@ -674,14 +674,7 @@ function App() {
       <main className="main-content">
         <header className="topbar">
           <div>
-            <div className="eyebrow">工作台 / {pageTitle}</div>
             <h1>{pageTitle}</h1>
-            {location.pathname === "/" && (
-              <p className="topbar-subtitle">管理角色与本地图片，从这里开始</p>
-            )}
-            {recognitionPaths.has(location.pathname) && (
-              <p className="topbar-subtitle">识别、复核并校正图片中的动漫角色</p>
-            )}
           </div>
           <div className="topbar-actions">
             {location.pathname === "/settings" && settingsSave.available && (

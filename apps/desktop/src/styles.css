@@ -5,6 +5,7 @@
 @import "./styles/components.css";
 @import "./styles/workspace.css";
 @import "./styles/workbench.css";
+@import "./styles/recognition.css";
 @import "./styles/personal-model.css";
 @import "./styles/similarity.css";
 @import "./styles/settings.css";
